@@ -1,0 +1,468 @@
+LEXICON Root
+غ.ر.ح.اضافه=:0 iPr; !!!! حرف اضافه  غیر رسمی
+غ.ر.ح.اضافه=با:با iPrBa; !!!! حرف اضافه  غیر رسمی
+غ.ر.عبارت=:0 iExp;!!!!عبارت غیر رسمی
+غ.ر.ح.مفعولی=:0 iPo;!!!!رو یا رای مفعولی
+غ.ر.ح.ربط۱=:0 iC0; !!!! حرف ربط
+
+LEXICON iPrBa
+: iPrTail;
++های.میانجی:*ها iPrTail;
+
+LEXICON iPrTail
++و.شخصی۱:*م Ham;
++و.شخصی۲:*ت Ham;
++و.شخصی۳:*ش Ham;
++و.شخصی۴:*مون Ham;
++و.شخصی۵:*تون Ham;
++و.شخصی۶:*شون Ham;
++و.شخصی۱+و.ربطی۱:*مم Ham;!!!!!!!!
++و.شخصی۱+و.ربطی۱:*م^هستم Ham;
++و.شخصی۱+و.ربطی۲:*می Ham;
++و.شخصی۱+و.ربطی۲:*م^هستی Ham;
++و.شخصی۱+و.ربطی۳:*مه Ham;
++و.شخصی۱+و.ربطی۳:*م^هست shehStress;
++و.شخصی۱+و.ربطی۳:*م×ست Ham;
++و.شخصی۱+و.ربطی۴:*میم Ham;
++و.شخصی۱+و.ربطی۵:*مید Ham; 
++و.شخصی۱+و.ربطی۵:*مین Ham; 
++و.شخصی۱+و.ربطی۶:*من Ham;
++و.شخصی۲+و.ربطی۱:*تم Ham;
++و.شخصی۲+و.ربطی۱:*ت^هستم Ham;
++و.شخصی۲+و.ربطی۲:*تی Ham;!!!!!!!!!
++و.شخصی۲+و.ربطی۲:*ت^هستی Ham;
++و.شخصی۲+و.ربطی۳:*ته Ham;
++و.شخصی۲+و.ربطی۳:*ت^هست shehStress;
++و.شخصی۲+و.ربطی۳:*ت×ست Ham;
++و.شخصی۲+و.ربطی۴:*تیم Ham; 
++و.شخصی۲+و.ربطی۵:*تین Ham;
++و.شخصی۲+و.ربطی۵:*تید Ham; 
++و.شخصی۲+و.ربطی۶:*تن Ham; 
++و.شخصی۳+و.ربطی۱:*شم Ham;
++و.شخصی۳+و.ربطی۱:*ش^هستم Ham;
++و.شخصی۳+و.ربطی۲:*شی Ham;
++و.شخصی۳+و.ربطی۲:*ش^هستی Ham;
++و.شخصی۳+و.ربطی۳:*شه Ham;
++و.شخصی۳+و.ربطی۳:*ش^هست shehStress;
++و.شخصی۳+و.ربطی۳:*ش×ست Ham;
++و.شخصی۳+و.ربطی۴:*شیم Ham;
++و.شخصی۳+و.ربطی۵:*شید Ham;
++و.شخصی۳+و.ربطی۵:*شین Ham;
++و.شخصی۳+و.ربطی۶:*شن Ham;
++و.شخصی۴+و.ربطی۱:×مونم Ham;
++و.شخصی۴+و.ربطی۱:×مون^هستم Ham;
++و.شخصی۴+و.ربطی۲:×مونی Ham;
++و.شخصی۴+و.ربطی۲:×مون^هستی Ham;
++و.شخصی۴+و.ربطی۳:×مونه Ham;
++و.شخصی۴+و.ربطی۳:×مون^هست shehStress;
++و.شخصی۴+و.ربطی۳:×مون×ست Ham;
++و.شخصی۴+و.ربطی۴:×مونیم Ham;
++و.شخصی۴+و.ربطی۵:×مونین Ham;
++و.شخصی۴+و.ربطی۵:×مونید Ham;
++و.شخصی۴+و.ربطی۶:×مونن Ham;
++و.شخصی۵+و.ربطی۱:×تونم Ham;
++و.شخصی۵+و.ربطی۱:×تون^هستم Ham;
++و.شخصی۵+و.ربطی۲:×تونی Ham;!!!!!!!!!
++و.شخصی۵+و.ربطی۲:×تون^هستی Ham;
++و.شخصی۵+و.ربطی۳:×تونه Ham;
++و.شخصی۵+و.ربطی۳:×تون^هست shehStress;
++و.شخصی۵+و.ربطی۳:×تون×ست Ham;
++و.شخصی۵+و.ربطی۴:×تونیم Ham;
++و.شخصی۵+و.ربطی۵:×تونین Ham;
++و.شخصی۵+و.ربطی۵:×تونید Ham;
++و.شخصی۵+و.ربطی۶:×تونن Ham;
++و.شخصی۶+و.ربطی۱:×شونم Ham;
++و.شخصی۶+و.ربطی۱:×شون^هستم Ham;
++و.شخصی۶+و.ربطی۲:×شونی Ham;
++و.شخصی۶+و.ربطی۲:×شون^هستی Ham;
++و.شخصی۶+و.ربطی۳:×شونه Ham;
++و.شخصی۶+و.ربطی۳:×شون^هست shehStress;
++و.شخصی۶+و.ربطی۳:×شون×ست Ham;
++و.شخصی۶+و.ربطی۴:×شونیم Ham;
++و.شخصی۶+و.ربطی۵:×شونین Ham;
++و.شخصی۶+و.ربطی۵:×شونید Ham;
++و.شخصی۶+و.ربطی۶:×شونن Ham;
+: #;
+ 
+LEXICON shehStress
+: Ham;
+:*ش Ham;
+  
+LEXICON Ham
+: #;
++م.هم:¤م #;
++و.عطف:*و #;
++ها.تاکیدی:*ها #;
++ها.تاکیدی:*ا #;
+
+LEXICON iPo !!!! واژگان پر و کامل حرف اضافه پسین
+رو #;
+
+LEXICON iC0 !!!! واژگان پر حرف ربط بدون نیاز به قاعده تصریفی
+اگه #;
+ک #;
+ینی #;
+اگر+م.هم:اگر*م #;!!!!corpus
+وگرنه #;!!!!corpus
+ک #;!!!!corpus
+(را):و #;!!!!corpus-means ra
+!#;!!!!corpus
+
+LEXICON iPr !!!! واژگان -- حرف اضافه 
+ب iPrTail; !!!!corpus
+برا iPrTail;
+از iPrTail;
+از‌باب iPrTail;
+از‌بالا iPrTail; !!!! Perlex
+از‌برا iPrTail; !!!! Perlex
+از‌پشت iPrTail; !!!! Perlex
+از‌پی iPrTail;
+از‌پیش iPrTail; !!!! Perlex
+از‌تو iPrTail; !!!! Perlex
+از‌جانب iPrTail;
+از‌جهت iPrTail;
+از‌حیث iPrTail;
+از‌دست iPrTail;
+از‌دنبال iPrTail;
+از‌زیر iPrTail; !!!! Perlex
+از‌سر iPrTail;
+از‌سو iPrTail;
+از‌طریق iPrTail;
+از‌فرط iPrTail;
+از‌قبیل iPrTail;
+از‌لحاظ iPrTail;
+ازبهر iPrTail;
+ازبین iPrTail; !!!! Perlex
+ازجانب iPrTail; !!!! Perlex
+ازجمله iPrTail; !!!! Perlex
+ازخلال iPrTail;
+ازراه iPrTail;
+ازرو iPrTail;
+ازسر iPrTail; !!!! Perlex
+ازطرف iPrTail; !!!! Perlex
+ازطریق iPrTail; !!!! Perlex
+ازفرط iPrTail; !!!! Perlex
+ازقبیل iPrTail; !!!! Perlex
+ازلحاظ iPrTail; !!!! Perlex
+ازمیان iPrTail; !!!! Perlex
+ازنظر iPrTail;
+اضافه‌بر #;
+اطراف iPrTail; !!!! Perlex
+اعم‌از iPrTail; !!!! Perlex
+الا iPrTail;
+الی iPrTail;
+امتداد iPrTail; !!!! Perlex
+اندر iPrTail;
+اندرون iPrTail; !!!! Perlex
+با‌تمام iPrTail;
+با‌کمک iPrTail;
+با‌وجود iPrTail;
+با‌وصف iPrTail;
+بابت iPrTail; !!!! Perlex
+باز iPrTail;
+بالا iPrTail; !!!! Perlex
+بالغ‌بر #;
+باوجود iPrTail; !!!! Perlex
+بجا iPrTail; !!!! Perlex
+بجز iPrTail;
+بخاطر iPrTail; !!!! Perlex
+بدان iPrTail; !!!! Perlex
+بدنبال iPrTail; !!!! Perlex
+بدو iPrTail; !!!! Perlex
+بدون iPrTail;
+بدین iPrTail;
+بر iPrTail;
+بر‌اثر iPrTail;
+بر‌اساس iPrTail;
+بر‌پایه iPrTail;
+بر‌حسب iPrTail;
+بر‌خلاف iPrTail;
+بر‌سر iPrTail;
+بر‌ضد iPrTail; !!!! Perlex
+بر‌طبق iPrTail;
+بر‌عکس iPrTail;
+بر‌علیه iPrTail;
+بر‌عهده iPrTail; !!!! Perlex
+بر‌له iPrTail;
+بر‌مبنا iPrTail;
+بر‌وفق iPrTail;
+برابر iPrTail; !!!! Perlex
+براثر iPrTail; !!!! Perlex
+براساس iPrTail; !!!! Perlex
+برای iPrTail;
+توی iPrTail;!!!!corpus
+برحسب iPrTail; !!!! Perlex
+برخلاف iPrTail; !!!! Perlex
+بررو iPrTail; !!!! Perlex
+برسر iPrTail; !!!! Perlex
+برضد iPrTail; !!!! Perlex
+برطبق iPrTail; !!!! Perlex
+برعلیه iPrTail; !!!! Perlex
+برعهده iPrTail; !!!! Perlex
+برغم iPrTail;
+برفراز iPrTail; !!!! Perlex
+برگرد iPrTail; !!!! Perlex
+برون iPrTail; !!!! Perlex
+بعداز iPrTail; !!!! Perlex
+بلا iPrTail; !!!! Perlex
+بلعکس iPrTail;
+بمثل iPrTail; !!!! Perlex
+بمحض iPrTail;
+موجب iPrTail;
+بنابر #;
+بنابه iPrTail; !!!! Perlex
+بنفع iPrTail;
+بواسطه iPrTail;
+بوسیله iPrTail; !!!! Perlex
+به iPrTail;
+به‌‌درون iPrTail; !!!! Perlex
+به‌استثنا‌ی iPrTail;
+به‌اضافه‌ iPrTail;
+به‌بالا iPrTail; !!!! Perlex
+به‌پشت iPrTail; !!!! Perlex
+به‌پیش iPrTail;
+به‌تبع iPrTail; !!!! Perlex
+به‌توسط iPrTail;
+به‌تو iPrTail; !!!! Perlex
+به‌جا iPrTail; !!!! Perlex
+به‌جز iPrTail; !!!! Perlex
+به‌جهت iPrTail;
+به‌خاطر iPrTail;
+به‌خدمت iPrTail; !!!! Perlex
+به‌خلاف iPrTail;
+به‌داخل iPrTail; !!!! Perlex
+به‌درون iPrTail; !!!! Perlex
+به‌دلیل iPrTail; !!!! Perlex
+به‌دنبال iPrTail;
+به‌دور iPrTail; !!!! Perlex
+به‌زعم iPrTail;
+به‌زیر iPrTail; !!!! Perlex
+به‌سان iPrTail;
+به‌سبب iPrTail;
+به‌سراغ iPrTail; !!!! Perlex
+به‌سمت iPrTail; !!!! Perlex
+به‌شرط iPrTail;
+به‌صرف iPrTail;
+به‌صورت iPrTail;
+به‌طرز iPrTail;
+به‌طرف iPrTail; !!!! Perlex
+به‌طور iPrTail;
+به‌عکس iPrTail;
+به‌علاوه‌ iPrTail;
+به‌علت iPrTail;
+به‌عنوان iPrTail; !!!! Perlex
+به‌عهده iPrTail;
+به‌غیر iPrTail;
+به‌غیراز #;
+به‌قرار iPrTail;
+به‌کنار iPrTail; !!!! Perlex
+به‌گزارش iPrTail;
+به‌گفته‌ iPrTail;
+به‌مانند iPrTail;
+به‌مثابه iPrTail;
+به‌مثل iPrTail;
+به‌مجرد iPrTail;
+به‌محض iPrTail;
+به‌منظور iPrTail;
+به‌میان iPrTail; !!!! Perlex
+به‌نحو iPrTail;
+به‌نزد iPrTail;
+به‌نزدیک iPrTail;
+به‌نسبت iPrTail; !!!! Perlex
+به‌نظر iPrTail;
+به‌وسیله iPrTail; !!!! Perlex
+به‌همراه iPrTail; !!!! Perlex
+به‌هنگام iPrTail;
+بهر iPrTail; !!!! Perlex
+بی #;
+بیرون iPrTail; !!!! Perlex
+بیش‌از #;
+بین iPrTail; !!!! Perlex
+پایین iPrTail; !!!! Perlex
+پس‌از #;
+پشت iPrTail; !!!! Perlex
+پشت‌سر iPrTail; !!!! Perlex
+پهلو iPrTail; !!!! Perlex
+پیرامون iPrTail; !!!! Perlex
+پیش iPrTail; !!!! Perlex
+پیش‌از #;
+تا iPrTail;
+تا‌به iPrTail; !!!! Perlex
+تانک iPrTail; !!!! Perlex
+تحت iPrTail;
+تو iPrTail; !!!! Perlex
+توسط iPrTail; !!!! Perlex
+ته iPrTail; !!!! Perlex
+جز #;
+جزو iPrTail;
+جلو iPrTail; !!!! Perlex
+جنب iPrTail; !!!! Perlex
+جوف iPrTail; !!!! Perlex
+جهت iPrTail; !!!! Perlex
+چون #;
+حول iPrTail; !!!! Perlex
+حین iPrTail; !!!! Perlex
+خارج‌از iPrTail; !!!! Perlex
+خدمت iPrTail; !!!! Perlex
+داخل iPrTail; !!!! Perlex
+دخمه iPrTail; !!!! Perlex
+در iPrTail;
+در‌اثر iPrTail;
+در‌ازا iPrTail;
+در‌اطراف iPrTail;
+در‌باب iPrTail;
+در‌باره iPrTail; !!!! Perlex
+در‌بالا iPrTail; !!!! Perlex
+در‌برابر iPrTail;
+در‌بین iPrTail;
+در‌پس iPrTail;
+در‌پشت iPrTail; !!!! Perlex
+در‌پیرامون iPrTail;
+در‌پیش iPrTail; !!!! Perlex
+در‌تحت iPrTail; !!!! Perlex
+در‌تو iPrTail; !!!! Perlex
+در‌حدود iPrTail;
+در‌حین iPrTail;
+در‌خدمت iPrTail; !!!! Perlex
+در‌خصوص iPrTail;
+در‌خلال iPrTail; !!!! Perlex
+در‌زمینه iPrTail;
+در‌زیر iPrTail; !!!! Perlex
+در‌سر iPrTail;
+در‌صدد iPrTail;
+در‌ضمن iPrTail; !!!! Perlex
+در‌طی iPrTail;
+در‌عین iPrTail;
+در‌قبال iPrTail;
+در‌کنار iPrTail; !!!! Perlex
+در‌مقابل iPrTail;
+در‌مورد iPrTail;
+در‌نزد iPrTail;
+در‌وسط iPrTail; !!!! Perlex
+در‌وقت iPrTail;
+در‌هنگام iPrTail;
+دراثر iPrTail; !!!! Perlex
+دراطراف iPrTail; !!!! Perlex
+درباره iPrTail;
+دربر iPrTail;
+دربرابر iPrTail; !!!! Perlex
+دربین iPrTail; !!!! Perlex
+درپایین iPrTail; !!!! Perlex
+درپشت iPrTail; !!!! Perlex
+درپی iPrTail;
+درجلو iPrTail; !!!! Perlex
+درجهت iPrTail;
+درحق iPrTail;
+درخلال iPrTail;
+درداخل iPrTail; !!!! Perlex
+دردرون iPrTail; !!!! Perlex
+دررابطه‌با iPrTail; !!!! Perlex
+درراه iPrTail;
+درزیر iPrTail; !!!! Perlex
+درصورت iPrTail; !!!! Perlex
+درضمن iPrTail;
+درطول iPrTail;
+درظرف iPrTail; !!!! Perlex
+درعرض iPrTail; !!!! Perlex
+درعین iPrTail; !!!! Perlex
+درکنار iPrTail; !!!! Perlex
+درمقابل iPrTail; !!!! Perlex
+درمورد iPrTail; !!!! Perlex
+درمیون iPrTail; !!!! Perlex
+دروسط iPrTail; !!!! Perlex
+درون iPrTail; !!!! Perlex
+درین iPrTail; !!!! Perlex
+دم iPrTail; !!!! Perlex
+دنبال iPrTail; !!!! Perlex
+دور iPrTail; !!!! Perlex
+دور‌تا‌دور iPrTail; !!!! Perlex
+دوروبر iPrTail; !!!! Perlex
+را iPrTail; !!!! Perlex
+راجع iPrTail; !!!! Perlex
+راجع‌به iPrTail;
+راه‌پله iPrTail; !!!! Perlex
+رو iPrTail; !!!! Perlex
+روبرو iPrTail; !!!! Perlex
+روبرو iPrTail; !!!! Perlex
+روبه‌رو iPrTail; !!!! Perlex
+رودررو iPrTail; !!!! Perlex
+رویارو iPrTail; !!!! Perlex
+زان iPrTail; !!!! Perlex
+زیر iPrTail; !!!! Perlex
+سر iPrTail; !!!! Perlex
+شبیه iPrTail; !!!! Perlex
+شبیه‌به iPrTail;
+صورتحساب iPrTail; !!!! Perlex
+ضد iPrTail; !!!! Perlex
+ضمن iPrTail; !!!! Perlex
+طبق iPrTail;
+طرف iPrTail; !!!! Perlex
+طی iPrTail;
+ظرف iPrTail; !!!! Perlex
+عطف‌به #;
+عقب iPrTail; !!!! Perlex
+علاوه‌بر #;
+علی‌رغم #;
+علیه iPrTail; !!!! Perlex
+غیراز #;
+فاقد iPrTail; !!!! Perlex
+فرا iPrTail;
+فراتر iPrTail; !!!! Perlex
+فراخور iPrTail; !!!! Perlex
+فرارو iPrTail; !!!! Perlex
+فرو iPrTail;
+فی iPrTail;
+فیمابین iPrTail; !!!! Perlex
+قبل iPrTail; !!!! Perlex
+قبل‌از #;
+کنار iPrTail; !!!! Perlex
+گذشته‌از iPrTail; !!!! Perlex
+لای iPrTail; !!!! Perlex
+لب iPrTail; !!!! Perlex
+لغایت #;
+له iPrTail; !!!! Perlex
+لیک #;
+مابه‌ازا iPrTail;
+مابین iPrTail;
+مادون iPrTail; !!!! Perlex
+ماقبل iPrTail; !!!! Perlex
+مال iPrTail; !!!! Perlex
+مانند iPrTail; !!!! Perlex
+ماورا iPrTail; !!!! Perlex
+مبنی‌بر iPrTail; !!!! Perlex
+مثل iPrTail; !!!! Perlex
+محض iPrTail; !!!! Perlex
+مد iPrTail; !!!! Perlex
+مع‌الاسف #;
+مع‌الوصف #;
+مع‌ذلک #;
+مع‌هذا #;
+مقابل iPrTail; !!!! Perlex
+مگر iPrTail; !!!! Perlex
+من‌حیث iPrTail; !!!! Perlex
+میان iPrTail; !!!! Perlex
+میون iPrTail;
+نبش iPrTail; !!!! Perlex
+نزد iPrTail;
+نزدیک iPrTail; !!!! Perlex
+نسبت‌به iPrTail;
+نظر‌به iPrTail;
+نظیر iPrTail; !!!! Perlex
+وا iPrTail;
+واسه iPrTail;
+وارد iPrTail; !!!! Perlex
+ورا iPrTail; !!!! Perlex
+وز iPrTail; !!!! Perlex
+وسط iPrTail; !!!! Perlex
+همانند iPrTail; !!!! Perlex
+همچون #;
+همراه iPrTail; !!!! Perlex
+همراه‌با iPrTail; !!!! Perlex
+راجب iPrTail;!!!!corpus
+اینور iPrTail;!!!!corpus
+اونور iPrTail;!!!!corpus
+ور iPrTail;!!!!corpus
+
+LEXICON iExp
+خدافظ #;!!!!iPrTail;!!!!corpus
+سیکتیر #;

@@ -1,0 +1,335 @@
+read lexc lexc/noun.lexc
+define LexNoun;
+
+read lexc lexc/harf.lexc
+define LexHarf;
+
+read lexc lexc/verb.lexc
+define LexVerb;
+
+read lexc lexc/iverb.lexc
+define iLexVerb;
+
+read lexc lexc/inoun.lexc
+define iLexNoun;
+
+read lexc lexc/iharf.lexc
+define iLexHarf;
+
+read lexc lexc/ichain.lexc
+define iChain;
+
+read lexc lexc/chain.lexc
+define chain;
+
+define ALLnouns LexHarf | LexNoun;
+
+define ZWNJ "‌";
+define CONCAT 0;
+define SPACE " ";
+
+define ALEFCNTX [ "ا" | "آ" ];
+define ALEF "ا";
+define AA "آ";
+define BEH "ب";
+define PEH "پ";
+define TE "ت";
+define SE "ث";
+define JIM "ج";
+define CHE "چ";
+define HE "ح";
+define KHE "خ";
+define DAL "د";
+define ZAL "ذ";
+define RE "ر";
+define ZE "ز";
+define ZHE "ژ";
+define SIN "س";
+define SHIN "ش";
+define SAD "ص";
+define ZAD "ض";
+define TA "ط";
+define ZA "ظ";
+define EIN "ع";
+define GHEIN "غ";
+define FE "ف";
+define GHAF "ق";
+define KAF "ک";
+define GAF "گ";
+define LAM "ل";
+define MIM "م";
+define NOON "ن";
+define VAV "و";
+define HEH "ه";
+define YEH "ی";
+define HAMZE ["ئ" | "ء" | "ؤ" | "أ" | "إ"];
+define HZE  "ئ";
+
+define ALPHABET [ ALEF | AA | BEH | PEH | TE | SE | JIM |
+	   CHE | HE | KHE | DAL | ZAL | RE | ZE |
+	   ZHE | SIN | SHIN | SAD | ZAD | TA | ZA |
+	   EIN | GHEIN | FE | GHAF | KAF | GAF |
+	   LAM | MIM | NOON | VAV | HEH | YEH |
+	   HAMZE ];
+
+define SST SIN TE;
+define AN ["ا" "ن"];
+
+define presentInflections [ MIM | YEH | DAL | YEH MIM | YEH DAL | NOON DAL ];
+
+define HA ["ه" "ا"];
+define MI [MIM YEH];
+define NACHASB [ "ر" | "ز" | "د" | "ذ" | "و" | "ژ" | "ا" | "آ" | "ء" ];
+define BOUNDS [ "*" | "^" | "×" | "&" | .#. | "Æ" | "©" | "¤"]; 
+define yehContext1 [ "م" | "ت" | "ش" | "ی" | "ی" "م" | "ی" "د" | "ن" "د" ];
+define yehContext2 [ yehContext1 | "م" AN | "ت" AN | "ش" AN ];
+define EZContext [ "و" | "ا" ];
+define putZWNJ "×" ->‌ ZWNJ;
+define refineHA "×" -> "*" || NACHASB _ HA;
+define putConcat [ "*" | "&" | "¤" | "Æ" | "©"] -> CONCAT;
+define putSpace "^" -> SPACE;
+define extraZWNJ ZWNJ+ -> ZWNJ;
+define coverUpZWNJ "×" -> 0;
+define removeZWNJ "×" -> "^";
+define coverUpAnd "&" -> "^";
+define refineZWNJ ZWNJ -> CONCAT ||  NACHASB _ ?*;
+
+define nehRefine "*" -> [YEH "*"] || BOUNDS NOON _ ALEFCNTX; #both need to be changed like iNehRefine
+define behRefine "*" -> [YEH "×"] || BOUNDS BEH _ ALEFCNTX; #both need to be changed like iNehRefine
+
+#define iBehRefine "*" -> [YEH "*"] || .#. BEH _ ALEFCNTX ?*;
+#define iRefineProg "×" -> "*" || YEH _ ALEFCNTX ?*; #e.g. nemiaim, mian
+define iPutSpace [ "^" ] ->‌ SPACE;
+define iExtraSpace SPACE+ -> SPACE;
+define refineStress [..] -> HEH || HEH ? _ ALEF .#.;
+#define iObjCliticRefine [..] -> ALEF || HEH ["*" | "^" | "×" | SPACE] _ [ MIM | SHIN | TE] BOUNDS;
+define iObjCliticRefine HEH (->) 0 || _ ["*" | "×"] [ MIM | SHIN | TE] ([VAV NOON | ALEF NOON]);
+
+define distRefine ALEFCNTX -> 0 || BOUNDS [BEH | NOON] BOUNDS _ NOON DAL;# ننداختم - مینداختم
+#define iNehBehRefine "*" -> [YEH "*"] || BOUNDS [BEH | NOON] _ ALEFCNTX;# creats نیفشونم و نیافشونم
+define iNehBehRefine [..] -> YEH || BOUNDS [ BEH | NOON ] _ BOUNDS ALEFCNTX \.#.; ### The "\.#." prevents 6th person inf copula and "A" stress make a "NIA" at the end of word!
+
+#define AnDazDakhtRefine1 [["*" | "×"] ALEFCNTX] -> "*" || BOUNDS [BEH | NOON] _ NOON DAL ALEFCNTX [ZE | KHE TE] BOUNDS; #  ب(یا)نداز/خت
+#define AnDazDakhtRefine2 ["*" ALEFCNTX] -> "*" || BOUNDS (NOON BOUNDS) MI _ NOON DAL ALEFCNTX [ZE | KHE TE] BOUNDS;
+#define AndazDakhtRefine AnDazDakhtRefine1 .o. AnDazDakhtRefine2;
+
+define optionalAlef1 ALEF (->) 0 || BOUNDS [[BEH | NOON] YEH "*"] _ \BOUNDS, [BOUNDS ([NOON "*"]) MI "×"] _ \BOUNDS;
+define optionalAlef2 AA (->) 0 || BOUNDS [[BEH | NOON] YEH "*"] _ \BOUNDS, [BOUNDS ([NOON "*"]) MI "×"] _ \BOUNDS;
+define refineOptAlef1 "×" -> "^" || BOUNDS ([NOON "*"]) MI _ ALEFCNTX \"*";
+define refineOptAlef2 "×" -> "*" || BOUNDS ([NOON "*"]) MI _ \ALEFCNTX;
+define optionalAlef   optionalAlef1 .o. optionalAlef2 .o. refineOptAlef1 .o. refineOptAlef2;
+
+define defHehRefine "Æ"-> ["^" HEH] || [HEH | VAV | ALEFCNTX] _ HEH BOUNDS; #حشره هه، آقاهه
+
+define hehSpace [ "*" |"×" ] -> "^" || HEH _ \[.#.];
+#define iMiRefine ALEF -> 0 || [.#. MI "×"] _ \BOUNDS ?*;# creats میفشونم و میافشونمم
+
+define iHaRefine "*" -> "^" || [HEH | YEH] _ HA BOUNDS;
+define iPLaRefine [..] -> HEH || [HEH | ALEFCNTX] BOUNDS _ ALEFCNTX BOUNDS; #A to HA
+define animPlRefine AN -> [HEH ALEF] || [ ALEFCNTX | VAV | HEH | YEH] "*" _ BOUNDS; #rules out something like عباان
+
+define iYehMianji [..] -> YEH || [VAV | ALEFCNTX | HEH] BOUNDS _ YEH BOUNDS;
+#define iAlefMianji ["*" | "×" | "^"] (->) ["^" ALEF] || [ HEH | YEH] _ [YEH | SHIN | TE | MIM] BOUNDS;
+#define iRabtiPl [..] (->) [ALEF | YEH] || [ALEFCNTX | HEH | VAV] BOUNDS _ [YEH [ MIM | DAL | NOON]] BOUNDS;
+#define iYehAlefMianji iYehMianji .o. iAlefMianji .o. iRabtiPl;
+#define animPLandYehMianji iYehMianji .o. animPlRefine;
+
+define presInflInflection [..] -> YEH || ALEFCNTX BOUNDS _ presentInflections BOUNDS;
+define VowelEnding [..] -> YEH || _ BOUNDS presentInflections BOUNDS "@P.VOWEL.ON@";
+define iThirdPerson  HEH -> [DAL | YEH HEH] || ALEFCNTX BOUNDS _ BOUNDS;
+#define iOptionalI [..] -> (YEH) || ALEFCNTX "*" _ YEH [ MIM | DAL | NOON ] ?*;
+
+#define iImp1Exception ["غ.ر.امری۱=ر+مفرد"]:["ب" "ر" "و"];
+#define iImp2Exception ["غ.ر.امری۱=گ+مفرد"]:["ب" "گ" "و"];
+#define iImp3Exception ["غ.ر.امری۱=ش+مفرد"]:["ب" "ش" "و"];
+#define iImpException iImp1Exception | iImp2Exception | iImp3Exception;
+
+define roARefine "×" -> ["*" RE] || ALEFCNTX _ VAV BOUNDS; #!!!!!"×" is object clitic bounds
+#define roHRefine HEH (->) RE || _ "×" VAV .#.; #!!!!!"×" is object clitic bounds
+#define raAtfRefine ["*" | "×"] -> "^" || [ YEH | VAV ] _ VAV .#.; #seperate atf VAV in context
+#define RaAtfRefine roARefine; # | roHRefine | raAtfRefine;
+#define RaAtfRefine "*" -> "^" || [ YEH | HEH | VAV ] _ VAV .#.; #seperate atf VAV in context
+####define raRefine "@" -> ["×" "ر"] || [ YEH | HEH | VAV ] _ VAV .#.; #convert obj. marker VAV to RO in context
+
+
+define hamRefine "¤" -> ["^" HEH] || [VAV | HEH] _ MIM BOUNDS ?*;# makes یهوم به یهو هم
+#define shortCopula [ HEH "×" SST ] (->) ["*" SIN] || _ BOUNDS;
+define shortCopula1 "©" HEH -> ["*" [SIN | HZE HEH]] || ALEFCNTX _;
+define shortCopula2 "©" HEH -> ["*" [SIN | HZE HEH]] || VAV _;
+define shortCopula3 "©" HEH -> ["^" [SIN]] || HEH _;
+define refineCopula1 [HEH "^"] (->) "*" || _ SIN BOUNDS;
+define refineCopula2 ["×" | "^"] -> "*" || [VAV | ALEFCNTX | YEH] _ SST BOUNDS;
+define shortCopula4 "©" HEH -> ["*" [HEH | SIN]] || \[ALEFCNTX | HEH | VAV] _;
+define shortCopula shortCopula1 .o. shortCopula2 .o. shortCopula3
+	shortCopula4 .o. refineCopula1 .o. refineCopula2;
+
+define tafzili "*" -> "×" || [ YEH |  HEH ] _ [TE RE | TE RE YE NOON] BOUNDS;####changed
+define alefMianji [ "*" | "×" ] -> [ "×" ALEF ] || [ YEH | HEH ] _ yehContext1;
+define yehMianji [ "*" | "×" ] -> [ "*" YEH ] || [VAV | ALEFCNTX ] _ yehContext2;
+define gafMianji  HEH -> GAF ||  _ "*" AN;
+
+define EZConst1 "&" -> YEH || EZContext _ .#.;
+define EZConst2 "&" -> ([ZWNJ YEH]) || HEH _ .#.;
+define EZConst3 "&" -> 0 || \[EZContex | HEH] _ .#.;
+#define EZConst EZConst1 .o. EZConst2 .o. EZConst3;
+
+define someSpace [ZWNJ | SPACE] (->) 0;
+define aPhone [AA | ALEF] -> [AA | ALEF];
+define nonDeterministicAll someSpace .o. aPhone;
+
+################Homo Phones###########################
+define zPhone [ZAL | ZAD | ZA | ZE] -> [ZAL | ZAD | ZA | ZE];
+define tPhone [TA | TE] -> [TA | TE];
+define sPhone [SAD | SE | SIN] -> [SAD | SE | SIN];
+define ghePhone [GHEIN | GHAF] -> [GHEIN | GHAF];
+define hePhone [HEH | HE] -> [HEH | HE];
+define ePhone HAMZE (->) [YEH | EIN];
+define homoPhones zPhone .o. tPhone .o. sPhone .o. ghePhone .o. hePhone .o. ePhone;
+######################################################
+################Multi Changes###########################
+define khaPhone [KHE VAV ALEF] (->) [KHE ALEF]; #خاستن
+define fin1 HEH (->) 0 || ALEFCNTX _ .#.;
+define fin2 TE (->) 0 || [SIN | SHIN | KAF] _ .#.;
+define fin3 RE (->) 0 || [KAF | GHAF DAL | GAF ALEF] _ .#.;
+define finalEliminate fin1 .o. fin2 .o. fin3;
+define elitRules khaPhone .o. finalEliminate;
+######################################################
+###################word stress##########################
+define h1 ALEF+ -> 0 || ALEF _ ;
+define h2 AA+ -> 0 || AA _ ;
+define h3 BEH+ -> 0 || BEH _ ;
+define h4 PEH+ -> 0 || PEH _ ;
+define h5 TE+ -> 0 || TE _ ;
+define h6 SE+ -> 0 || SE _ ;
+define h7 JIM+ -> 0 || JIM _ ;
+define h8 CHE+ -> 0 || CHE _ ;
+define h9 HE+ -> 0 || HE _ ;
+define h10 KHE+ -> 0 || KHE _ ;
+define h11 DAL+ -> 0 || DAL _ ;
+define h12 ZAL+ -> 0 || ZAL _ ;
+define h13 RE+ -> 0 || RE _ ;
+define h14 ZE+ -> 0 || ZE _ ;
+define h15 ZHE+ -> 0 || ZHE _ ;
+define h16 SIN+ -> 0 || SIN _ ;
+define h17 SHIN+ -> 0 || SHIN _ ;
+define h18 SAD+ -> 0 || SAD _ ;
+define h19 ZAD+ -> 0 || ZAD _ ;
+define h20 TA+ -> 0 || TA _ ;
+define h21 ZA+ -> 0 || ZA _ ;
+define h22 EIN+ -> 0 || EIN _ ;
+define h23 GHEIN+ -> 0 || GHEIN _ ;
+define h24 FE+ -> 0 || FE _ ;
+define h25 GHAF+ -> 0 || GHAF _ ;
+define h26 KAF+ -> 0 || KAF _ ;
+define h27 GAF+ -> 0 || GAF _ ;
+define h28 LAM+ -> 0 || LAM _ ;
+define h29 MIM+ -> 0 || MIM _ ;
+define h30 NOON+ -> 0 || NOON _ ;
+define h31 VAV+ -> 0 || VAV _ ;
+define h32 HEH+ -> 0 || HEH _ ;
+define h33 YEH+ -> 0 || YEH _ ;
+####define h33 HAMZE+ -> 0 || HAMZE _ ;
+define wordStress h1 .o. h2 .o. h3 .o. h4 .o. h5 .o. h6 .o. h7 .o. h8 .o.
+	h9 .o. h10 .o. h11 .o. h12 .o. h13 .o. h14 .o. h15 .o. h16 .o.
+	h17 .o. h18 .o. h19 .o. h20 .o. h21 .o. h22 .o. h23 .o. h24 .o.
+	h25 .o. h26 .o. h27 .o. h28 .o. h29 .o. h30 .o. h31 .o. h32 .o. h33;
+
+######################################################
+#############MINIMUM EDIT DISTANCE##################
+define MED2 [ALPHABET* [ALPHABET:0 | 0:ALPHABET | ALPHABET:ALPHABET-ALPHABET] ALPHABET*]^<2;
+######################################################
+
+define ALL ALLnouns .o.
+	alefMianji .o.
+	gafMianji .o.
+	EZConst1 .o.
+	EZConst2 .o.
+	EZConst3 .o.
+	yehMianji .o.
+	tafzili .o.
+	refineHA .o.
+	putZWNJ .o.
+	putConcat .o. 
+	putSpace .o.
+	extraZWNJ;
+define iNOUN iLexNoun | iLexHarf .o.
+	shortCopula .o.
+	defHehRefine .o.
+	tafzili .o.
+	roARefine .o.
+	animPlRefine .o.
+	iHaRefine .o.
+	iPLaRefine .o.
+	hamRefine .o.
+	iObjCliticRefine .o.
+	hehSpace .o.
+	distRefine .o.
+	iNehBehRefine .o. #for neg infs start with alef
+	optionalAlef .o.
+###	iYehAlefMianji .o.
+	iYehMianji .o.
+	EZConst1 .o.
+	EZConst2 .o.
+	EZConst3 .o.
+	removeZWNJ .o.
+	iPutSpace .o.
+	refineZWNJ .o.
+	putConcat .o.
+	iExtraSpace;
+define VERBS chain | LexVerb .o. 
+	presInflInflection .o.
+	#VowelEnding .o.
+	nehRefine .o.
+	behRefine .o.
+	putZWNJ .o.
+	putConcat .o. 
+	putSpace .o.
+	extraZWNJ;
+define iVERBS iChain | iLexVerb .o.
+	iThirdPerson .o.
+	distRefine .o.
+	iNehBehRefine .o.
+	#AndazDakhtRefine .o.
+	optionalAlef .o.
+	hamRefine .o.
+	iHaRefine .o.
+	iPLaRefine .o.
+#	refineStress .o.
+	hehSpace .o.
+	putConcat .o. 
+	coverUpZWNJ .o.
+	iPutSpace .o.
+	refineZWNJ .o.
+	iExtraSpace;
+
+#define debugFST(FST, num) [FST.i .o. [[..] -> ["<" F S T  ": " num ">"] || _ .#.]].i;
+define debugFST(FST, num) [FST.i .o. [?+ @-> ["<" F S T  ": " num ">"] ... ["<" "/" F S T  ": " num ">"] ]].i;
+define WORDS ALL | iNOUN | VERBS | iVERBS .o. nonDeterministicAll;
+
+define FST1 WORDS ; #farsi #combo #med 
+define FST2 WORDS .o. homoPhones; #combo #med 
+define FST3 WORDS .o. wordStress.i; #combo #med 
+define FST5 MED2.i; #med 
+define FST4 WORDS .o. homoPhones .o. elitRules; #combo #med 
+###regex debugFST(FST4, e l i t R u l e s);
+
+################farsi.fst###################
+#regex debugFST(FST1, r a w);
+#########################################
+
+################farsiCombo.fst#############
+#regex debugFST(FST1, r a w);
+#regex debugFST(FST2, h o m o P h o n e s);
+#regex debugFST(FST3, w o r d S t r e s s);
+#########################################
+
+##############medA.fst(part1)###############
+regex debugFST(FST1, r a w);
+regex debugFST(FST2, h o m o P h o n e s);
+regex debugFST(FST3, w o r d S t r e s s);
+regex FST5;
+#########################################
+
+##############medB.fst(part2)###############
+#regex debugFST(FST1, M E D);
+#########################################
