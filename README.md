@@ -24,8 +24,6 @@ print(str(data, encoding="utf-8")
 ```
 ## Persian word structure; informal and formal
 Comprehensive structure of words specially informal words are explained in the `Contemporary Persian Inflectional Analyzer` paper in full detail: `docs/informal-analyzer.pdf
-## FST word rule structure; informal and formal
-How the rules of words are developed to make FSTs are explained in `Thesis`: `docs/thesis.pdf`
 ### Citation
 ```
 @ARTICLE{Heidarpour2021, 
@@ -40,6 +38,8 @@ How the rules of words are developed to make FSTs are explained in `Thesis`: `do
   year = {2021}  
 }
 ```
+## FST word rule structure; informal and formal
+How the rules of words are developed to make FSTs are explained in `Thesis`: `docs/thesis.pdf`
 ## Secondary FSTs
 These FSTs are designed for covering out-of-vocabulary informal/noisy words and are explained in The OOV `Identification of Informal Persian words`: `docs/informal-oov.pdf`
 ### Citation
