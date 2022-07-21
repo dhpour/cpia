@@ -1,0 +1,10 @@
+ک	که	false	6	 
+قر و قاط	 	false	2	 
+ی	یک	false	2	 
+رو	را	false	3	حرف اضافه
+اون	آن	false	2	تخصیصگر
+ب	به	false	3	  حرف اضافه  
+بحث مون	بحث+مان	true	1	 
+دیگه	دیگر	false	2	 
+فک	فکر	false	1	 
+آتیش	آتش	false	1	 
