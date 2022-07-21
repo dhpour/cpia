@@ -31,7 +31,7 @@ then quering it:
 می‌چرخونده 	       	<استاندارد:ف.م.ن.م=چرخوند+وربطی۳>
 ```
 ## Persian word structure; informal and formal
-Comprehensive structure of words specially informal words are explained in the `Contemporary Persian Inflectional Analyzer` paper in full detail: `docs/informal-analyzer.pdf`
+Comprehensive structure of words especially informal words are explained in the `Contemporary Persian Inflectional Analyzer` paper in full detail: `docs/informal-analyzer.pdf`
 ### Citation
 ```
 @ARTICLE{Heidarpour2021, 
