@@ -40,11 +40,19 @@ Comprehensive structure of words specially informal words are explained in the `
 ```
 ## FST word rule structure; informal and formal
 How the rules of words are developed to make FSTs are explained in `Thesis`: `docs/thesis.pdf`
+### Citation
+```
+@mastersthesis{heidarpour2018,
+  title={An inflectional analyzer for contemporary Persian},
+  author={Heidarpour, Davood and Salehi, Mostafa and Bijankhan, Mahmoud and Veisi, Hadi},
+  year={2018}
+} 
+```
 ## Secondary FSTs
 These FSTs are designed for covering out-of-vocabulary informal/noisy words and are explained in The OOV `Identification of Informal Persian words`: `docs/informal-oov.pdf`
 ### Citation
 ```
-@inproceedings{Heidarpour2019, 
+@incollection{Heidarpour2019, 
   title = {Covering Out-of-Vocabulary Words of Informal Persian}, 
   author = {Heidarpour, Davood and Salehi, Mostafa and Bi Jen Khan, Mahmoud and Veisi, Hadi and Ranjbar, Vahid},  
   booktitle={5th National Conference on Computational Linguistics},
