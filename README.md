@@ -8,7 +8,7 @@ its [Telegram Bot](https://t.me/infarsi_bot). Also you can clone this repo or `a
 python interfaceGrid.py
 ```
 or run Foma as server:
-```batch
+```shell
 flookup -S -A 127.0.0.1 ./1standard.fst
 ```
 then quering it:
