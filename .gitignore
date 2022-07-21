@@ -1,0 +1,12 @@
+eval
+eval/*
+docs/
+docs/*
+misc/
+misc/*
+foma.exe
+/cygwin1.dll
+/cygreadline7.dll
+/cygncurses7.dll
+/foma.exe.stackdump
+app/setup-x86.exe
