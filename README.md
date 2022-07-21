@@ -1,5 +1,7 @@
 <p align="center">
+  
 # Contemporary Persian Inflectional Analyzer  
+  
 </p>
 <p align="center">
   <img src="https://github.com/lingwndr/cpia/blob/master/icon.jfif?raw=true" alt="تحلیلگر تصریفی فارسی معاصر" width="200"/>
