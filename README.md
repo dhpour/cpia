@@ -1,7 +1,7 @@
 # Contemporary Persian Inflectional Analyzer
-CPIA is a multi-FST inflectional analyzer for both informal and formal Persian. FSTs rules are designed and compiled by [Foma](https://fomafst.github.io/).
+CPIA is a multi-FST inflectional analyzer for both informal and formal Persian. FSTs rules are compiled by [Foma](https://fomafst.github.io/).
 
-##Test
+## Test
 For checking the anlyzer you can check both its [Online tool](http://infarsi.herokuapp.com/) or
 its [Telegram Bot](https://t.me/infarsi_bot). Also you can clone this repo or `app` folder and run the app by
 ```batch
