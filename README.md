@@ -17,10 +17,10 @@ then quering it:
 
 >>> sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 >>> sock.sendto(bytes("پیچونده", "utf-8"), ("127.0.0.1", 6062))
+14
 >>> data, addr = sock.recvfrom(6062)
->>> print(str(data, encoding="utf-8")
-
-<پیچونده <استاندارد:صمفعولی=پیچونده
+>>> print(str(data, encoding="utf-8"))
+پیچونده <استاندارد:صمفعولی=پیچونده>
 ```
 ## Persian word structure; informal and formal
 Comprehensive structure of words specially informal words are explained in the `Contemporary Persian Inflectional Analyzer` paper in full detail: `docs/informal-analyzer.pdf
