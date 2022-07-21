@@ -11,7 +11,7 @@ CPIA is a multi-FST inflectional analyzer for both informal and formal Persian. 
 
 ## Test
 For testing the analyzer you can check both its [Online Tool](http://infarsi.herokuapp.com/) or
-its [Telegram Bot](https://t.me/infarsi_bot). Also you can clone this repo or `app` folder and run the app by
+its [Telegram Bot](https://t.me/infarsi_bot). You can also clone this repo or `app` folder and run the app by
 ```batch
 python interfaceGrid.py
 ```
