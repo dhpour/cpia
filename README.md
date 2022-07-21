@@ -17,7 +17,7 @@ then quering it:
 
 >>> sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 >>> sock.sendto(bytes("پیچونده", "utf-8"), ("127.0.0.1", 6062))
-14
+21
 >>> data, addr = sock.recvfrom(6062)
 >>> print(str(data, encoding="utf-8"))
 پیچونده <استاندارد:صمفعولی=پیچونده>
