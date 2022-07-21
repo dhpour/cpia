@@ -49,7 +49,7 @@ How the rules of words are developed to make FSTs are explained in `Thesis`: `do
 } 
 ```
 ## Secondary FSTs
-These FSTs are designed for covering out-of-vocabulary informal/noisy words and are explained in The OOV `Identification of Informal Persian words`: `docs/informal-oov.pdf`
+These FSTs are designed for covering out-of-vocabulary informal/noisy words and are explained in The OOV `Covering Out-of-Vocabulary Words of Informal Persian`: `docs/informal-oov.pdf`
 ### Citation
 ```
 @incollection{Heidarpour2019, 
