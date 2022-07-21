@@ -1,6 +1,7 @@
 <p align="center">
   <img src="https://github.com/lingwndr/cpia/blob/master/icon.jfif?raw=true" alt="تحلیلگر تصریفی فارسی معاصر" width="200"/>
 </p>
+
 # Contemporary Persian Inflectional Analyzer
 CPIA is a multi-FST inflectional analyzer for both informal and formal Persian. FSTs rules are compiled by [Foma](https://fomafst.github.io/).
 
