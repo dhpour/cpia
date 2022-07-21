@@ -3,7 +3,7 @@
 # Contemporary Persian Inflectional Analyzer  
   
 </p>
-<p align="center">
+<p align="right">
   <img src="https://github.com/lingwndr/cpia/blob/master/icon.jfif?raw=true" alt="تحلیلگر تصریفی فارسی معاصر" width="150"/>
 </p>
 
