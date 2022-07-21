@@ -7,11 +7,11 @@ its [Telegram Bot](https://t.me/infarsi_bot). Also you can clone this repo or `a
 ```batch
 python interfaceGrid.py
 ```
-or run Foma as server
+or run Foma as server:
 ```batch
 flookup -S -A 127.0.0.1 ./1standard.fst
 ```
-and quering it
+then quering it:
 ```python
 import socket
 
