@@ -75,10 +75,18 @@ def lookup(word):
     pointer = len(cmds)-1
     return result
 
+def loadExtra(word):
+    for line in open('OOs/extra.txt', 'r', encoding='utf-8'):
+        if line.split('\t')[0].strip().replace(zwnj, '').replace(space, '').translate(repl) == word.replace(zwnj, '').replace(space, '').translate(repl):
+            new_line = line.strip().split('\t')[0] + "\t<استاندارد:" + line.strip().split('\t')[1] + ">\n"
+            return new_line
+    return ''
+
 def read_word(event):
 	#print(var.get())
 	text_contents = box.get()
 	returnedresult = lookup(text_contents)
+	returnedresult += loadExtra(text_contents)
 	rules = list(set(returnedresult.split("\n")))
 	out = ""
 	for rule in rules:
