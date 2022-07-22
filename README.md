@@ -8,7 +8,7 @@
 </p>
 
 CPIA is a multi-FST inflectional analyzer for both informal and formal Persian. FSTs rules are compiled by [Foma](https://fomafst.github.io/).
-The main FST is enough for almost all tasks. The Secondary FSTs can be used for noisy informal Out-Of-Vocabulary words, they normally can produce a lot of unusefull inflections. They are only usefull for especial cases. Use them only if you know what you want.
+The main FST is enough for almost all tasks. The Secondary FSTs can be used for noisy informal Out-Of-Vocabulary words, they normally can produce a lot of useless inflections. They are only useful for special cases. Use them only if you know what you want.
 
 ### FSTs
 
