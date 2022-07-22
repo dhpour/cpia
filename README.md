@@ -10,11 +10,14 @@
 CPIA is a multi-FST inflectional analyzer for both informal and formal Persian. FSTs rules are compiled by [Foma](https://fomafst.github.io/).
 The main FST is enough for almost all tasks. The Secondary FSTs can be used for noisy informal Out-Of-Vocabulary words, they normally can produce a lot of unusefull inflections. They are only usefull for especial cases. Use them only if you know what you want.
 
-###FSTs
+### FSTs
+
 | FST                  |           word          |                                                         output |
 |----------------------|:-----------------------:|---------------------------------------------------------------:|
 | **standard**             |           **برم**           | **<استاندارد:اسمعا=بره+وشخصی۱><br><استاندارد:اسمعا=بر+هم><br><استاندارد:اسمعا=بر+وشخصی۱+رسمی><br><استاندارد:اسمعا=بر+وربطی۱+رسمی><br><استاندارد:اسمعا=برم+رسمی><br><استاندارد:حضاف=بر+وشخصی۱+رسمی><br><استاندارد:التزامی=ر+ش۱><br><استاندارد:امری=رم+مفرد+رسمی>** |
+
 **Secondary FSTs**
+
 | FST                  |           word          |                                                         output |
 |----------------------|:-----------------------:|---------------------------------------------------------------:|
 | **homophone**            | **مسؤول<br>مسئول<br>مسیول** |                                       <**همصدا:اسمعا=مسئول+رسمی>** |
