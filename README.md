@@ -64,6 +64,11 @@ The **`recall`** metric is calculated for all FSTs as below
 | formal                  | **95.1%**  | 95.1%     | 95.1%        | 95.1%      | 95.1%    |
 | combined (Contemporary) | **95.56%** | 95.64%    | 96%          | 96%        | 96.08%   |
 
+## OOVs and OO-Rules
+There is a list of words and inflections in [OOs/extra.txt](https://github.com/lingwndr/cpia/blob/master/app/OOs/extra.txt) that are not in FSTs. You can directly contribute to this list or report these types of words/rules loss by online tools (both [Online Tool](https://infarsi.herokuapp.com/) and [Telegram Bot](https://t.me/infarsi_bot) have report capability) and update this list. This list will be used to update FSTs in a proper manner periodically.
+For contributing directly to this list please use the following format. Note that the third column (context the word appeared in) is optional.
+`فونت[TAB]اسمعام=فونت+رسمی[TAB]فونت قشنگی استفاده کردن`
+
 ## Persian word structure; informal and formal
 Comprehensive structure of words especially informal words are explained in the `Contemporary Persian Inflectional Analyzer` paper in full detail: [`docs/informal-analyzer.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/informal-analyzer.pdf)
 ### Citation
