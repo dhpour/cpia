@@ -7,11 +7,22 @@
   <img src="https://github.com/lingwndr/cpia/blob/master/icon.jfif?raw=true" alt="تحلیلگر تصریفی فارسی معاصر" width="150"/>
 </p>
 
-CPIA is a multi-FST inflectional analyzer for both informal and formal Persian. FSTs rules are compiled by [Foma](https://fomafst.github.io/).
+CPIA is a multi-FST inflectional analyzer for both informal and formal Persian. FSTs rules are compiled by [Foma](https://fomafst.github.io/).The main FST is enough for almost all of tasks, but the Secondary FSTs can be used for noisy informal Out-Of-Vocabulary words.
+###FSTs
+| FST                  |           word          |                                                         output |
+|----------------------|:-----------------------:|---------------------------------------------------------------:|
+| standard             |           مردم           | <استاندارد:اسمعا=بره+وشخصی۱><br><استاندارد:اسمعا=بر+هم><br><استاندارد:اسمعا=بر+وشخصی۱+رسمی><br><استاندارد:اسمعا=بر+وربطی۱+رسمی><br><استاندارد:اسمعا=برم+رسمی><br><استاندارد:حضاف=بر+وشخصی۱+رسمی><br><استاندارد:التزامی=ر+ش۱><br><استاندارد:امری=رم+مفرد+رسمی> |
+**Secondary FSTs**
+| FST                  |           word          |                                                         output |
+|----------------------|:-----------------------:|---------------------------------------------------------------:|
+| homophone            | مسؤول<br>مسئول<br>مسیول |                                       <همصدا:اسمعا=مسئول+رسمی> |
+| avaee                |          شیطون          |                                            <آوایی:اسمعا=شیطان> |
+| expressive           | چرااااااااااااااااااا |                                         <بیانی:اسمعا=چرا+رسمی> |
+| splitter             |         چهاربعدی        |               <تقطیع:شماره=چهار+رسمی><br><تقطیع:صفت=بعدی+رسمی> |
 
-## Test
-For testing the analyzer you can check both its [Online Tool](https://infarsi.herokuapp.com/) or
-its [Telegram Bot](https://t.me/infarsi_bot). You can also clone this repo or `app` folder and run the app by
+## How to check or use FSTs
+For testing the analyzer you can check both its [Online Tool](https://infarsi.herokuapp.com/) (all FSTs) or
+its [Telegram Bot](https://t.me/infarsi_bot) (only standard FST). You can also clone this repo or `app` folder and run the app by
 ```batch
 python interfaceGrid.py
 ```
@@ -30,6 +41,9 @@ then quering it:
 >>> print(str(data, encoding="utf-8"))
 می‌چرخونده 	       	<استاندارد:ف.م.ن.م=چرخوند+وربطی۳>
 ```
+
+## Evaluation
+
 ## Persian word structure; informal and formal
 Comprehensive structure of words especially informal words are explained in the `Contemporary Persian Inflectional Analyzer` paper in full detail: `docs/informal-analyzer.pdf`
 ### Citation
