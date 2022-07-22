@@ -45,8 +45,9 @@ def lookup(word):
     para = ''
     if "=" in word1:
         para = '-i'
+
+    lookup_line = 'echo ' + word1 + ' | flookup '
     if para == "":
-        lookup_line = 'echo ' + word1 + ' | flookup '
         if v.get() == 1:
             lookup_line += para + ' ./1standard.fst'
         elif v.get() == 2:
