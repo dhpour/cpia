@@ -53,7 +53,7 @@ The analyzer is not aware of context but the output should provide all possible 
 | informal |  40 |     4    |             3             |        3       |        5       |        8       |
 |  formal  |  83 |     6    |             0             |        1       |        0       |       17       |
 
-The **RECALL** metric is calculate for all FSTs as below
+The **`recall`** metric is calculated for all FSTs as below
 
 | register / FST          | standard   | homophone | phone_change | expressive | splitter |
 |-------------------------|------------|-----------|--------------|------------|----------|
