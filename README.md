@@ -65,7 +65,7 @@ The **`recall`** metric is calculated for all FSTs as below
 | combined (Contemporary) | **95.56%** | 95.64%    | 96%          | 96%        | 96.08%   |
 
 ## Persian word structure; informal and formal
-Comprehensive structure of words especially informal words are explained in the `Contemporary Persian Inflectional Analyzer` paper in full detail: `docs/informal-analyzer.pdf`
+Comprehensive structure of words especially informal words are explained in the `Contemporary Persian Inflectional Analyzer` paper in full detail: [`docs/informal-analyzer.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/informal-analyzer.pdf)
 ### Citation
 ```
 @article{Heidarpour2021, 
@@ -82,7 +82,7 @@ Comprehensive structure of words especially informal words are explained in the 
 ```
 ## FST word rule structure; informal and formal
 All the lexicon, morphotactic and morphophonemic rules are in `lexc` folder. These files are used by Foma to compile FSTs.
-How the rules of words are developed to make FSTs are explained in `Thesis`: `docs/thesis.pdf`
+How the rules of words are developed to make FSTs are explained in `Thesis`: [`docs/thesis.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/thesis.pdf)
 ### Citation
 ```
 @mastersthesis{Heidarpour2018,
