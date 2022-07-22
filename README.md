@@ -11,13 +11,13 @@ CPIA is a multi-FST inflectional analyzer for both informal and formal Persian. 
 ###FSTs
 | FST                  |           word          |                                                         output |
 |----------------------|:-----------------------:|---------------------------------------------------------------:|
-| standard             |           مردم           | <استاندارد:اسمعا=بره+وشخصی۱><br><استاندارد:اسمعا=بر+هم><br><استاندارد:اسمعا=بر+وشخصی۱+رسمی><br><استاندارد:اسمعا=بر+وربطی۱+رسمی><br><استاندارد:اسمعا=برم+رسمی><br><استاندارد:حضاف=بر+وشخصی۱+رسمی><br><استاندارد:التزامی=ر+ش۱><br><استاندارد:امری=رم+مفرد+رسمی> |
+| standard             |           برم           | <استاندارد:اسمعا=بره+وشخصی۱><br><استاندارد:اسمعا=بر+هم><br><استاندارد:اسمعا=بر+وشخصی۱+رسمی><br><استاندارد:اسمعا=بر+وربطی۱+رسمی><br><استاندارد:اسمعا=برم+رسمی><br><استاندارد:حضاف=بر+وشخصی۱+رسمی><br><استاندارد:التزامی=ر+ش۱><br><استاندارد:امری=رم+مفرد+رسمی> |
 **Secondary FSTs**
 | FST                  |           word          |                                                         output |
 |----------------------|:-----------------------:|---------------------------------------------------------------:|
 | homophone            | مسؤول<br>مسئول<br>مسیول |                                       <همصدا:اسمعا=مسئول+رسمی> |
-| avaee                |          شیطون          |                                            <آوایی:اسمعا=شیطان> |
-| expressive           | چرااااااااااااااااااا |                                         <بیانی:اسمعا=چرا+رسمی> |
+| phone_change                |          شیطون          |                                            <آوایی:اسمعا=شیطان> |
+| expressive           | چراااااااااااا |                                         <بیانی:اسمعا=چرا+رسمی> |
 | splitter             |         چهاربعدی        |               <تقطیع:شماره=چهار+رسمی><br><تقطیع:صفت=بعدی+رسمی> |
 
 ## How to check or use FSTs
@@ -48,9 +48,9 @@ then quering it:
 Comprehensive structure of words especially informal words are explained in the `Contemporary Persian Inflectional Analyzer` paper in full detail: `docs/informal-analyzer.pdf`
 ### Citation
 ```
-@ARTICLE{Heidarpour2021, 
+@article{Heidarpour2021, 
   title = {Contemporary Persian Inflectional Analyzer}, 
-  author = {Heidarpour, Davood and S.Sebt, Elham and Bi Jen Khan, Mahmoud and Salehi, Mostafa and Veisi, Hadi and },  
+  author = {Heidarpour, Davood and S.Sebt, Elham and Bi Jen Khan, Mahmoud and Salehi, Mostafa and Veisi, Hadi },  
   volume = {36}, 
   number = {4},  
   URL = {http://jipm.irandoc.ac.ir/article-1-4337-en.html},  
@@ -61,12 +61,13 @@ Comprehensive structure of words especially informal words are explained in the 
 }
 ```
 ## FST word rule structure; informal and formal
+All the lexicon, morphotactic and morphophonemic rules are in `lexc` folder. These files are used by Foma to compile FSTs.
 How the rules of words are developed to make FSTs are explained in `Thesis`: `docs/thesis.pdf`
 ### Citation
 ```
-@mastersthesis{heidarpour2018,
+@mastersthesis{Heidarpour2018,
   title={An inflectional analyzer for contemporary Persian},
-  author={Heidarpour, Davood and Salehi, Mostafa and Bijankhan, Mahmoud and Veisi, Hadi},
+  author={Heidarpour, Davood and Salehi, Mostafa and Bi Jen Khan, Mahmoud and Veisi, Hadi},
   year={2018}
 } 
 ```
