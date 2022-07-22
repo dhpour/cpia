@@ -66,7 +66,7 @@ The **`recall`** metric is calculated for all FSTs as below
 
 ## OOVs and OO-Rules
 There is a list of words and inflections in [OOs/extra.txt](https://github.com/lingwndr/cpia/blob/master/app/OOs/extra.txt) that are not in FSTs. You can directly contribute to this list or report these types of words/rules loss by online tools (both [Online Tool](https://infarsi.herokuapp.com/) and [Telegram Bot](https://t.me/infarsi_bot) have report capability) and update this list. This list will be used to update FSTs in a proper manner periodically.
-For contributing directly to this list please use the following format. Note that the third column (context the word appeared in) is optional.
+For contributing directly to this list please use the following format and for inflection use the structure of this analyzer. Note that the third column (context the word appeared in) is optional.
 `فونت[TAB]اسمعام=فونت+رسمی[TAB]فونت قشنگی استفاده کردن`
 
 ## Persian word structure; informal and formal
