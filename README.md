@@ -91,9 +91,9 @@ How the rules of words are developed to make FSTs are explained in `Thesis`: [`d
 ### Citation
 ```bibtex
 @mastersthesis{Heidarpour2018,
-  title={An inflectional analyzer for contemporary Persian},
-  author={Heidarpour, Davood and Salehi, Mostafa and Bi Jen Khan, Mahmoud and Veisi, Hadi},
-  year={2018}
+  title = {An inflectional analyzer for contemporary Persian},
+  author = {Heidarpour, Davood and Salehi, Mostafa and Bi Jen Khan, Mahmoud and Veisi, Hadi},
+  year = {2018}
 } 
 ```
 ## Secondary FSTs
@@ -103,7 +103,7 @@ These FSTs are designed for covering out-of-vocabulary informal/noisy words and 
 @incollection{Heidarpour2019, 
   title = {Covering Out-of-Vocabulary Words of Informal Persian}, 
   author = {Heidarpour, Davood and Salehi, Mostafa and Bi Jen Khan, Mahmoud and Veisi, Hadi and Ranjbar, Vahid},  
-  booktitle={5th National Conference on Computational Linguistics},
+  booktitle = {5th National Conference on Computational Linguistics},
   URL = {https://neveeseh.com},  
   year = {2019}  
 }
