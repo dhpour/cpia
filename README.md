@@ -72,7 +72,7 @@ There is a list of words and inflections in [OOs/extra.txt](https://github.com/l
 ## Persian word structure; informal and formal
 Comprehensive structure of words especially informal words are explained in the `Contemporary Persian Inflectional Analyzer` paper in full detail: [`docs/informal-analyzer.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/informal-analyzer.pdf)
 ### Citation
-```
+```bibtex
 @article{Heidarpour2021, 
   title = {Contemporary Persian Inflectional Analyzer}, 
   author = {Heidarpour, Davood and S.Sebt, Elham and Bi Jen Khan, Mahmoud and Salehi, Mostafa and Veisi, Hadi },  
@@ -89,7 +89,7 @@ Comprehensive structure of words especially informal words are explained in the 
 All the lexicon, morphotactic and morphophonemic rules are in `lexc` folder. These files are used by Foma to compile FSTs.
 How the rules of words are developed to make FSTs are explained in `Thesis`: [`docs/thesis.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/thesis.pdf)
 ### Citation
-```
+```bibtex
 @mastersthesis{Heidarpour2018,
   title={An inflectional analyzer for contemporary Persian},
   author={Heidarpour, Davood and Salehi, Mostafa and Bi Jen Khan, Mahmoud and Veisi, Hadi},
@@ -99,7 +99,7 @@ How the rules of words are developed to make FSTs are explained in `Thesis`: [`d
 ## Secondary FSTs
 These FSTs are designed for covering out-of-vocabulary informal/noisy words and are explained in `Covering Out-of-Vocabulary Words of Informal Persian` paper: [`docs/informal-oov.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/informal-oov.pdf)
 ### Citation
-```
+```bibtex
 @incollection{Heidarpour2019, 
   title = {Covering Out-of-Vocabulary Words of Informal Persian}, 
   author = {Heidarpour, Davood and Salehi, Mostafa and Bi Jen Khan, Mahmoud and Veisi, Hadi and Ranjbar, Vahid},  
