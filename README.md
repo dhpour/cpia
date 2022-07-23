@@ -65,7 +65,7 @@ The **`recall`** metric is calculated for all FSTs as below
 | combined (Contemporary) | **95.56%** | 95.64%    | 96%          | 96%        | 96.08%   |
 
 ## OOVs and OO-Rules
-There is a list of words and inflections in [OOs/extra.txt](https://github.com/lingwndr/cpia/blob/master/app/OOs/extra.txt) that are not included in FSTs. You can directly contribute to this list or report lack of words/rules by online tools and update this list. Both [Online Tool](https://infarsi.herokuapp.com/) and [Telegram Bot](https://t.me/infarsi_bot) have report capability. This list will be used to update FSTs in a proper manner periodically. For contributing directly to this list, please use the following format, and for inflection, use the structure of this analyzer. Note that the third column (the context that the word appeared in) is optional.
+There is a list of words and inflections in [OOs/extra.txt](https://github.com/lingwndr/cpia/blob/master/app/OOs/extra.txt) that are not included in FSTs. You can directly contribute to this list or report lack of words/rules by online tools and update this list. Both [Online Tool](https://infarsi.herokuapp.com/) and [Telegram Bot](https://t.me/infarsi_bot) have report capability. This list will be used to update FSTs in a proper manner periodically. For contributing directly to this list, please use the following format, and for inflection, use the structure of this analyzer. Note that the third column (the context that the word appears in) is optional.
 
 `فونت[TAB]اسمعام=فونت+رسمی[TAB]فونت قشنگی استفاده کردن`
 
