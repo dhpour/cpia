@@ -66,7 +66,7 @@ There is a list of words and inflections in [OOs/extra.txt](https://github.com/l
 `فونت[TAB]اسمعام=فونت+رسمی[TAB]فونت قشنگی استفاده کردن`
 
 ## Persian word structure; informal and formal
-Comprehensive structure of words especially informal words are explained in the `Contemporary Persian Inflectional Analyzer` paper in full detail: [`docs/informal-analyzer.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/informal-analyzer.pdf) or [website](https://jipm.irandoc.ac.ir/article-1-4337-en.html%3B)
+Comprehensive structure of words especially informal words are explained in the `Contemporary Persian Inflectional Analyzer` paper in full detail: [`docs/informal-analyzer.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/informal-analyzer.pdf); [paper on the Journal website](https://jipm.irandoc.ac.ir/article-1-4337-en.html%3B)
 ### Citation
 ```bibtex
 @article{Heidarpour2021, 
