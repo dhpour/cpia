@@ -98,7 +98,7 @@ LEXICON iStress
 +تاکید:*ا #;
 +تاکید:^ها #;
 +عطف:*و #;
-@D.IMPERATIVE@+هم:&م@D.IMPERATIVE@ #;
+@D.IMPERATIVE@+هم:@D.IMPERATIVE@&م #;
   
 LEXICON iImpSubj !!!! فعل های امری و التزامی غیر رسمی
 @P.IMPERATIVE.ON@امری=:@P.IMPERATIVE.ON@0 iImper; !!!! بچپون نچپون - فعل امری
@@ -206,8 +206,8 @@ LEXICON ipres !!!! قواعد تصریف فعل حال ساده
 @D.LONEINFSTEM@+ش۳:@D.LONEINFSTEM@*د iObjectClitic;
 !!!!@D.TWOSIDED@+ش۳+وفاعلی:@D.TWOSIDED@*د*ش SubjCliticDiacritics;
 !!!!@D.TWOSIDED@+ش۳+ت+وفاعلی:@D.TWOSIDED@*ت*ش SubjCliticDiacritics;
-@C.FORMAL@+ش۳:0@C.FORMAL@ Tintv;
-@P.TINTER.ON@+ش۳+ت:*ه×ت@P.TINTER.ON@ iObjectCliticThirdPerson;
+@C.FORMAL@+ش۳:@C.FORMAL@0 Tintv;
+@P.TINTER.ON@+ش۳+ت:@P.TINTER.ON@*ه×ت iObjectCliticThirdPerson;
 +ش۴:*یم iObjectClitic;
 @C.FORMAL@+ش۵:@C.FORMAL@*ین iObjectClitic;
 +ش۵:*ید iObjectClitic;
@@ -248,8 +248,8 @@ LEXICON iALEFpres !!!! قواعد تصریف فعل حال ساده
 +ش۳:*ید iObjectClitic;
 @C.FORMAL@+ش۳:@C.FORMAL@*د iObjectClitic;
 @C.FORMAL@+ش۳:@C.FORMAL@*یه iObjectClitic;
-@P.TINTER.ON@+ش۳+ت:*یه×ت@P.TINTER.ON@ iObjectCliticThirdPerson;
-@C.FORMAL@+ش۳:*ی@C.FORMAL@ Tintv;
+@P.TINTER.ON@+ش۳+ت:@P.TINTER.ON@*یه×ت iObjectCliticThirdPerson;
+@C.FORMAL@+ش۳:@C.FORMAL@*ی Tintv;
 +ش۴:*ییم iObjectClitic;
 @C.FORMAL@+ش۴:@C.FORMAL@*یم iObjectClitic;
 @C.FORMAL@+ش۵:@C.FORMAL@*ین iObjectClitic;
@@ -283,9 +283,9 @@ LEXICON iVAVpres !!!! قواعد تصریف فعل حال ساده
 +ش۱:*یم iObjectClitic;
 +ش۲:*یی iObjectClitic;
 @C.FORMAL@+ش۳:@C.FORMAL@*یه iObjectCliticThirdPerson;
-@P.TINTER.ON@+ش۳+ت:*یه×ت@P.TINTER.ON@ iObjectCliticThirdPerson;
+@P.TINTER.ON@+ش۳+ت:@P.TINTER.ON@*یه×ت iObjectCliticThirdPerson;
 +ش۳:*ید iObjectClitic;
-@C.FORMAL@+ش۳:*ی@C.FORMAL@ Tintv;
+@C.FORMAL@+ش۳:@C.FORMAL@*ی Tintv;
 !!!!@D.TWOSIDED@+ش۳+وفاعلی:@D.TWOSIDED@*ید*ش SubjCliticDiacritics;
 !!!!@D.TWOSIDED@+ش۳+ت+وفاعلی:@D.TWOSIDED@*یت*ش SubjCliticDiacritics;
 +ش۴:*ییم iObjectClitic;
@@ -322,7 +322,7 @@ LEXICON iYEHpres !!!! قواعد تصریف فعل حال ساده
 +ش۱:×ام iObjectClitic;
 +ش۲:×ای iObjectClitic;
 @C.FORMAL@+ش۳:@C.FORMAL@*ه iObjectCliticThirdPerson;
-@P.TINTER.ON@+ش۳+ت:*ه×ت@P.TINTER.ON@ iObjectCliticThirdPerson;
+@P.TINTER.ON@+ش۳+ت:@P.TINTER.ON@*ه×ت iObjectCliticThirdPerson;
 +ش۳:*د iObjectClitic;
 @C.FORMAL@+ش۳:@C.FORMAL@ Tintv;
 +ش۴:×ایم iObjectClitic;
@@ -545,14 +545,14 @@ LEXICON iPresP  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل گ�
 دویید iPrPInflInTrans;
 موند iPrPInflInTrans;
 دونست iPrPInflInTrans;
-@R.SPECINFL@گذاشت:ذاشت@R.SPECINFL@ iPrPInfl;!!!!دارای تصریف ناقص - تصریف تنها برای ماضی استمراری و منفی ان ، نقلی مستمرو منفی آن، منفی ماضی ساده، منفی ماضی نقلی، منفی ماضی بعید، منفی ماضی ابعد، 
-@R.SPECINFL@نشست:شست@R.SPECINFL@ iPrPInflInTrans;
-@R.SPECINFL@نشوند:شوند@R.SPECINFL@ iPrPInflInTrans;
-@R.SPECINFL@انداخت:نداخت@R.SPECINFL@ iPrPInfl;
-@R.SPECINFL@افتاد:فتاد@R.SPECINFL@ iPrPInflInTrans;
-@R.SPECINFL@افتاد:وفتاد@R.SPECINFL@ iPrPInflInTrans;
-@R.SPECINFL@اورد:ورد@R.SPECINFL@ iPrPInfl;
-@R.SPECINFL@اومد:ومد@R.SPECINFL@ iPrPInflInTrans;
+@R.SPECINFL@گذاشت:@R.SPECINFL@ذاشت iPrPInfl;!!!!دارای تصریف ناقص - تصریف تنها برای ماضی استمراری و منفی ان ، نقلی مستمرو منفی آن، منفی ماضی ساده، منفی ماضی نقلی، منفی ماضی بعید، منفی ماضی ابعد، 
+@R.SPECINFL@نشست:@R.SPECINFL@شست iPrPInflInTrans;
+@R.SPECINFL@نشوند:@R.SPECINFL@شوند iPrPInflInTrans;
+@R.SPECINFL@انداخت:@R.SPECINFL@نداخت iPrPInfl;
+@R.SPECINFL@افتاد:@R.SPECINFL@فتاد iPrPInflInTrans;
+@R.SPECINFL@افتاد:@R.SPECINFL@وفتاد iPrPInflInTrans;
+@R.SPECINFL@اورد:@R.SPECINFL@ورد iPrPInfl;
+@R.SPECINFL@اومد:@R.SPECINFL@ومد iPrPInflInTrans;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!formal!!!!!!!!!!!!!!!
 انداخت PrPInfl;
@@ -1156,14 +1156,14 @@ LEXICON iSimpleP
 دویید ipastInTrans;
 موند ipastInTrans;
 دونست ipastInTrans;
-@R.SPECINFL@گذاشت:ذاشت@R.SPECINFL@ ipast;!!!!دارای تصریف ناقص - تصریف تنها برای ماضی استمراری و منفی ان ، نقلی مستمرو منفی آن، منفی ماضی ساده، منفی ماضی نقلی، منفی ماضی بعید، منفی ماضی ابعد، 
-@R.SPECINFL@نشست:شست@R.SPECINFL@ ipastInTrans;
-@R.SPECINFL@نشوند:شوند@R.SPECINFL@ ipastInTrans;
-@R.SPECINFL@انداخت:نداخت@R.SPECINFL@ ipast;
-@R.SPECINFL@افتاد:فتاد@R.SPECINFL@ ipastInTrans;
-@R.SPECINFL@افتاد:وفتاد@R.SPECINFL@ ipastInTrans;
-@R.SPECINFL@اورد:ورد@R.SPECINFL@ ipast;
-@R.SPECINFL@اومد:ومد@R.SPECINFL@ ipastInTrans;
+@R.SPECINFL@گذاشت:@R.SPECINFL@ذاشت ipast;!!!!دارای تصریف ناقص - تصریف تنها برای ماضی استمراری و منفی ان ، نقلی مستمرو منفی آن، منفی ماضی ساده، منفی ماضی نقلی، منفی ماضی بعید، منفی ماضی ابعد، 
+@R.SPECINFL@نشست:@R.SPECINFL@شست ipastInTrans;
+@R.SPECINFL@نشوند:@R.SPECINFL@شوند ipastInTrans;
+@R.SPECINFL@انداخت:@R.SPECINFL@نداخت ipast;
+@R.SPECINFL@افتاد:@R.SPECINFL@فتاد ipastInTrans;
+@R.SPECINFL@افتاد:@R.SPECINFL@وفتاد ipastInTrans;
+@R.SPECINFL@اورد:@R.SPECINFL@ورد ipast;
+@R.SPECINFL@اومد:@R.SPECINFL@ومد ipastInTrans;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!formal!!!!!!!!!!!!!!!
 انداخت past;

@@ -63,19 +63,19 @@ LEXICON NaghliMostamer
 @P.CMPIMPERFECT.ON@:@P.CMPIMPERFECT.ON@ iPrPInfl;
 
 LEXICON iChainImpSubj !!!! فعل های امری و التزامی غیر رسمی
-@P.IMPERATIVE.ON@امری=:ب*@P.IMPERATIVE.ON@ iChainImper; !!!! در بیار -  باز بذار - فعل امری
+@P.IMPERATIVE.ON@امری=:@P.IMPERATIVE.ON@ب* iChainImper; !!!! در بیار -  باز بذار - فعل امری
 @P.IMPERATIVE.ON@امری=:@P.IMPERATIVE.ON@ iChainImper; !!!! در بیار -  باز بذار - فعل امری
 @P.IMPERATIVE.ON@امری=:@P.IMPERATIVE.ON@ iChainSelfImper; !!!! ور دار - وایسا - فعل امری
 التزامی=:ب* iChainVpresSub; !!!! در بیارم - باز بذارم - فعل التزامی
 التزامی=:0 iChainVpresSub; !!!! در بیارم - باز بذارم - فعل التزامی
 التزامی=:0 iChainVpresSelfSub; !!!! ور دارم - وایسم - فعل التزامی
-@P.IMPERATIVE.ON@منفی+امری=:ن*@P.IMPERATIVE.ON@ iChainImper; !!!! در نیار -  باز نذار - فعل امری
-@P.IMPERATIVE.ON@منفی+امری=:ن*@P.IMPERATIVE.ON@ iChainSelfImper; !!!! ور ندار - واینسا - فعل امری
+@P.IMPERATIVE.ON@منفی+امری=:@P.IMPERATIVE.ON@ن* iChainImper; !!!! در نیار -  باز نذار - فعل امری
+@P.IMPERATIVE.ON@منفی+امری=:@P.IMPERATIVE.ON@ن* iChainSelfImper; !!!! ور ندار - واینسا - فعل امری
 منفی+التزامی=:ن* iChainVpresSub; !!!! در نیارم - باز نذارم - فعل التزامی
 منفی+التزامی=:ن* iChainVpresSelfSub; !!!! ور ندارم - واینسم - فعل التزامی
 !!!!!!!!!!Iregularities!!!!!!!!!!!!!!!!Imperative- Subjunctive zar
-@P.IMPERATIVE.ON@امری=:ب*@P.IMPERATIVE.ON@ ImperZar;
-@P.IMPERATIVE.ON@منفی+امری=:ن*@P.IMPERATIVE.ON@ ImperZar;
+@P.IMPERATIVE.ON@امری=:@P.IMPERATIVE.ON@ب* ImperZar;
+@P.IMPERATIVE.ON@منفی+امری=:@P.IMPERATIVE.ON@ن* ImperZar;
 التزامی=:ب* presZar;
 منفی+التزامی=:ن* presZar;
 !!!!!!!!!!!!!!!Iregularities!!!!!!!!!!!!present progressive
@@ -271,11 +271,11 @@ LEXICON iChainSimpleP
 @R.VAY@سوند@R.VAY@ ipast;!!!!corpus
 @R.VAY@ستوند@R.VAY@ ipast;!!!!corpus
 @R.PA@شد@R.PA@ ipastInTrans;!!!!corpus
-@R.DAR@اورد:ورد@R.DAR@ ipast;
-@R.DAR@اومد:ومد@R.DAR@ ipastInTrans;
-@R.VAR@اومد:ومد@R.VAR@ ipastInTrans;
-@R.DAR@افتاد:فتاد@R.DAR@ ipastInTrans;!!!!!!!!!!!!!!!!!!!!!newnew
-@R.DAR@افتاد:وفتاد@R.DAR@ ipastInTrans;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.DAR@اورد:@R.DAR@ورد ipast;
+@R.DAR@اومد:@R.DAR@ومد ipastInTrans;
+@R.VAR@اومد:@R.VAR@ومد ipastInTrans;
+@R.DAR@افتاد:@R.DAR@فتاد ipastInTrans;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.DAR@افتاد:@R.DAR@وفتاد ipastInTrans;!!!!!!!!!!!!!!!!!!!!!newnew
 !!!!!!!!!!!!!!!!!!!!!
 @R.BAR@آمد@R.BAR@ pastInTrans;
 @R.BAR@افراخت@R.BAR@ past;
@@ -346,11 +346,11 @@ LEXICON iChainPresP
 @R.VAY@سوند@R.VAY@ iPrPInfl;!!!!corpus
 @R.VAY@ستوند@R.VAY@ iPrPInfl;!!!!corpus
 @R.PA@شد@R.PA@ iPrPInflInTrans;!!!!corpus
-@R.DAR@اورد:ورد@R.DAR@ iPrPInfl;
-@R.DAR@اومد:ومد@R.DAR@ iPrPInflInTrans;
-@R.VAR@اومد:ومد@R.VAR@ iPrPInflInTrans;
-@R.DAR@افتاد:فتاد@R.DAR@ iPrPInflInTrans;!!!!!!!!!!!!!!!!!!!!!newnew
-@R.DAR@افتاد:وفتاد@R.DAR@ iPrPInflInTrans;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.DAR@اورد:@R.DAR@ورد iPrPInfl;
+@R.DAR@اومد:@R.DAR@ومد iPrPInflInTrans;
+@R.VAR@اومد:@R.VAR@ومد iPrPInflInTrans;
+@R.DAR@افتاد:@R.DAR@فتاد iPrPInflInTrans;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.DAR@افتاد:@R.DAR@وفتاد iPrPInflInTrans;!!!!!!!!!!!!!!!!!!!!!newnew
 !!!!!!!!!!!!!!!!!!!!!
 @R.BAR@آمد@R.BAR@ PrPInflInTrans;
 @R.BAR@افراخت@R.BAR@ PrPInfl;
@@ -428,7 +428,7 @@ LEXICON iStress
 +تاکید:*ا #;
 +تاکید:^ها #;
 +عطف:*و #;
-@D.IMPERATIVE@+هم:&م@D.IMPERATIVE@ #;
+@D.IMPERATIVE@+هم:@D.IMPERATIVE@&م #;
 
 LEXICON SubjCliticDiacritics
 @C.FORMAL@:@C.FORMAL@ iStress;
@@ -486,8 +486,8 @@ LEXICON ipres !!!! قواعد تصریف فعل حال ساده
 @D.LONEINFSTEM@+ش۳:@D.LONEINFSTEM@*د iObjectClitic;
 !!!!@D.TWOSIDED@+ش۳+وفاعلی:@D.TWOSIDED@*د*ش SubjCliticDiacritics;
 !!!!@D.TWOSIDED@+ش۳+ت+وفاعلی:@D.TWOSIDED@*ت*ش SubjCliticDiacritics;
-@C.FORMAL@+ش۳:0@C.FORMAL@ Tintv;
-@P.TINTER.ON@+ش۳+ت:*ه×ت@P.TINTER.ON@ iObjectCliticThirdPerson;
+@C.FORMAL@+ش۳:@C.FORMAL@0 Tintv;
+@P.TINTER.ON@+ش۳+ت:@P.TINTER.ON@*ه×ت iObjectCliticThirdPerson;
 +ش۴:*یم iObjectClitic;
 @C.FORMAL@+ش۵:@C.FORMAL@*ین iObjectClitic;
 +ش۵:*ید iObjectClitic;
@@ -528,8 +528,8 @@ LEXICON iALEFpres !!!! قواعد تصریف فعل حال ساده
 @C.FORMAL@+ش۳:@C.FORMAL@*د iObjectClitic;
 !!!!@D.TWOSIDED@+ش۳+وفاعلی:@D.TWOSIDED@*د*ش SubjCliticDiacritics;
 @C.FORMAL@+ش۳:@C.FORMAL@*یه iObjectClitic;
-@P.TINTER.ON@+ش۳+ت:*یه×ت@P.TINTER.ON@ iObjectCliticThirdPerson;
-@C.FORMAL@+ش۳:*ی@C.FORMAL@ Tintv;
+@P.TINTER.ON@+ش۳+ت:@P.TINTER.ON@*یه×ت iObjectCliticThirdPerson;
+@C.FORMAL@+ش۳:@C.FORMAL@*ی Tintv;
 +ش۴:*ییم iObjectClitic;
 @C.FORMAL@+ش۴:@C.FORMAL@*یم iObjectClitic;
 @C.FORMAL@+ش۵:@C.FORMAL@*ین iObjectClitic;
@@ -563,11 +563,11 @@ LEXICON iVAVpres !!!! قواعد تصریف فعل حال ساده
 +ش۱:*یم iObjectClitic;
 +ش۲:*یی iObjectClitic;
 @C.FORMAL@+ش۳:@C.FORMAL@*یه iObjectCliticThirdPerson;
-@P.TINTER.ON@+ش۳+ت:*یه×ت@P.TINTER.ON@ iObjectCliticThirdPerson;
+@P.TINTER.ON@+ش۳+ت:@P.TINTER.ON@*یه×ت iObjectCliticThirdPerson;
 !!!!@D.TWOSIDED@+ش۳+وفاعلی:@D.TWOSIDED@*ید*ش SubjCliticDiacritics;
 !!!!@D.TWOSIDED@+ش۳+ت+وفاعلی:@D.TWOSIDED@*یت*ش SubjCliticDiacritics;
 +ش۳:*ید iObjectClitic;
-@C.FORMAL@+ش۳:*ی@C.FORMAL@ Tintv;
+@C.FORMAL@+ش۳:@C.FORMAL@*ی Tintv;
 +ش۴:*ییم iObjectClitic;
 @C.FORMAL@+ش۵:@C.FORMAL@*یین iObjectClitic;
 +ش۵:*یید iObjectClitic;

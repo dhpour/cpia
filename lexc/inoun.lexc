@@ -679,8 +679,8 @@ LEXICON rabti1
 LEXICON rabti2
 !!!!input vowel yeh
 0:0 takid1;
-@C.VOWEL@+وربطی۱:*م takid1;
-@C.VOWEL@+وربطی۱×ام takid1;
+@C.VOWEL@+وربطی۱:@C.VOWEL@*م takid1;
+@C.VOWEL@+وربطی۱:@C.VOWEL@×ام takid1;
 +وربطی۲:×ای takid1;
 @C.VOWEL@@P.VOWEL.HEH@@C.FORMAL@+وربطی۳:@C.VOWEL@@P.VOWEL.HEH@@C.FORMAL@*ه takid1;
 @C.VOWEL@+وربطی۳:@C.VOWEL@*ست takid1;
@@ -1072,7 +1072,7 @@ LEXICON ComNN
 آب‌نای consnHaComNNFRM;
 @P.VOWEL.YEH@آبنگاری vowelHaComNNFRM;!VOWEL_YEH
 آب‌نی consnHaComNNFRM;
-@P.VOWEL.HEH@ابنیه(جم):ابنیه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
+@P.VOWEL.HEH@ابنیه(جم):@P.VOWEL.HEH@ابنیه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
 @P.VOWEL.YEH@ابنیه‌سازی vowelHaComNNFRM;!VOWEL_YEH
 آبنوس consnHaComNNFRM;
 آب‌وعلف consnHaComNNFRM;
@@ -1397,7 +1397,7 @@ LEXICON ComNN
 آب‌نای consnHaComNNFRM;
 @P.VOWEL.YEH@آبنگاری vowelHaComNNFRM;!VOWEL_YEH
 آب‌نی consnHaComNNFRM;
-@P.VOWEL.HEH@ابنیه(جم):ابنیه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
+@P.VOWEL.HEH@ابنیه(جم):@P.VOWEL.HEH@ابنیه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
 @P.VOWEL.YEH@ابنیه‌سازی vowelHaComNNFRM;!VOWEL_YEH
 آبنوس consnHaComNNFRM;
 آب‌وعلف consnHaComNNFRM;
@@ -1639,7 +1639,7 @@ LEXICON ComNN
 @P.VOWEL.VAV@عدو vowelHaComNNFRM;!VOWEL_VAV
 ادوار(جم):ادوار consnHaComNNFRM;!ARABIC-PL
 ادونیسم consnHaComNNFRM;
-@P.VOWEL.HEH@ادویه(جم):ادویه vowelJatComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-JAT!PL-HA
+@P.VOWEL.HEH@ادویه(جم):@P.VOWEL.HEH@ادویه vowelJatComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-JAT!PL-HA
 ادویه‌جات consnHaComNNFRM;
 ادیان(جم):ادیان consnHaComNNFRM;!ARABIC-PL
 عائد consnHaComNNFRM;
@@ -2033,7 +2033,7 @@ LEXICON ComNN
 @P.VOWEL.YEH@آلانی vowelHaComNNFRM;!VOWEL_YEH
 الانصار consnHaComNNFRM;
 علق consnHaComNNFRM;
-@P.VOWEL.HEH@علاقه(جم):علاقه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
+@P.VOWEL.HEH@علاقه(جم):@P.VOWEL.HEH@علاقه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
 @P.VOWEL.HEH@علقه vowelHaComNNFRM;!VOWEL_HEH
 علاقه‌بند consnHaComNNFRM;
 علاقمند consnAnComNNFRM;!PL-AN
@@ -3032,7 +3032,7 @@ LEXICON ComNN
 @P.VOWEL.HEH@عصب‌پایه vowelHaComNNFRM;!VOWEL_HEH
 @P.VOWEL.YEH@عصب‌‌شناسی vowelHaComNNFRM;!VOWEL_YEH
 @P.VOWEL.YEH@عصب‌‌شناختی vowelHaComNNFRM;!VOWEL_YEH
-@P.VOWEL.HEH@اشعه(جم):اشعه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
+@P.VOWEL.HEH@اشعه(جم):@P.VOWEL.HEH@اشعه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
 @P.VOWEL.YEH@اشعه‌درمانی vowelHaComNNFRM;!VOWEL_YEH
 اسف consnHaComNNFRM;
 عساکر(جم):عساکر consnHaComNNFRM;!ARABIC-PL
@@ -3207,7 +3207,7 @@ LEXICON ComNN
 اشک‌ریزش consnHaComNNFRM;
 @P.VOWEL.HEH@عسکخانه vowelHaComNNFRM;!VOWEL_HEH
 اسلاف(جم):اسلاف consnHaComNNFRM;!ARABIC-PL
-@P.VOWEL.HEH@اسلحه(جم):اسلحه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
+@P.VOWEL.HEH@اسلحه(جم):@P.VOWEL.HEH@اسلحه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
 اسلحه‌دار consnHaComNNFRM;
 @P.VOWEL.YEH@اسلحه‌سازی vowelHaComNNFRM;!VOWEL_YEH
 @P.VOWEL.HEH@اسلحه‌خانه vowelHaComNNFRM;!VOWEL_HEH
@@ -6378,7 +6378,7 @@ LEXICON ComNN
 @P.VOWEL.HEH@دارابنامه vowelHaComNNFRM;!VOWEL_HEH
 @P.VOWEL.YEH@دارائی vowelHaComNNFRM;!VOWEL_YEH
 درجات(جم):درجات consnHaComNNFRM;!ARABIC-PL
-@P.VOWEL.HEH@درجه(جم):درجه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
+@P.VOWEL.HEH@درجه(جم):@P.VOWEL.HEH@درجه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
 @P.VOWEL.YEH@درجه‌بندی vowelHaComNNFRM;!VOWEL_YEH
 @P.VOWEL.YEH@درجه‌داری vowelHaComNNFRM;!VOWEL_YEH
 درجه‌حرارت consnHaComNNFRM;
@@ -9318,7 +9318,7 @@ LEXICON ComNN
 فوق‌لیسانس consnHaComNNFRM;
 فورد consnHaComNNFRM;
 فوریت consnHaComNNFRM;
-@P.VOWEL.HEH@فرجه(جم):فرجه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
+@P.VOWEL.HEH@فرجه(جم):@P.VOWEL.HEH@فرجه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
 فرم consnHaComNNFRM;
 فورم consnHaComNNFRM;
 فرمالین consnHaComNNFRM;
@@ -11838,7 +11838,7 @@ LEXICON ComNN
 جلودار consnAnComNNFRM;!PL-AN
 @P.VOWEL.YEH@جلوگیری vowelHaComNNFRM;!VOWEL_YEH
 جلوخان consnHaComNNFRM;
-@P.VOWEL.HEH@جلوه(جم):جلوه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
+@P.VOWEL.HEH@جلوه(جم):@P.VOWEL.HEH@جلوه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
 @P.VOWEL.YEH@جلوه‌آفرینی vowelHaComNNFRM;!VOWEL_YEH
 @P.VOWEL.YEH@جلوه‌آرایی vowelHaComNNFRM;!VOWEL_YEH
 جلوه‌گاه consnHaComNNFRM;
@@ -11861,7 +11861,7 @@ LEXICON ComNN
 جنایات consnHaComNNFRM;
 جنایت(جم):جنایت consnHaComNNFRM;!ARABIC-PL!PL-HA
 @P.VOWEL.YEH@جنایتکاری vowelHaComNNFRM;!VOWEL_YEH
-@P.VOWEL.HEH@جنازه(جم):جنازه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
+@P.VOWEL.HEH@جنازه(جم):@P.VOWEL.HEH@جنازه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
 @P.VOWEL.HEH@جنده vowelHaComNNFRM;!VOWEL_HEH
 @P.VOWEL.YEH@جنده‌بازی vowelHaComNNFRM;!VOWEL_YEH
 @P.VOWEL.HEH@جنده‌خانه vowelHaComNNFRM;!VOWEL_HEH
@@ -13664,7 +13664,7 @@ LEXICON ComNN
 لهیب consnHaComNNFRM;
 لحیم consnHaComNNFRM;
 @P.VOWEL.YEH@لحیم‌کاری vowelHaComNNFRM;!VOWEL_YEH
-@P.VOWEL.HEH@لهجه(جم):لهجه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
+@P.VOWEL.HEH@لهجه(جم):@P.VOWEL.HEH@لهجه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
 لحن consnHaComNNFRM;
 لاهوت consnHaComNNFRM;
 لهو consnHaComNNFRM;
@@ -15133,7 +15133,7 @@ LEXICON ComNN
 مواعید(جم):مواعید consnHaComNNFRM;!ARABIC-PL
 مواجب(جم):مواجب consnHaComNNFRM;!ARABIC-PL
 موالد(جم):موالد consnHaComNNFRM;!ARABIC-PL
-@P.VOWEL.YEH@موالی(جم):موالی vowelAnComNNFRM;!VOWEL_YEH!ARABIC-PL!PL-AN
+@P.VOWEL.YEH@موالی(جم):@P.VOWEL.YEH@موالی vowelAnComNNFRM;!VOWEL_YEH!ARABIC-PL!PL-AN
 موالید(جم):موالید consnHaComNNFRM;!ARABIC-PL
 موانع(جم):موانع consnHaComNNFRM;!ARABIC-PL
 ماوقع consnHaComNNFRM;
@@ -15977,7 +15977,7 @@ LEXICON ComNN
 @P.VOWEL.YEH@مجزایی vowelHaComNNFRM;!VOWEL_YEH
 معجز(جم):معجز consnAtComNNFRM;!ARABIC-PL!PL-AT
 معجزات consnHaComNNFRM;
-@P.VOWEL.HEH@معجزه(جم):معجزه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
+@P.VOWEL.HEH@معجزه(جم):@P.VOWEL.HEH@معجزه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
 مجرمیت consnHaComNNFRM;
 @P.VOWEL.YEH@مجری vowelAnComNNFRM;!VOWEL_YEH!PL-AN
 @P.VOWEL.YEH@مجری‌گری vowelHaComNNFRM;!VOWEL_YEH
@@ -16265,7 +16265,7 @@ LEXICON ComNN
 @P.VOWEL.YEH@مشاعی vowelHaComNNFRM;!VOWEL_YEH
 مشاجر consnAtComNNFRM;!PL-AT
 مشاجرات consnHaComNNFRM;
-@P.VOWEL.HEH@مشاجره(جم):مشاجره vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
+@P.VOWEL.HEH@مشاجره(جم):@P.VOWEL.HEH@مشاجره vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
 @P.VOWEL.HEH@مصالحه vowelHaComNNFRM;!VOWEL_HEH
 مسالمت consnHaComNNFRM;
 @P.VOWEL.YEH@مسالمت‌جویی vowelHaComNNFRM;!VOWEL_YEH
@@ -16469,7 +16469,7 @@ LEXICON ComNN
 موافقت consnHaComNNFRM;
 @P.VOWEL.HEH@موافقت‌نامه vowelHaComNNFRM;!VOWEL_HEH
 موفقیت consnHaComNNFRM;
-@P.VOWEL.HEH@مواجهه(جم):مواجهه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
+@P.VOWEL.HEH@مواجهه(جم):@P.VOWEL.HEH@مواجهه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
 @P.VOWEL.HEH@موجهه vowelHaComNNFRM;!VOWEL_HEH
 موکل consnInAnComNNFRM;!PL-IN!PL-AN
 @P.VOWEL.YEH@مولدسازی vowelHaComNNFRM;!VOWEL_YEH
@@ -17219,7 +17219,7 @@ LEXICON ComNN
 @P.VOWEL.YEH@ناتوان‌سازی vowelHaComNNFRM;!VOWEL_YEH
 نتایج(جم):نتایج consnHaComNNFRM;!ARABIC-PL
 ناتریم consnHaComNNFRM;
-@P.VOWEL.HEH@نتیجه(جم):نتیجه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
+@P.VOWEL.HEH@نتیجه(جم):@P.VOWEL.HEH@نتیجه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
 @P.VOWEL.YEH@نتیجه‌بخشی vowelHaComNNFRM;!VOWEL_YEH
 @P.VOWEL.YEH@نتیجه‌گیری vowelHaComNNFRM;!VOWEL_YEH
 ناتورالیسم consnHaComNNFRM;
@@ -26627,7 +26627,7 @@ LEXICON ComNN
 @P.VOWEL.YEH@ورق‌بازی vowelHaComNNFRM;!VOWEL_YEH
 @P.VOWEL.HEH@ورقه vowelHaComNNFRM;!VOWEL_HEH
 @P.VOWEL.HEH@ورق‌پاره vowelHaComNNFRM;!VOWEL_HEH
-@P.VOWEL.HEH@ورثه(جم):ورثه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
+@P.VOWEL.HEH@ورثه(جم):@P.VOWEL.HEH@ورثه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
 @P.VOWEL.YEH@وارسی vowelHaComNNFRM;!VOWEL_YEH
 وارستگان consnHaComNNFRM;
 @P.VOWEL.YEH@وارستگی vowelHaComNNFRM;!VOWEL_YEH
@@ -26961,7 +26961,7 @@ LEXICON ComNN
 خدمات consnHaComNNFRM;
 @P.VOWEL.YEH@خدمات‌دهی vowelHaComNNFRM;!VOWEL_YEH
 @P.VOWEL.YEH@خدمات‌رسانی vowelHaComNNFRM;!VOWEL_YEH
-@P.VOWEL.HEH@خدمه(جم):خدمه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
+@P.VOWEL.HEH@خدمه(جم):@P.VOWEL.HEH@خدمه vowelHaComNNFRM;!VOWEL_HEH!ARABIC-PL!PL-HA
 خدم‌وحشم consnHaComNNFRM;
 @P.VOWEL.YEH@خدری vowelHaComNNFRM;!VOWEL_YEH
 خادم consnInAnComNNFRM;!PL-IN!PL-AN
@@ -47231,14 +47231,14 @@ LEXICON pastStem
 دویید verbalStruct;
 موند verbalStruct;
 دونست verbalStruct;
-@R.SPECINFL@گذاشت:ذاشت@R.SPECINFL@ verbalStruct;!!!!دارای تصریف ناقص - تصریف تنها برای ماضی استمراری و منفی ان ، نقلی مستمرو منفی آن، منفی ماضی ساده، منفی ماضی نقلی، منفی ماضی بعید، منفی ماضی ابعد، 
-@R.SPECINFL@نشست:شست@R.SPECINFL@ verbalStruct;
-@R.SPECINFL@نشوند:شوند@R.SPECINFL@ verbalStruct;
-@R.SPECINFL@انداخت:نداخت@R.SPECINFL@ verbalStruct;
-@R.SPECINFL@افتاد:فتاد@R.SPECINFL@ verbalStruct;
-@R.SPECINFL@افتاد:وفتاد@R.SPECINFL@ verbalStruct;
-@R.SPECINFL@اورد:ورد@R.SPECINFL@ verbalStruct;
-@R.SPECINFL@اومد:ومد@R.SPECINFL@ verbalStruct;
+@R.SPECINFL@گذاشت:@R.SPECINFL@ذاشت verbalStruct;!!!!دارای تصریف ناقص - تصریف تنها برای ماضی استمراری و منفی ان ، نقلی مستمرو منفی آن، منفی ماضی ساده، منفی ماضی نقلی، منفی ماضی بعید، منفی ماضی ابعد، 
+@R.SPECINFL@نشست:@R.SPECINFL@شست verbalStruct;
+@R.SPECINFL@نشوند:@R.SPECINFL@شوند verbalStruct;
+@R.SPECINFL@انداخت:@R.SPECINFL@نداخت verbalStruct;
+@R.SPECINFL@افتاد:@R.SPECINFL@فتاد verbalStruct;
+@R.SPECINFL@افتاد:@R.SPECINFL@وفتاد verbalStruct;
+@R.SPECINFL@اورد:@R.SPECINFL@ورد verbalStruct;
+@R.SPECINFL@اومد:@R.SPECINFL@ومد verbalStruct;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!formal!!!!!!!!!!!!!!!
 انداخت verbalStructFRM;
@@ -47777,11 +47777,11 @@ LEXICON ChainVB
 @R.VAY@سوند@R.VAY@ verbalStruct;!!!!corpus
 @R.VAY@ستوند@R.VAY@ verbalStruct;!!!!corpus
 @R.PA@شد@R.PA@ verbalStruct;!!!!corpus
-@R.DAR@اورد:ورد@R.DAR@ verbalStruct;
-@R.DAR@اومد:ومد@R.DAR@ verbalStruct;
-@R.VAR@اومد:ومد@R.VAR@ verbalStruct;
-@R.DAR@افتاد:فتاد@R.DAR@ verbalStruct;!!!!!!!!!!!!!!!!!!!!!newnew
-@R.DAR@افتاد:وفتاد@R.DAR@ verbalStruct;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.DAR@اورد:@R.DAR@ورد verbalStruct;
+@R.DAR@اومد:@R.DAR@ومد verbalStruct;
+@R.VAR@اومد:@R.VAR@ومد verbalStruct;
+@R.DAR@افتاد:@R.DAR@فتاد verbalStruct;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.DAR@افتاد:@R.DAR@وفتاد verbalStruct;!!!!!!!!!!!!!!!!!!!!!newnew
 !!!!!!!!!!!!!!!!!!!!!
 @R.BAR@آمد@R.BAR@ verbalStructFRM;
 @R.BAR@افراخت@R.BAR@ verbalStructFRM;

@@ -36,7 +36,7 @@ LEXICON iStress
 +تاکید:*ا #;
 +تاکید:^ها #;
 +عطف:*و #;
-@D.IMPERATIVE@+هم:&م@D.IMPERATIVE@ #;
+@D.IMPERATIVE@+هم:@D.IMPERATIVE@&م #;
 
 LEXICON SubjCliticDiacritics
 @C.FORMAL@:@C.FORMAL@ iStress;
@@ -1238,14 +1238,14 @@ LEXICON iPastP  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل گ�
 دویید iPsPInflInTrans;
 موند iPsPInflInTrans;
 دونست iPsPInflInTrans;
-@R.SPECINFL@گذاشت:ذاشت@R.SPECINFL@ iPsPInfl;!!!!دارای تصریف ناقص - تصریف تنها برای ماضی استمراری و منفی ان ، نقلی مستمرو منفی آن، منفی ماضی ساده، منفی ماضی نقلی، منفی ماضی بعید، منفی ماضی ابعد، 
-@R.SPECINFL@نشست:شست@R.SPECINFL@ iPsPInflInTrans;
-@R.SPECINFL@نشوند:شوند@R.SPECINFL@ iPsPInflInTrans;
-@R.SPECINFL@انداخت:نداخت@R.SPECINFL@ iPsPInfl;
-@R.SPECINFL@افتاد:فتاد@R.SPECINFL@ iPsPInflInTrans;
-@R.SPECINFL@افتاد:وفتاد@R.SPECINFL@ iPsPInflInTrans;
-@R.SPECINFL@اورد:ورد@R.SPECINFL@ iPsPInfl;
-@R.SPECINFL@اومد:ومد@R.SPECINFL@ iPsPInflInTrans;
+@R.SPECINFL@گذاشت:@R.SPECINFL@ذاشت iPsPInfl;!!!!دارای تصریف ناقص - تصریف تنها برای ماضی استمراری و منفی ان ، نقلی مستمرو منفی آن، منفی ماضی ساده، منفی ماضی نقلی، منفی ماضی بعید، منفی ماضی ابعد، 
+@R.SPECINFL@نشست:@R.SPECINFL@شست iPsPInflInTrans;
+@R.SPECINFL@نشوند:@R.SPECINFL@شوند iPsPInflInTrans;
+@R.SPECINFL@انداخت:@R.SPECINFL@نداخت iPsPInfl;
+@R.SPECINFL@افتاد:@R.SPECINFL@فتاد iPsPInflInTrans;
+@R.SPECINFL@افتاد:@R.SPECINFL@وفتاد iPsPInflInTrans;
+@R.SPECINFL@اورد:@R.SPECINFL@ورد iPsPInfl;
+@R.SPECINFL@اومد:@R.SPECINFL@ومد iPsPInflInTrans;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!formal!!!!!!!!!!!!!!!
 انداخت PsPInfl;
@@ -1849,14 +1849,14 @@ LEXICON iPastSubj   !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل
 دویید iPastSubjInflInTrans;
 موند iPastSubjInflInTrans;
 دونست iPastSubjInflInTrans;
-@R.SPECINFL@گذاشت:ذاشت@R.SPECINFL@ iPastSubjInfl;!!!!دارای تصریف ناقص - تصریف تنها برای ماضی استمراری و منفی ان ، نقلی مستمرو منفی آن، منفی ماضی ساده، منفی ماضی نقلی، منفی ماضی بعید، منفی ماضی ابعد، 
-@R.SPECINFL@نشست:شست@R.SPECINFL@ iPastSubjInflInTrans;
-@R.SPECINFL@نشوند:شوند@R.SPECINFL@ iPastSubjInflInTrans;
-@R.SPECINFL@انداخت:نداخت@R.SPECINFL@ iPastSubjInfl;
-@R.SPECINFL@افتاد:فتاد@R.SPECINFL@ iPastSubjInflInTrans;
-@R.SPECINFL@افتاد:وفتاد@R.SPECINFL@ iPastSubjInflInTrans;
-@R.SPECINFL@اورد:ورد@R.SPECINFL@ iPastSubjInfl;
-@R.SPECINFL@اومد:ومد@R.SPECINFL@ iPastSubjInflInTrans;
+@R.SPECINFL@گذاشت:@R.SPECINFL@ذاشت iPastSubjInfl;!!!!دارای تصریف ناقص - تصریف تنها برای ماضی استمراری و منفی ان ، نقلی مستمرو منفی آن، منفی ماضی ساده، منفی ماضی نقلی، منفی ماضی بعید، منفی ماضی ابعد، 
+@R.SPECINFL@نشست:@R.SPECINFL@شست iPastSubjInflInTrans;
+@R.SPECINFL@نشوند:@R.SPECINFL@شوند iPastSubjInflInTrans;
+@R.SPECINFL@انداخت:@R.SPECINFL@نداخت iPastSubjInfl;
+@R.SPECINFL@افتاد:@R.SPECINFL@فتاد iPastSubjInflInTrans;
+@R.SPECINFL@افتاد:@R.SPECINFL@وفتاد iPastSubjInflInTrans;
+@R.SPECINFL@اورد:@R.SPECINFL@ورد iPastSubjInfl;
+@R.SPECINFL@اومد:@R.SPECINFL@ومد iPastSubjInflInTrans;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!formal!!!!!!!!!!!!!!!
 انداخت PastSubjInfl;
