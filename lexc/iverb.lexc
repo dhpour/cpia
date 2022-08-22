@@ -10,28 +10,31 @@ iCopula;
 Modals;
 منفی+:ن* Modals;
 ف.و=توان:بتوان #;
-منفی+ف.و=توان:نتوان #;
+منفی+ف.و=توان:ن*توان #;
 !!!!!!!!!!!!!!!!!!!!!Iregularities-Imperative!!!!!!!!!!!!!!!!!!!!!!
 @P.IMPERATIVE.ON@:@P.IMPERATIVE.ON@ exceptionalImp;
 !!!!!!!!!!!!!!!!!!!!!!Iregularities-Present!!!!!!!!!!!!!!!!!!!!!!!!!
 : exceptionPres;
 
+LEXICON theEnd
++رسمی:0 #;
+
 LEXICON iCopula
 @P.FORMAL.ON@اسناد=هست:@P.FORMAL.ON@هست ipastInTrans;
-@P.FORMAL.ON@منفی+اسناد=هست:@P.FORMAL.ON@نیست ipastInTrans;
+@P.FORMAL.ON@منفی+اسناد=هست:@P.FORMAL.ON@نی*ست ipastInTrans;
 اسناد=هست+وفاعلی:هست*ش #;
-منفی+اسناد=هست+وفاعلی:نیست*ش #;
-اسناد=است+رسمی:است #;
-اسناد=ست+رسمی:ست #;
+منفی+اسناد=هست+وفاعلی:نی*ست*ش #;
+اسناد=است:است theEnd;
+اسناد=ست:ست theEnd;
 
 LEXICON Modals
-ف.و=میبایست+رسمی:می×بایست #;
-ف.و=میبایستی+رسمی:می×بایستی #;
-ف.و=بایست+رسمی:بایست #;
-ف.و=بایستی+رسمی:بایستی #;
-ف.و=باید+رسمی:باید #; 
-ف.و=میباید+رسمی:می×باید #;
-ف.و=میتوان+رسمی:می×توان #;
+ف.و=میبایست:می×بایست theEnd;
+ف.و=میبایستی:می×بایستی theEnd;
+ف.و=بایست:بایست theEnd;
+ف.و=بایستی:بایستی theEnd;
+ف.و=باید:باید theEnd; 
+ف.و=میباید:می×باید theEnd;
+ف.و=میتوان:می×توان theEnd;
 
 LEXICON Tintv
 @P.TINTER.ON@+ت:@P.TINTER.ON@*ت iObjectClitic;
@@ -51,7 +54,7 @@ LEXICON exceptionPres
 التزامی=خواه:ب*خوا presException;
 منفی+التزامی=خواه:ن*خوا presException;
 ف.ح.ا=خواه:می×خوا presException;
-منفی+ف.ح.ا=خواه:نمی×خوا presException;
+منفی+ف.ح.ا=خواه:ن*می×خوا presException;
 
 LEXICON presException
 +ش۱:*م iObjectClitic;
@@ -74,8 +77,8 @@ LEXICON exceptionalImp
 امری=خواه:ب*خوا iALEFImperInfl;
 منفی+امری=خواه:ن*خوا iALEFImperInfl;
 امری=ایست:ایست ImperInflInTrans;
-امری=ا+مفرد+رسمی:بیا #;! این مشکلی نداشت، برای یکدست شدن با ساخت منفی استفاده شد.
-منفی+امری=ا+مفرد+رسمی:نیا #;! با مثلا بگنا تداخل داشت و به ناچرا به شکل استثنا مجزا ساخته شد. 
+امری=ا+مفرد:بی*ا theEnd;! این مشکلی نداشت، برای یکدست شدن با ساخت منفی استفاده شد.
+منفی+امری=ا+مفرد:نی*ا theEnd;! با مثلا بگنا تداخل داشت و به ناچرا به شکل استثنا مجزا ساخته شد. 
 
 !!!!LEXICON iObjectClitic
 !!!!@C.FORMAL@:@C.FORMAL@ iObjClt;

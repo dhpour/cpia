@@ -16,6 +16,9 @@ LEXICON Root
 LEXICON Tintv
 @P.TINTER.ON@+ت:@P.TINTER.ON@*ت iObjectClitic;
 
+LEXICON theEnd
++رسمی:0 #;
+
 LEXICON iChainVHub
 iChainVB;
 منفی+:ن* iChainVB;
@@ -54,30 +57,30 @@ LEXICON iStress
 @D.IMPERATIVE@+هم:@D.IMPERATIVE@&م #;
 
 LEXICON PastPPInfl !!!! قواعد تصریفی ماضی ابعد
-+وربطی۱+رسمی:*ه^بوده×ام #;
-+وربطی۲+رسمی:*ه^بوده×ای #;
-+ف.ربطی۳+رسمی:*ه^بوده^است #;
-+وربطی۴+رسمی:*ه^بوده×ایم #;
-+وربطی۵+رسمی:*ه^بوده×اید #;
-+وربطی۶+رسمی:*ه^بوده×اند #;
++وربطی۱:*ه^بوده×ام theEnd;
++وربطی۲:*ه^بوده×ای theEnd;
++وربطی۳:*ه^بوده^است theEnd;
++وربطی۴:*ه^بوده×ایم theEnd;
++وربطی۵:*ه^بوده×اید theEnd;
++وربطی۶:*ه^بوده×اند theEnd;
 
 LEXICON chainFuture !!!! قواعد تصریف فعل آینده  رسمی
-خواه+ش۱+:خواهم^ chainFutureInf;
-خواه+ش۲+:خواهی^ chainFutureInf;
-خواه+ش۳+:خواهد^ chainFutureInf;
-خواه+ش۴+:خواهیم^ chainFutureInf;
-خواه+ش۵+:خواهید^ chainFutureInf;
-خواه+ش۶+:خواهند^ chainFutureInf;
+خواه+ش۱+:خواه*م^ chainFutureInf;
+خواه+ش۲+:خواه*ی^ chainFutureInf;
+خواه+ش۳+:خواه*د^ chainFutureInf;
+خواه+ش۴+:خواه*یم^ chainFutureInf;
+خواه+ش۵+:خواه*ید^ chainFutureInf;
+خواه+ش۶+:خواه*ند^ chainFutureInf;
 
 LEXICON iPsPInflInTrans  !ماضی بعید ناگذر غیر رسمی
-+ش۱:*ه^بودم iStress;
-+ش۲:*ه^بودی iStress;
++ش۱:*ه^بود*م iStress;
++ش۲:*ه^بود*ی iStress;
 +ش۳:*ه^بود iStress;
-@C.FORMAL@+ش۳+ش.تاکیدی:@C.FORMAL@*ه^بودش SubjCliticDiacritics;
-+ش۴:*ه^بودیم iStress;
-@C.FORMAL@+ش۵:@C.FORMAL@*ه^بودین iStress;
-+ش۵:*ه^بودید iStress;
-@C.FORMAL@+ش۶:@C.FORMAL@*ه^بودن iStress;
+@C.FORMAL@+ش۳+ش.تاکیدی:@C.FORMAL@*ه^بود*ش SubjCliticDiacritics;
++ش۴:*ه^بود*یم iStress;
+@C.FORMAL@+ش۵:@C.FORMAL@*ه^بود*ین iStress;
++ش۵:*ه^بود*ید iStress;
+@C.FORMAL@+ش۶:@C.FORMAL@*ه^بود*ن iStress;
 +ش۶:*ه^بودند iStress;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 LEXICON PsPInflInTrans ! ماضی بعید ناگذر رسمی
@@ -87,100 +90,100 @@ LEXICON SubjCliticDiacritics
 @C.FORMAL@:@C.FORMAL@ iStress;
 
 LEXICON iPsPInfl !!!! قواعد تصریفی ماضی بعید غیر رسمی
-+ش۱:*ه^بودم iObjectClitic;
-+ش۲:*ه^بودی iObjectClitic;
++ش۱:*ه^بود*م iObjectClitic;
++ش۲:*ه^بود*ی iObjectClitic;
 +ش۳:*ه^بود iObjectClitic;
-@D.TWOSIDED@+ش۳+وفاعلی:@D.TWOSIDED@*ه^بودش SubjCliticDiacritics;
+@D.TWOSIDED@+ش۳+وفاعلی:@D.TWOSIDED@*ه^بود*ش SubjCliticDiacritics;
 @C.FORMAL@+ش۳:@C.FORMAL@*ه^بود Tintv;!!!!ت کمکی برای شناسایی مفعول زیرا شناسه بروز حرفی ندارد
-+ش۴:*ه^بودیم iObjectClitic;
-@C.FORMAL@+ش۵:@C.FORMAL@*ه^بودین iObjectClitic;
-+ش۵:*ه^بودید iObjectClitic;
-@C.FORMAL@+ش۶:@C.FORMAL@*ه^بودن iObjectClitic;
-+ش۶:*ه^بودند iObjectClitic;
++ش۴:*ه^بود*یم iObjectClitic;
+@C.FORMAL@+ش۵:@C.FORMAL@*ه^بود*ین iObjectClitic;
++ش۵:*ه^بود*ید iObjectClitic;
+@C.FORMAL@+ش۶:@C.FORMAL@*ه^بود*ن iObjectClitic;
++ش۶:*ه^بود*ند iObjectClitic;
 !-------------------------------!
 LEXICON PsPInfl !!!! قواعد تصریفی ماضی بعید رسمی
 @P.FORMAL.ON@:@P.FORMAL.ON@ iPsPInfl;
 
 LEXICON iPastSubjInflInTrans !!!! قواعد تصریفی ماضی التزامی غیر رسمی
-+ش۱:*ه^باشم iStress;
-+ش۲:*ه^باشی iStress;
-@C.FORMAL@+ش۳:@C.FORMAL@*ه^باشه iStress;
-@C.FORMAL@+ش۳:@C.FORMAL@*ه^باشد*ش SubjCliticDiacritics;
-+ش۳:*ه^باشد iStress;
-+ش۴:*ه^باشیم iStress;
-@C.FORMAL@+ش۵:@C.FORMAL@*ه^باشین iStress;
-+ش۵:*ه^باشید iStress;
-@C.FORMAL@+ش۶:@C.FORMAL@*ه^باشن iStress;
-+ش۶:*ه^باشند iStress;
++ش۱:*ه^باش*م iStress;
++ش۲:*ه^باش*ی iStress;
+@C.FORMAL@+ش۳:@C.FORMAL@*ه^باش*ه iStress;
+@C.FORMAL@+ش۳:@C.FORMAL@*ه^باش*د*ش SubjCliticDiacritics;
++ش۳:*ه^باش*د iStress;
++ش۴:*ه^باش*یم iStress;
+@C.FORMAL@+ش۵:@C.FORMAL@*ه^باش*ین iStress;
++ش۵:*ه^باش*ید iStress;
+@C.FORMAL@+ش۶:@C.FORMAL@*ه^باش*ن iStress;
++ش۶:*ه^باش*ند iStress;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 LEXICON PastSubjInflInTrans !!!! قواعد تصریفی ماضی التزامی
 @P.FORMAL.ON@:@P.FORMAL.ON@ iPastSubjInflInTrans;
 
 LEXICON iPastSubjInfl !!!! قواعد تصریفی ماضی التزامی غیر رسمی
-+ش۱:*ه^باشم iObjectClitic;
-+ش۲:*ه^باشی iObjectClitic;
-@C.FORMAL@+ش۳:@C.FORMAL@*ه^باشه iObjectClitic;
-@D.TWOSIDED@+ش۳:@D.TWOSIDED@*ه^باشد*ش SubjCliticDiacritics;
-+ش۳:*ه^باشد iObjectClitic;
-+ش۴:*ه^باشیم iObjectClitic;
-@C.FORMAL@+ش۵:@C.FORMAL@*ه^باشین iObjectClitic;
-+ش۵:*ه^باشید iObjectClitic;
-@C.FORMAL@+ش۶:@C.FORMAL@*ه^باشن iObjectClitic;
-+ش۶:*ه^باشند iObjectClitic;
++ش۱:*ه^باش*م iObjectClitic;
++ش۲:*ه^باش*ی iObjectClitic;
+@C.FORMAL@+ش۳:@C.FORMAL@*ه^باش*ه iObjectClitic;
+@D.TWOSIDED@+ش۳:@D.TWOSIDED@*ه^باش*د*ش SubjCliticDiacritics;
++ش۳:*ه^باش*د iObjectClitic;
++ش۴:*ه^باش*یم iObjectClitic;
+@C.FORMAL@+ش۵:@C.FORMAL@*ه^باش*ین iObjectClitic;
++ش۵:*ه^باش*ید iObjectClitic;
+@C.FORMAL@+ش۶:@C.FORMAL@*ه^باش*ن iObjectClitic;
++ش۶:*ه^باش*ند iObjectClitic;
 !-------------------------------!
 LEXICON PastSubjInfl !!!! قواعد تصریفی ماضی التزامی
 @P.FORMAL.ON@:@P.FORMAL.ON@ iPastSubjInfl;
 
 LEXICON chainFutureInf
-@R.BAR@آمد+رسمی:@R.BAR@آمد #;
-@R.BAR@افراخت+رسمی:@R.BAR@افراخت #;
-@R.BAR@افروخت+رسمی:@R.BAR@افروخت #;
-@R.BAR@انداخت+رسمی:@R.BAR@انداخت #;
-@R.BAR@انگیخت+رسمی:@R.BAR@انگیخت #;
-@R.BAR@آورد+رسمی:@R.BAR@آورد #;
-@R.BAR@چید+رسمی:@R.BAR@چید #;
-@R.BAR@داشت+رسمی:@R.BAR@داشت #;
-@R.BAR@فروخت+رسمی:@R.BAR@فروخت #;
-@R.BAR@گرداند+رسمی:@R.BAR@گرداند #;
-@R.BAR@گرفت+رسمی:@R.BAR@گرفت #;
-@R.BAR@گذشت+رسمی:@R.BAR@گذشت #;
-@R.BAR@گزید+رسمی:@R.BAR@گزید #;
-@R.BAR@کند+رسمی:@R.BAR@کند #;
-@R.BAR@کشد+رسمی:@R.BAR@کشد #;
-@R.BAR@نهاد+رسمی:@R.BAR@نهاد #;
-@R.BAR@ریخت+رسمی:@R.BAR@ریخت #;
-@R.BAR@شکست+رسمی:@R.BAR@شکست #;
-@R.BAR@شمرد+رسمی:@R.BAR@شمرد #;
-@R.BAR@شمارد+رسمی:@R.BAR@شمارد #;
-@R.BAR@تابید+رسمی:@R.BAR@تابید #;
-@R.BAR@خیزید+رسمی:@R.BAR@خیزید #;
-@R.BAR@خورد+رسمی:@R.BAR@خورد #;
-@R.BAZ@گشت+رسمی:@R.BAZ@گشت #;
-@R.BAZ@گفت+رسمی:@R.BAZ@گفت #;
-@R.BAZ@ماند+رسمی:@R.BAZ@ماند #;
-@R.BAZ@شناخت+رسمی:@R.BAZ@شناخت #;
-@R.BAZ@یافت+رسمی:@R.BAZ@یافت #;
-@R.FARA@خواند+رسمی:@R.FARA@خواند #;!!!!corpus
-@R.NEGAH@داشت+رسمی:@R.NEGAH@داشت #;
-@R.BAR@گشت+رسمی:@R.BAR@گشت #;!!!!!!!!!!!!!!!!!!!!!!!!!!new
-@R.DAR@آورد+رسمی:@R.DAR@آورد #;!!!!!!!!!!!!!!!!!!!!!!!!!new
-@R.DAR@آمد+رسمی:@R.DAR@آمد #;!!!!!!!!!!!!!!!!!!!!!!!!!new
-@R.DAR@ماند+رسمی:@R.DAR@ماند #;!!!!!!!!!!!!!!!!!!!!!!!!!new
-@R.BAZ@گذاشت+رسمی:@R.BAZ@گذاشت #;!!!!!!!!!!!!!!!!!!!!!!!!!!new
-@R.BAZ@رساند+رسمی:@R.BAZ@رساند #;!!!!!!!!!!!!!!!!!!!!!!!!!!new
-@R.BAZ@خواند+رسمی:@R.BAZ@خواند #;!!!!!!!!!!!!!!!!!!!!!!!!!!new
-@R.BAZ@نمایاند+رسمی:@R.BAZ@نمایاند #;!!!!!!!!!!!!!!!!!!!!!!!!!!new
-@R.BAR@تاباند+رسمی:@R.BAR@تاباند #;!!!!!!!!!!!!!!!!!!!!!!!!!!!new
-@R.BAR@داشت+رسمی:@R.BAR@داشت #;!!!!!!!!!!!!!!!!!!!!!!!!!!!new
-@R.DAR@رفت+رسمی:@R.DAR@رفت #;!!!!!!!!!!!!!!!!!!!!!!!!!new
-@R.FARA@گرفت+رسمی:@R.FARA@گرفت #;!!!!!!!!!!!!!!!!!newnew
-@R.VA@داشت+رسمی:@R.VA@داشت #;!!!!!!!!!!!!!!!!!!!!!newnew
-@R.VA@داد+رسمی:@R.VA@داد #;!!!!!!!!!!!!!!!!!!!!!newnew
-@R.VAR@رفت+رسمی:@R.VAR@رفت #;!!!!!!!!!!!!!!!!!newnew
-@R.VA@رفت+رسمی:@R.VA@رفت #;!!!!!!!!!!!!!!!!!!!!!newnew
-@R.FORU@رفت+رسمی:@R.FORU@رفت #;!!!!!!!!!!!!!!!!!newnew
-@R.DAR@افتاد+رسمی:@R.DAR@افتاد #;!!!!!!!!!!!!!!!!!!!!!newnew
-@R.DAR@یافت+رسمی:@R.DAR@یافت #;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.BAR@آمد:@R.BAR@آمد theEnd;
+@R.BAR@افراخت:@R.BAR@افراخت theEnd;
+@R.BAR@افروخت:@R.BAR@افروخت theEnd;
+@R.BAR@انداخت:@R.BAR@انداخت theEnd;
+@R.BAR@انگیخت:@R.BAR@انگیخت theEnd;
+@R.BAR@آورد:@R.BAR@آورد theEnd;
+@R.BAR@چید:@R.BAR@چید theEnd;
+@R.BAR@داشت:@R.BAR@داشت theEnd;
+@R.BAR@فروخت:@R.BAR@فروخت theEnd;
+@R.BAR@گرداند:@R.BAR@گرداند theEnd;
+@R.BAR@گرفت:@R.BAR@گرفت theEnd;
+@R.BAR@گذشت:@R.BAR@گذشت theEnd;
+@R.BAR@گزید:@R.BAR@گزید theEnd;
+@R.BAR@کند:@R.BAR@کند theEnd;
+@R.BAR@کشد:@R.BAR@کشد theEnd;
+@R.BAR@نهاد:@R.BAR@نهاد theEnd;
+@R.BAR@ریخت:@R.BAR@ریخت theEnd;
+@R.BAR@شکست:@R.BAR@شکست theEnd;
+@R.BAR@شمرد:@R.BAR@شمرد theEnd;
+@R.BAR@شمارد:@R.BAR@شمارد theEnd;
+@R.BAR@تابید:@R.BAR@تابید theEnd;
+@R.BAR@خیزید:@R.BAR@خیزید theEnd;
+@R.BAR@خورد:@R.BAR@خورد theEnd;
+@R.BAZ@گشت:@R.BAZ@گشت theEnd;
+@R.BAZ@گفت:@R.BAZ@گفت theEnd;
+@R.BAZ@ماند:@R.BAZ@ماند theEnd;
+@R.BAZ@شناخت:@R.BAZ@شناخت theEnd;
+@R.BAZ@یافت:@R.BAZ@یافت theEnd;
+@R.FARA@خواند:@R.FARA@خواند theEnd;!!!!corpus
+@R.NEGAH@داشت:@R.NEGAH@داشت theEnd;
+@R.BAR@گشت:@R.BAR@گشت theEnd;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@آورد:@R.DAR@آورد theEnd;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@آمد:@R.DAR@آمد theEnd;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@ماند:@R.DAR@ماند theEnd;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@گذاشت:@R.BAZ@گذاشت theEnd;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@رساند:@R.BAZ@رساند theEnd;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@خواند:@R.BAZ@خواند theEnd;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@نمایاند:@R.BAZ@نمایاند theEnd;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAR@تاباند:@R.BAR@تاباند theEnd;!!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAR@داشت:@R.BAR@داشت theEnd;!!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@رفت:@R.DAR@رفت theEnd;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.FARA@گرفت:@R.FARA@گرفت theEnd;!!!!!!!!!!!!!!!!!newnew
+@R.VA@داشت:@R.VA@داشت theEnd;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.VA@داد:@R.VA@داد theEnd;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.VAR@رفت:@R.VAR@رفت theEnd;!!!!!!!!!!!!!!!!!newnew
+@R.VA@رفت:@R.VA@رفت theEnd;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.FORU@رفت:@R.FORU@رفت theEnd;!!!!!!!!!!!!!!!!!newnew
+@R.DAR@افتاد:@R.DAR@افتاد theEnd;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.DAR@یافت:@R.DAR@یافت theEnd;!!!!!!!!!!!!!!!!!!!!!newnew
 
 LEXICON iChainPastP
 @R.VAR@اومد@R.VAR@ iPsPInflInTrans;

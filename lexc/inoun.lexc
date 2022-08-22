@@ -47855,10 +47855,10 @@ LEXICON num
 !=====FORMAL========
 اول consnHaComNNFRM;
 سوم consnHaComNNFRM;
-اول+ترتیبی:اولی consnHaComNNFRM;
-@P.VOWEL.VAV@سوم+ترتیبی:@P.VOWEL.VAV@سومی vowelHaComNNFRM;
-اول+ترتیبی:اولین consnHaComNNFRM;
-سوم+ترتیبی:سومین consnHaComNNFRM;
+اول+ترتیبی:اول*ی consnHaComNNFRM;
+@P.VOWEL.VAV@سوم+ترتیبی:@P.VOWEL.VAV@سوم*ی vowelHaComNNFRM;
+اول+ترتیبی:اول*ین consnHaComNNFRM;
+سوم+ترتیبی:سوم*ین consnHaComNNFRM;
 یک numtailFRM;
 دو numtailFRM;
 سه consnHaComNNFRM;
@@ -47906,7 +47906,7 @@ LEXICON prep
 !========INFORMAL=========
 ب FINPOINT;
 @P.VOWEL.HEH@واسه prepHub;!VOWEL_HEH
-@P.VOWEL.ALEF@با+ها:@P.VOWEL.ALEF@باها shakhsi2;
+@P.VOWEL.ALEF@با+ها:@P.VOWEL.ALEF@با*ها shakhsi2;
 @P.VOWEL.ALEF@برا prepHub;!VOWEL_ALEF
 !========FORMAL==========
 @P.VOWEL.HEH@به prepHubFRM;
@@ -48082,11 +48082,11 @@ LEXICON GPprep
 LEXICON ppro
 !=========INFORMAL=========
 @P.SING.ON@ایشون postppro;
-@P.VOWEL.ALEF@شما+جها:@P.VOWEL.ALEF@شماها postppro;
-@P.VOWEL.ALEF@ما+جها:@P.VOWEL.ALEF@ماها postppro;
+@P.VOWEL.ALEF@شما+جها:@P.VOWEL.ALEF@شما*ها postppro;
+@P.VOWEL.ALEF@ما+جها:@P.VOWEL.ALEF@ما*ها postppro;
 !=========FORMAL=========
 @P.SING.ON@اینجانب postpproFRM;
-اینجانب+جان:اینجانبان postpproFRM;
+اینجانب+جان:اینجانب*ان postpproFRM;
 @P.SING.ON@من postpproFRM;
 @P.VOWEL.VAV@تو postpproFRM;
 @P.VOWEL.VAV@او postpproFRM;!VOWEL_VAV
@@ -48105,7 +48105,7 @@ LEXICON mobhamLex
 @P.VOWEL.ALEF@چنتا postmobham;
 @P.VOWEL.YEH@چنتایی postmobham;
 هیچیز postmobham;
-@P.VOWEL.ALEF@خیلی+جها:@P.VOWEL.ALEF@خیلیا postmobham;
+@P.VOWEL.ALEF@خیلی+جها:@P.VOWEL.ALEF@خیلی*ا postmobham;
 !=========FORMAL===========
 !!!@P.VOWEL.YEH@هیچی postmobhamFRM;
 دیگر postmobhamFRM;
@@ -48124,11 +48124,11 @@ LEXICON mobhamLex
 @P.VOWEL.ALEF@چندتا postmobhamFRM;
 !!!@P.VOWEL.YEH@چندتایی postmobhamFRM;
 @P.VOWEL.YEH@یکی postmobhamFRM;
-@P.VOWEL.ALEF@یکی+جها:@P.VOWEL.ALEF@یکی postmobhamFRM;
+@P.VOWEL.ALEF@یکی+جها:@P.VOWEL.ALEF@یکی*ها postmobhamFRM;
 @P.VOWEL.YEH@هرکی‌ postmobhamFRM;
 @P.VOWEL.YEH@هرچی postmobhamFRM;
 @P.VOWEL.YEH@خیلی postmobhamFRM;
-!!!@P.VOWEL.ALEF@خیلی+جها:@P.VOWEL.ALEF@خیلی‌ها postmobhamFRM;
+!!!@P.VOWEL.ALEF@خیلی+جها:@P.VOWEL.ALEF@خیلی*ها postmobhamFRM;
 @P.VOWEL.YEH@کمی postmobhamFRM;
 @P.VOWEL.YEH@قدری postmobhamFRM;
 @P.VOWEL.YEH@لختی postmobhamFRM;
