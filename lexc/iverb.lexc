@@ -1,4 +1,4 @@
-Multichar_Symbols @D.TINTER@ @P.TINTER.ON@ @R.TINTER@ @P.FORMAL.ON@ @D.FORMAL@ @C.FORMAL@ @P.SPECINFL.ON@ @R.SPECINFL@ @P.NOTFORIMPER.ON@ @D.NOTFORIMPER@
+Multichar_Symbols @D.TINTER@ @P.TINTER.ON@ @R.TINTER@ @P.FORMAL.ON@ @D.FORMAL@ @C.FORMAL@ @P.SPECINFL.ON@ @R.SPECINFL@ @P.LONEINFSTEM.ON@ @D.LONEINFSTEM@ @D.LONEFRMSTEM@ @P.LONEFRMSTEM.ON@ @R.FORMAL@ @P.IMPERATIVE.ON@ @D.IMPERATIVE@ @R.IMPERATIVE@ @P.ALLIMPER.ON@ @R.ALLIMPER@ @D.ALLIMPER@ @P.CMPIMPERFECT.ON@ @R.CMPIMPERFECT@ @D.CMPIMPERFECT@ @D.TWOSIDED@ @P.TWOSIDED.ON@
 
 LEXICON Root
 iNormalVerbs;
@@ -6,264 +6,460 @@ iNormalVerbs;
 :ب* iImpSubj;
 !:0 iImpSubj;!chandan-bedardbokhor-nist-va-hamnevishaie-ziadi-tolid-mikonad
 منفی+:ن* iImpSubj;
-iAux;
-منفی+:ن* iAux;
 iCopula;
+Modals;
+منفی+:ن* Modals;
+ف.و=توان:بتوان #;
+منفی+ف.و=توان:نتوان #;
+!!!!!!!!!!!!!!!!!!!!!Iregularities-Imperative!!!!!!!!!!!!!!!!!!!!!!
+@P.IMPERATIVE.ON@:@P.IMPERATIVE.ON@ exceptionalImp;
+!!!!!!!!!!!!!!!!!!!!!!Iregularities-Present!!!!!!!!!!!!!!!!!!!!!!!!!
+: exceptionPres;
 
 LEXICON iCopula
-@P.FORMAL.ON@غ.ر.اسناد=هست:@P.FORMAL.ON@هست ipast;
-@P.FORMAL.ON@منفی+غ.ر.اسناد=هست:@P.FORMAL.ON@نیست ipast;
- 
+@P.FORMAL.ON@اسناد=هست:@P.FORMAL.ON@هست ipastInTrans;
+@P.FORMAL.ON@منفی+اسناد=هست:@P.FORMAL.ON@نیست ipastInTrans;
+اسناد=هست+وفاعلی:هست*ش #;
+منفی+اسناد=هست+وفاعلی:نیست*ش #;
+اسناد=است+رسمی:است #;
+اسناد=ست+رسمی:ست #;
+
+LEXICON Modals
+ف.و=میبایست+رسمی:می×بایست #;
+ف.و=میبایستی+رسمی:می×بایستی #;
+ف.و=بایست+رسمی:بایست #;
+ف.و=بایستی+رسمی:بایستی #;
+ف.و=باید+رسمی:باید #; 
+ف.و=میباید+رسمی:می×باید #;
+ف.و=میتوان+رسمی:می×توان #;
+
 LEXICON Tintv
-@P.TINTER.ON@+ت.میانجی:@P.TINTER.ON@*ت iObjectClitic;
+@P.TINTER.ON@+ت:@P.TINTER.ON@*ت iObjectClitic;
 
 LEXICON iNormalVerbs
-غ.ر.ف.ح.س=: iRawPres;! فعل حال ساده - دارم دارمش
-غ.ر.ف.م.س=:0 iSimpleP; !اومدم - ماضی ساده
-غ.ر.ف.م.ن=:0 iPresP; !اومده ام - ماضی نقلی    >>>iPrPInfl
-@P.SPECINFL.ON@غ.ر.ف.م.ا=:@P.SPECINFL.ON@می× iSimpleP; !می اومدم - ماضی استمراری
-@P.SPECINFL.ON@غ.ر.ف.م.ن.م=:@P.SPECINFL.ON@می× iPresP; !می اومده ام - ماضی نقلی مستمر  !!! کم کاربرد
-غ.ر.ف.م.ب=:0 iPastP; !اومده بودم - ماضی بعید --> iPsPInfl
-غ.ر.ف.م.ال=:0 iPastSubj; !اومده باشم - ماضی التزامی
-@P.SPECINFL.ON@غ.ر.ف.ح.ا=:@P.SPECINFL.ON@می× iVpres; !!!! میام - فعل حال استمراری   
-!!!!!!!!!!!!!!!!!!!!!Iregularities-Imperative!!!!!!!!!!!!!!!!!!!!!!
-@P.FORMAL.ON@غ.ر.امری=باش:@P.FORMAL.ON@باش iImperInfl;
-@P.FORMAL.ON@غ.ر.امری=دار:@P.FORMAL.ON@دار iImperInfl;
-@P.FORMAL.ON@غ.ر.امری=کن:@P.FORMAL.ON@کن iImperInfl;
- 
-LEXICON iAux
-@P.FORMAL.ON@غ.ر.وجه.نما=باید:@P.FORMAL.ON@باید iStress;
+ف.ح.س=: iRawPres;! فعل حال ساده - دارم دارمش
+ف.م.س=:0 iSimpleP; !اومدم - ماضی ساده
+ف.م.ن=:0 iPresP; !اومده ام - ماضی نقلی    >>>iPrPInfl
+@P.SPECINFL.ON@ف.م.ا=:@P.SPECINFL.ON@می× iSimpleP; !می اومدم - ماضی استمراری
+@P.SPECINFL.ON@ف.م.ن.م=:@P.SPECINFL.ON@می× NaghliMostamer; !می اومده ام - ماضی نقلی مستمر  !!! کم کاربرد
+@P.SPECINFL.ON@ف.ح.ا=:@P.SPECINFL.ON@می× iVpres; !!!! میام - فعل حال استمراری   
+
+LEXICON NaghliMostamer
+@P.CMPIMPERFECT.ON@:@P.CMPIMPERFECT.ON@ iPresP;
+
+LEXICON exceptionPres
+التزامی=خواه:ب*خوا presException;
+منفی+التزامی=خواه:ن*خوا presException;
+ف.ح.ا=خواه:می×خوا presException;
+منفی+ف.ح.ا=خواه:نمی×خوا presException;
+
+LEXICON presException
++ش۱:*م iObjectClitic;
++ش۲:*ی iObjectClitic;
++ش۲:*یی iObjectClitic;
++ش۳:*د iObjectClitic;
++ش۳+وفاعلی:*د*ش iStress;
++ش۴:*یم iObjectClitic;
++ش۵:*ین iObjectClitic;
++ش۵:*ید iObjectClitic;
++ش۶:*ن iObjectClitic;
+
+LEXICON exceptionalImp
+امری=باش:باش ImperInflInTrans;
+امری=دار:دار ImperInfl;
+منفی+امری=دار:ن*دار ImperInfl;
+امری=کُن:کن ImperInfl;!kon
+!!امری=کَن:کن ImperInfl;!kan! فعل امری کَندن بدون پیشوند ب لازم ندارد
+امری=شو:شو ImperInflInTrans;
+امری=خواه:ب*خوا iALEFImperInfl;
+منفی+امری=خواه:ن*خوا iALEFImperInfl;
+امری=ایست:ایست ImperInflInTrans;
+امری=ا+مفرد+رسمی:بیا #;! این مشکلی نداشت، برای یکدست شدن با ساخت منفی استفاده شد.
+منفی+امری=ا+مفرد+رسمی:نیا #;! با مثلا بگنا تداخل داشت و به ناچرا به شکل استثنا مجزا ساخته شد. 
 
 !!!!LEXICON iObjectClitic
 !!!!@C.FORMAL@:@C.FORMAL@ iObjClt;
 
 LEXICON iObjectClitic
-@C.FORMAL@+و.شخصی۱:@C.FORMAL@*م iStress;
-@C.FORMAL@+و.شخصی۲:@C.FORMAL@*ت iStress;
-@C.FORMAL@+و.شخصی۳:@C.FORMAL@*ش iStress;
-@C.FORMAL@+و.شخصی۴:@C.FORMAL@*مون iStress;
-@C.FORMAL@+و.شخصی۴:@C.FORMAL@*مان iStress;
-@C.FORMAL@+و.شخصی۵:@C.FORMAL@*تون iStress;
-@C.FORMAL@+و.شخصی۵:@C.FORMAL@*تان iStress;
-@C.FORMAL@+و.شخصی۶:@C.FORMAL@*شون iStress;
-@C.FORMAL@+و.شخصی۶:@C.FORMAL@*شان iStress;
+@C.FORMAL@+ومفعولی۱:@C.FORMAL@*م iStress;
+@C.FORMAL@+ومفعولی۲:@C.FORMAL@*ت iStress;
+@C.FORMAL@+ومفعولی۳:@C.FORMAL@*ش iStress;
+@C.FORMAL@+ومفعولی۴:@C.FORMAL@*مون iStress;
+@C.FORMAL@+ومفعولی۴:@C.FORMAL@*مان iStress;
+@C.FORMAL@+ومفعولی۵:@C.FORMAL@*تون iStress;
+@C.FORMAL@+ومفعولی۵:@C.FORMAL@*تان iStress;
+@C.FORMAL@+ومفعولی۶:@C.FORMAL@*شون iStress;
+@C.FORMAL@+ومفعولی۶:@C.FORMAL@*شان iStress;
 @D.TINTER@:@D.TINTER@ iStress;
 
 LEXICON iStress
 @D.FORMAL@:@D.FORMAL@ #;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!مگردومیان!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!برای مگردومیان کتفی است این دو خط زیر را کامنت بذاریم. (حذف کنیم))
-+ها.تاکیدی:*ا #;
-+ها.تاکیدی:*ها #;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-+و.عطف:*و #;
-+م.هم:&م #;
+@R.FORMAL@ +رسمی:@R.FORMAL@ #;
++تاکید:*ا #;
++تاکید:^ها #;
++عطف:*و #;
+@D.IMPERATIVE@+هم:&م@D.IMPERATIVE@ #;
   
 LEXICON iImpSubj !!!! فعل های امری و التزامی غیر رسمی
-غ.ر.امری=:0 iImper; !!!! بچپون نچپون - فعل امری
-غ.ر.التزامی=:0 iVpres; !!!! بچپونم نچپونم - فعل التزامی
- 
+@P.IMPERATIVE.ON@امری=:@P.IMPERATIVE.ON@0 iImper; !!!! بچپون نچپون - فعل امری
+التزامی=:0 iVpres; !!!! بچپونم نچپونم - فعل التزامی
+
+LEXICON SubjCliticDiacritics
+@C.FORMAL@:@C.FORMAL@ iStress;
+
 LEXICON ipastInTrans
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!مگردومیان!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!برای حالت مگردومیان تمام رولهای فقط این بخش را در حالت غیر فعال(کامنت) قرار دهید
-!!(خط پایین)و تنها رول این بخش را فعال کنید
-!: ipast;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-+ش.ش۱:*م iStress;
-+ش.ش۲:*ی iStress;
-+ش.ش۳:0 iStress;
-@C.FORMAL@+ش.ش۳+ش.تاکیدی:@C.FORMAL@*ش iStress;
-+ش.ش۴:*یم iStress;
-@C.FORMAL@+ش.ش۵:@C.FORMAL@*ین iStress;
-+ش.ش۵:*ید iStress;
-@C.FORMAL@+ش.ش۶:@C.FORMAL@*ن iStress;
-+ش.ش۶:*ند iStress;
++ش۱:*م iStress;
++ش۲:*ی iStress;
++ش۳:0 iStress;
+@C.FORMAL@+ش۳+وفاعلی:@C.FORMAL@*ش iStress;
++ش۴:*یم iStress;
+@C.FORMAL@+ش۵:@C.FORMAL@*ین iStress;
++ش۵:*ید iStress;
+@C.FORMAL@+ش۶:@C.FORMAL@*ن iStress;
++ش۶:*ند iStress;
 !--------------------------!
 LEXICON pastInTrans !!!!قواعد تصریف فعل گذشته ساده
 @P.FORMAL.ON@:@P.FORMAL.ON@ ipastInTrans;
 
 LEXICON ipast !!!!قواعد تصریف فعل گذشته ساده
-+ش.ش۱:*م iObjectClitic;
-+ش.ش۲:*ی iObjectClitic;
-+ش.ش۳:0 iObjectClitic;!!فقط با "ت میانجی می تواند و.شخصی بگیرد"
-@C.FORMAL@+ش.ش۳+ش.تاکیدی:@C.FORMAL@*ش iStress; !!!در ساخت فعل گذرا(متعدی) این ش.تاکیدی استفاده نمی شود
-@C.FORMAL@+ش.ش۳:@C.FORMAL@ Tintv;!!!!ت کمکی برای شناسایی مفعول زیرا شناسه بروز حرفی ندارد
-+ش.ش۴:*یم iObjectClitic;
-@C.FORMAL@+ش.ش۵:@C.FORMAL@*ین iObjectClitic;
-+ش.ش۵:*ید iObjectClitic;
-@C.FORMAL@+ش.ش۶:@C.FORMAL@*ن iObjectClitic;
-+ش.ش۶:*ند iObjectClitic;
++ش۱:*م iObjectClitic;
++ش۲:*ی iObjectClitic;
++ش۳:0 iObjectClitic;!!فقط با "ت میانجی می تواند ومفعولی بگیرد"
+@D.TWOSIDED@+ش۳+وفاعلی:@D.TWOSIDED@*ش SubjCliticDiacritics; !!!فعل های دووجهی
+@C.FORMAL@+ش۳:@C.FORMAL@ Tintv;!!!!ت کمکی برای شناسایی مفعول زیرا شناسه بروز حرفی ندارد
++ش۴:*یم iObjectClitic;
+@C.FORMAL@+ش۵:@C.FORMAL@*ین iObjectClitic;
++ش۵:*ید iObjectClitic;
+@C.FORMAL@+ش۶:@C.FORMAL@*ن iObjectClitic;
++ش۶:*ند iObjectClitic;
 !---------------------------!
 LEXICON past !!!!قواعد تصریف فعل گذشته ساده
 @P.FORMAL.ON@:@P.FORMAL.ON@ ipast;
 
 LEXICON iPrPInflInTrans !!!ماضی نقلی
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!مگردومیان!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!برای حالت مگردومیان تمام رولهای فقط این بخش را در حالت غیر فعال(کامنت) قرار دهید
-!!(خط پایین)و تنها رول این بخش را فعال کنید
-!: iPrPInfl;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-+ش.ش۱:*ه×ام iStress;
-+ش.ش۲:*ه×ای iStress;
-+ش.ش۳:*ه×ست iStress;
-+ش.ش۳:*ه iStress;
-+ش.ش۴:*ه×ایم iStress;
-+ش.ش۵:*ه×اید iStress;
-@C.FORMAL@+ش.ش۵:@C.FORMAL@*ه×این iStress;
-@C.FORMAL@+ش.ش۶:@C.FORMAL@*ه×ان iStress;
-+ش.ش۶:*ه×اند iStress;
++وربطی۱:*ه×ام iStress;
+@C.FORMAL@+وربطی۱:@C.FORMAL@*ه×م iStress;
++وربطی۲:*ه×ای iStress;
+@C.FORMAL@+وربطی۲:@C.FORMAL@*ه×ی iStress;
++وربطی۳:*ه×ست iStress;
++ف.ربطی۳:*ه^است iStress;
+@C.FORMAL@+وربطی۳:@C.FORMAL@*ه×س iStress;
+@C.FORMAL@+وربطی۳:@C.FORMAL@*ه×اس iStress;
+@R.CMPIMPERFECT@+وربطی۳:@R.CMPIMPERFECT@*ه iStress;
+!!!@D.CMPIMPERFECT@+ص.م:@D.CMPIMPERFECT@*ه iStress;
++وربطی۴:*ه×ایم iStress;
+@C.FORMAL@+وربطی۴:@C.FORMAL@*ه×یم iStress;
++وربطی۵:*ه×اید iStress;
+@C.FORMAL@+وربطی۵:@C.FORMAL@*ه×این iStress;
+@C.FORMAL@+وربطی۵:@C.FORMAL@*ه×ین iStress;
+@C.FORMAL@+وربطی۶:@C.FORMAL@*ه×ان iStress;
+@C.FORMAL@+وربطی۶:@C.FORMAL@*ه×ن iStress;
++وربطی۶:*ه×اند iStress;
 LEXICON PrPInflInTrans
 @P.FORMAL.ON@:@P.FORMAL.ON@ iPrPInflInTrans;
 
 LEXICON iPrPInfl !!!! قواعد تصریفی پایانی ماضی نقلی غیر رسمی
-+ش.ش۱:*ه×ام iObjectClitic;
-+ش.ش۲:*ه×ای iObjectClitic;
-+ش.ش۳:*ه×ست iObjectClitic;
-+ش.ش۳:*ه iObjectClitic;
-+ش.ش۴:*ه×ایم iObjectClitic;
-+ش.ش۵:*ه×اید iObjectClitic;
-@C.FORMAL@+ش.ش۵:@C.FORMAL@*ه×این iObjectClitic;
-@C.FORMAL@+ش.ش۶:@C.FORMAL@*ه×ان iObjectClitic;
-+ش.ش۶:*ه×اند iObjectClitic;
++وربطی۱:*ه×ام iObjectClitic;
+@C.FORMAL@+وربطی۱:@C.FORMAL@*ه×م iObjectClitic;
++وربطی۲:*ه×ای iObjectClitic;
+@C.FORMAL@+وربطی۲:@C.FORMAL@*ه×ی iObjectClitic;
++ف.ربطی۳:*ه^است iStress;
++وربطی۳:*ه×ست iStress;
+@C.FORMAL@+وربطی۳:@C.FORMAL@*ه×س iStress;
+@C.FORMAL@+وربطی۳:@C.FORMAL@*ه×اس iStress;
+@R.CMPIMPERFECT@+وربطی۳:@R.CMPIMPERFECT@*ه iObjectClitic;
+!!!@D.CMPIMPERFECT@+ص.م:@D.CMPIMPERFECT@*ه iObjectClitic;
+@C.FORMAL@+وربطی۳:@C.FORMAL@*ه Tintv;
++وربطی۴:*ه×ایم iObjectClitic;
+@C.FORMAL@+وربطی۴:@C.FORMAL@*ه×یم iObjectClitic;
++وربطی۵:*ه×اید iObjectClitic;
+@C.FORMAL@+وربطی۵:@C.FORMAL@*ه×این iObjectClitic;
+@C.FORMAL@+وربطی۵:@C.FORMAL@*ه×ین iObjectClitic;
+@C.FORMAL@+وربطی۶:@C.FORMAL@*ه×ان iObjectClitic;
+@C.FORMAL@+وربطی۶:@C.FORMAL@*ه×ن iObjectClitic;
++وربطی۶:*ه×اند iObjectClitic;
 !------------------------------!
 LEXICON PrPInfl !!!! قواعد تصریفی پایانی ماضی نقلی
 @P.FORMAL.ON@:@P.FORMAL.ON@ iPrPInfl;
 
-LEXICON iPsPInflInTrans  !ماضی بعید ناگذر غیر رسمی
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!مگردومیان!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!برای حالت مگردومیان تمام رولهای فقط این بخش را در حالت غیر فعال(کامنت) قرار دهید
-!!(خط پایین)و تنها رول این بخش را فعال کنید
-!: iPsPInfl;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-+ش.ش۱:*ه^بودم iStress;
-+ش.ش۲:*ه^بودی iStress;
-+ش.ش۳:*ه^بود iStress;
-@C.FORMAL@+ش.ش۳+ش.تاکیدی:@C.FORMAL@*ه^بودش iStress;
-+ش.ش۴:*ه^بودیم iStress;
-@C.FORMAL@+ش.ش۵:@C.FORMAL@*ه^بودین iStress;
-+ش.ش۵:*ه^بودید iStress;
-@C.FORMAL@+ش.ش۶:@C.FORMAL@*ه^بودن iStress;
-+ش.ش۶:*ه^بودند iStress;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-LEXICON PsPInflInTrans ! ماضی بعید ناگذر رسمی
-@P.FORMAL.ON@:@P.FORMAL.ON@ iPsPInflInTrans;
-
-LEXICON iPsPInfl !!!! قواعد تصریفی ماضی بعید غیر رسمی
-+ش.ش۱:*ه^بودم iObjectClitic;
-+ش.ش۲:*ه^بودی iObjectClitic;
-+ش.ش۳:*ه^بود iObjectClitic;
-@C.FORMAL@+ش.ش۳+ش.تاکیدی:@C.FORMAL@*ه^بودش iStress;
-@C.FORMAL@+ش.ش۳:@C.FORMAL@*ه^بود Tintv;!!!!ت کمکی برای شناسایی مفعول زیرا شناسه بروز حرفی ندارد
-+ش.ش۴:*ه^بودیم iObjectClitic;
-@C.FORMAL@+ش.ش۵:@C.FORMAL@*ه^بودین iObjectClitic;
-+ش.ش۵:*ه^بودید iObjectClitic;
-@C.FORMAL@+ش.ش۶:@C.FORMAL@*ه^بودن iObjectClitic;
-+ش.ش۶:*ه^بودند iObjectClitic;
-!-------------------------------!
-LEXICON PsPInfl !!!! قواعد تصریفی ماضی بعید رسمی
-@P.FORMAL.ON@:@P.FORMAL.ON@ iPsPInfl;
-
-LEXICON iPastSubjInflInTrans !!!! قواعد تصریفی ماضی التزامی غیر رسمی
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!مگردومیان!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!برای حالت مگردومیان تمام رولهای فقط این بخش را در حالت غیر فعال(کامنت) قرار دهید
-!!(خط پایین)و تنها رول این بخش را فعال کنید
-!: iPastSubjInfl;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-+ش.ش۱:*ه^باشم iStress;
-+ش.ش۲:*ه^باشی iStress;
-@C.FORMAL@+ش.ش۳:@C.FORMAL@*ه^باشه iStress;
-+ش.ش۳:*ه^باشد iStress;
-+ش.ش۴:*ه^باشیم iStress;
-@C.FORMAL@+ش.ش۵:@C.FORMAL@*ه^باشین iStress;
-+ش.ش۵:*ه^باشید iStress;
-@C.FORMAL@+ش.ش۶:@C.FORMAL@*ه^باشن iStress;
-+ش.ش۶:*ه^باشند iStress;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-LEXICON PastSubjInflInTrans !!!! قواعد تصریفی ماضی التزامی
-@P.FORMAL.ON@:@P.FORMAL.ON@ iPastSubjInflInTrans;
-
-LEXICON iPastSubjInfl !!!! قواعد تصریفی ماضی التزامی غیر رسمی
-+ش.ش۱:*ه^باشم iObjectClitic;
-+ش.ش۲:*ه^باشی iObjectClitic;
-@C.FORMAL@+ش.ش۳:@C.FORMAL@*ه^باشه iObjectClitic;
-+ش.ش۳:*ه^باشد iObjectClitic;
-+ش.ش۴:*ه^باشیم iObjectClitic;
-@C.FORMAL@+ش.ش۵:@C.FORMAL@*ه^باشین iObjectClitic;
-+ش.ش۵:*ه^باشید iObjectClitic;
-@C.FORMAL@+ش.ش۶:@C.FORMAL@*ه^باشن iObjectClitic;
-+ش.ش۶:*ه^باشند iObjectClitic;
-!-------------------------------!
-LEXICON PastSubjInfl !!!! قواعد تصریفی ماضی التزامی
-@P.FORMAL.ON@:@P.FORMAL.ON@ iPastSubjInfl;
-
+!=========================================================PRES REG  ENDING=============================================
 LEXICON ipresInTrans !!!! قواعد تصریف فعل حال ساده
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!مگردومیان!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!برای حالت مگردومیان تمام رولهای فقط این بخش را در حالت غیر فعال(کامنت) قرار دهید
-!!(خط پایین)و تنها رول این بخش را فعال کنید
-!: ipres;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-+ش.ش۱:*م iStress;
-+ش.ش۲:*ی iStress;
-@C.FORMAL@+ش.ش۳:@C.FORMAL@*ه iStress;
-+ش.ش۳:*د iStress;
-+ش.ش۴:*یم iStress;
-@C.FORMAL@+ش.ش۵:@C.FORMAL@*ین iStress;
-+ش.ش۵:*ید iStress;
-@C.FORMAL@+ش.ش۶:@C.FORMAL@*ن iStress;
-+ش.ش۶:*ند iStress;
++ش۱:*م iStress;
++ش۲:*ی iStress;
+@C.FORMAL@+ش۳:@C.FORMAL@*ه iStressThirdPerson;
+@D.LONEINFSTEM@+ش۳:@D.LONEINFSTEM@*د iStress;
+@D.LONEINFSTEM@+ش۳+وفاعلی:@D.LONEINFSTEM@*د*ش SubjCliticDiacritics;
+@D.LONEINFSTEM@+ش۳+ت+وفاعلی:@D.LONEINFSTEM@*ت*ش SubjCliticDiacritics;
++ش۴:*یم iStress;
+@C.FORMAL@+ش۵:@C.FORMAL@*ین iStress;
++ش۵:*ید iStress;
+@C.FORMAL@+ش۶:@C.FORMAL@*ن iStress;
++ش۶:*ند iStress;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 LEXICON presInTrans !!!! قواعد تصریف فعل حال ساده
 @P.FORMAL.ON@:@P.FORMAL.ON@ ipresInTrans;
 
 LEXICON ipres !!!! قواعد تصریف فعل حال ساده
-+ش.ش۱:*م iObjectClitic;
-+ش.ش۲:*ی iObjectClitic;
-@C.FORMAL@+ش.ش۳:@C.FORMAL@*ه iObjectClitic;
-+ش.ش۳:*د iObjectClitic;
-@C.FORMAL@+ش.ش۳:@C.FORMAL@ Tintv;
-+ش.ش۴:*یم iObjectClitic;
-@C.FORMAL@+ش.ش۵:@C.FORMAL@*ین iObjectClitic;
-+ش.ش۵:*ید iObjectClitic;
-@C.FORMAL@+ش.ش۶:@C.FORMAL@*ن iObjectClitic;
-+ش.ش۶:*ند iObjectClitic;
++ش۱:*م iObjectClitic;
++ش۲:*ی iObjectClitic;
+@C.FORMAL@+ش۳:@C.FORMAL@*ه iObjectCliticThirdPerson;
+@D.LONEINFSTEM@+ش۳:@D.LONEINFSTEM@*د iObjectClitic;
+!!!!@D.TWOSIDED@+ش۳+وفاعلی:@D.TWOSIDED@*د*ش SubjCliticDiacritics;
+!!!!@D.TWOSIDED@+ش۳+ت+وفاعلی:@D.TWOSIDED@*ت*ش SubjCliticDiacritics;
+@C.FORMAL@+ش۳:0@C.FORMAL@ Tintv;
+@P.TINTER.ON@+ش۳+ت:*ه×ت@P.TINTER.ON@ iObjectCliticThirdPerson;
++ش۴:*یم iObjectClitic;
+@C.FORMAL@+ش۵:@C.FORMAL@*ین iObjectClitic;
++ش۵:*ید iObjectClitic;
+@C.FORMAL@+ش۶:@C.FORMAL@*ن iObjectClitic;
++ش۶:*ند iObjectClitic;
 !---------------------------!
 LEXICON pres !!!! قواعد تصریف فعل حال ساده
 @P.FORMAL.ON@:@P.FORMAL.ON@ ipres;
-
-LEXICON iImperInflInTransFinal
-+مفرد:* iStress;
-LEXICON iImperInflInTrans
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!مگردومیان!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!برای حالت مگردومیان تمام رولهای فقط این بخش را در حالت غیر فعال(کامنت) قرار دهید
-!!(خط پایین)و تنها رول این بخش را فعال کنید
-!: iImperInfl;
+!=======================================================================================================================
+!=========================================================PRES ALEF VOWEL ENDING=============================================
+LEXICON iALEFpresInTrans !!!! قواعد تصریف فعل حال ساده
++ش۱:*یم iStress;
+@C.FORMAL@+ش۱:@C.FORMAL@*م iStress;
++ش۲:*یی iStress;
+@C.FORMAL@+ش۲:@C.FORMAL@*ی iStress;
++ش۳:*ید iStress;
+@C.FORMAL@+ش۳:@C.FORMAL@*د iStress;
+@D.LONEINFSTEM@+ش۳+وفاعلی:@D.LONEINFSTEM@*د*ش SubjCliticDiacritics;
+@C.FORMAL@+ش۳:@C.FORMAL@*یه iStress;
++ش۴:*ییم iStress;
+@C.FORMAL@+ش۴:@C.FORMAL@*یم iStress;
+@C.FORMAL@+ش۵:@C.FORMAL@*ین iStress;
+@C.FORMAL@+ش۵:@C.FORMAL@*یین iStress;
+!!!!@C.FORMAL@+ش۵:@C.FORMAL@*ید iStress;
++ش۵:*یید iStress;
+@C.FORMAL@+ش۶:@C.FORMAL@*ن iStress;
++ش۶:*یند iStress;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-@D.NOTFORIMPER@:@D.NOTFORIMPER@ iImperInflInTransFinal;
-+ش.ش۵:*ید iStress;
-@C.FORMAL@+ش.ش۵:@C.FORMAL@*ین iStress;
-+ش.ش۴:*یم iStress;
+LEXICON ALEFpresInTrans !!!! قواعد تصریف فعل حال ساده
+@P.FORMAL.ON@:@P.FORMAL.ON@ iALEFpresInTrans;
+
+LEXICON iALEFpres !!!! قواعد تصریف فعل حال ساده
++ش۱:*یم iObjectClitic;
+@C.FORMAL@+ش۱:@C.FORMAL@*م iObjectClitic;
++ش۲:*یی iObjectClitic;
+@C.FORMAL@+ش۲:@C.FORMAL@*ی iObjectClitic;
+!!!!@D.TWOSIDED@+ش۳+وفاعلی:@D.TWOSIDED@*د*ش SubjCliticDiacritics;
++ش۳:*ید iObjectClitic;
+@C.FORMAL@+ش۳:@C.FORMAL@*د iObjectClitic;
+@C.FORMAL@+ش۳:@C.FORMAL@*یه iObjectClitic;
+@P.TINTER.ON@+ش۳+ت:*یه×ت@P.TINTER.ON@ iObjectCliticThirdPerson;
+@C.FORMAL@+ش۳:*ی@C.FORMAL@ Tintv;
++ش۴:*ییم iObjectClitic;
+@C.FORMAL@+ش۴:@C.FORMAL@*یم iObjectClitic;
+@C.FORMAL@+ش۵:@C.FORMAL@*ین iObjectClitic;
+@C.FORMAL@+ش۵:@C.FORMAL@*یین iObjectClitic;
+@C.FORMAL@+ش۵:@C.FORMAL@*ید iObjectClitic;
++ش۵:*یید iObjectClitic;
+@C.FORMAL@+ش۶:@C.FORMAL@*ن iObjectClitic;
++ش۶:*یند iObjectClitic;
+!---------------------------!
+LEXICON ALEFpres !!!! قواعد تصریف فعل حال ساده
+@P.FORMAL.ON@:@P.FORMAL.ON@ iALEFpres;
+!=======================================================================================================================
+!=========================================================PRES VAV VOWEL ENDING=============================================
+LEXICON iVAVpresInTrans !!!! قواعد تصریف فعل حال ساده
++ش۱:*یم iStress;
++ش۲:*یی iStress;
+@C.FORMAL@+ش۳:@C.FORMAL@*یه iStressThirdPerson;
++ش۳:*ید iStress;
+@D.LONEINFSTEM@+ش۳+وفاعلی:@D.LONEINFSTEM@*ید*ش SubjCliticDiacritics;
+@D.LONEINFSTEM@+ش۳+ت+وفاعلی:@D.LONEINFSTEM@*یت*ش SubjCliticDiacritics;
++ش۴:*ییم iStress;
+@C.FORMAL@+ش۵:@C.FORMAL@*یین iStress;
++ش۵:*یید iStress;
+@C.FORMAL@+ش۶:@C.FORMAL@*ین iStress;
++ش۶:*یند iStress;
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON VAVpresInTrans !!!! قواعد تصریف فعل حال ساده
+@P.FORMAL.ON@:@P.FORMAL.ON@ iVAVpresInTrans;
+
+LEXICON iVAVpres !!!! قواعد تصریف فعل حال ساده
++ش۱:*یم iObjectClitic;
++ش۲:*یی iObjectClitic;
+@C.FORMAL@+ش۳:@C.FORMAL@*یه iObjectCliticThirdPerson;
+@P.TINTER.ON@+ش۳+ت:*یه×ت@P.TINTER.ON@ iObjectCliticThirdPerson;
++ش۳:*ید iObjectClitic;
+@C.FORMAL@+ش۳:*ی@C.FORMAL@ Tintv;
+!!!!@D.TWOSIDED@+ش۳+وفاعلی:@D.TWOSIDED@*ید*ش SubjCliticDiacritics;
+!!!!@D.TWOSIDED@+ش۳+ت+وفاعلی:@D.TWOSIDED@*یت*ش SubjCliticDiacritics;
++ش۴:*ییم iObjectClitic;
+@C.FORMAL@+ش۵:@C.FORMAL@*یین iObjectClitic;
++ش۵:*یید iObjectClitic;
+@C.FORMAL@+ش۶:@C.FORMAL@*ین iObjectClitic;
++ش۶:*یند iObjectClitic;
+!---------------------------!
+LEXICON VAVpres !!!! قواعد تصریف فعل حال ساده
+@P.FORMAL.ON@:@P.FORMAL.ON@ iVAVpres;
+!=======================================================================================================================
+!=========================================================PRES YEH VOWEL ENDING=============================================
+LEXICON iYEHpresInTrans !!!! قواعد تصریف فعل حال ساده
++ش۱:*م iStress;
++ش۱:×ام iStress;
++ش۲:×ای iStress;
+!!!!@C.FORMAL@+ش۳:@C.FORMAL@×یه iStressThirdPerson;
+@C.FORMAL@+ش۳:@C.FORMAL@*ه iStressThirdPerson;
++ش۳:*د iStress;
++ش۴:×ایم iStress;
+@C.FORMAL@+ش۵:@C.FORMAL@×این iStress;
++ش۵:×اید iStress;
+@C.FORMAL@+ش۶:@C.FORMAL@*ن iStress;
+@C.FORMAL@+ش۶:@C.FORMAL@×ان iStress;
++ش۶:*ند iStress;
++ش۶:×اند iStress;
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON YEHpresInTrans !!!! قواعد تصریف فعل حال ساده
+@P.FORMAL.ON@:@P.FORMAL.ON@ iYEHpresInTrans;
+
+LEXICON iYEHpres !!!! قواعد تصریف فعل حال ساده
+!	for now there is no transitive vb with YEH-ending vowel for this part
++ش۱:*م iObjectClitic;
++ش۱:×ام iObjectClitic;
++ش۲:×ای iObjectClitic;
+@C.FORMAL@+ش۳:@C.FORMAL@*ه iObjectCliticThirdPerson;
+@P.TINTER.ON@+ش۳+ت:*ه×ت@P.TINTER.ON@ iObjectCliticThirdPerson;
++ش۳:*د iObjectClitic;
+@C.FORMAL@+ش۳:@C.FORMAL@ Tintv;
++ش۴:×ایم iObjectClitic;
+@C.FORMAL@+ش۵:@C.FORMAL@×این iObjectClitic;
++ش۵:×اید iObjectClitic;
+@C.FORMAL@+ش۶:@C.FORMAL@*ن iObjectClitic;
+@C.FORMAL@+ش۶:@C.FORMAL@×ان iObjectClitic;
++ش۶:*ند iObjectClitic;
++ش۶:×اند iObjectClitic;
+!---------------------------!
+LEXICON YEHpres !!!! قواعد تصریف فعل حال ساده
+@P.FORMAL.ON@:@P.FORMAL.ON@ iYEHpres;
+!=======================================================================================================================
+LEXICON ColloqImperNoImperGate
+@R.IMPERATIVE@:@R.IMPERATIVE@ iStress;
+!@D.IMPERATIVE@:@D.IMPERATIVE@ iStress;
+
+LEXICON ObjectImperNoImperGate
+@R.IMPERATIVE@:@R.IMPERATIVE@ iObjectClitic;
+!@D.IMPERATIVE@:@D.IMPERATIVE@ iObjectClitic;
+
+LEXICON iStressThirdPerson
+@D.LONEFRMSTEM@:@D.LONEFRMSTEM@ iStress;
+
+LEXICON iObjectCliticThirdPerson
+@D.LONEFRMSTEM@:@D.LONEFRMSTEM@ iObjectClitic;
+!=========================================================IMPER REG  ENDING=============================================
+LEXICON iImperInflInTransFinal
++مفرد:0 iStress;
+LEXICON iImperInflInTrans
+@D.LONEINFSTEM@:@D.LONEINFSTEM@ iImperInflInTransFinal;
++ش۵:*ید ColloqImperNoImperGate;
+@C.FORMAL@+ش۵:@C.FORMAL@*ین ColloqImperNoImperGate;
++ش۴:*یم ColloqImperNoImperGate;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 LEXICON ImperInflInTrans
 @P.FORMAL.ON@:@P.FORMAL.ON@ iImperInflInTrans;
 
 LEXICON iImperInflFinal
-+مفرد:* iObjectClitic;
++مفرد:0 iObjectClitic;
 LEXICON iImperInfl !!!! قواعد تصریفی پایانی فعل امری غیر رسمی
-@D.NOTFORIMPER@:@D.NOTFORIMPER@ iImperInflFinal;
-+ش.ش۵:*ید iObjectClitic;
-@C.FORMAL@+ش.ش۵:@C.FORMAL@*ین iObjectClitic;
-+ش.ش۴:*یم iObjectClitic;
+@D.LONEINFSTEM@:@D.LONEINFSTEM@ iImperInflFinal;
++ش۵:*ید ObjectImperNoImperGate;
+@C.FORMAL@+ش۵:@C.FORMAL@*ین ObjectImperNoImperGate;
++ش۴:*یم ObjectImperNoImperGate;
 !------------------------!
 LEXICON ImperInfl !!!! قواعد تصریفی پایانی فعل امری
 @P.FORMAL.ON@:@P.FORMAL.ON@ iImperInfl;
+!=======================================================================================================================
+!=========================================================IMPER ALEF VOWEL ENDING=============================================
+LEXICON iALEFImperInflInTransFinal
++مفرد:0 iStress;
+LEXICON iALEFImperInflInTrans
+@D.LONEINFSTEM@:@D.LONEINFSTEM@ iALEFImperInflInTransFinal;
++ش۵:*یید ColloqImperNoImperGate;
+@C.FORMAL@+ش۵:@C.FORMAL@*ید ColloqImperNoImperGate;
+@C.FORMAL@+ش۵:@C.FORMAL@*ین ColloqImperNoImperGate;
+@C.FORMAL@+ش۵:@C.FORMAL@*یین ColloqImperNoImperGate;
++ش۴:*ییم ColloqImperNoImperGate;
+@C.FORMAL@+ش۴:@C.FORMAL@*یم ColloqImperNoImperGate;
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON ALEFImperInflInTrans
+@P.FORMAL.ON@:@P.FORMAL.ON@ iALEFImperInflInTrans;
 
+LEXICON iALEFImperInflFinal
++مفرد:0 iObjectClitic;
+@P.TINTER.ON@+مفرد:@P.TINTER.ON@ی* iObjectClitic;!TINTER diacritic is used for limiting the structure to be used only with obj clitics
+LEXICON iALEFImperInfl !!!! قواعد تصریفی پایانی فعل امری غیر رسمی
+@D.LONEINFSTEM@:@D.LONEINFSTEM@ iALEFImperInflFinal;
++ش۵:*یید ObjectImperNoImperGate;
+@C.FORMAL@+ش۵:@C.FORMAL@*ید ObjectImperNoImperGate;
+@C.FORMAL@+ش۵:@C.FORMAL@*ین ObjectImperNoImperGate;
+@C.FORMAL@+ش۵:@C.FORMAL@*یین ObjectImperNoImperGate;
++ش۴:*ییم ObjectImperNoImperGate;
+@C.FORMAL@+ش۴:@C.FORMAL@*یم ObjectImperNoImperGate;
+!------------------------!
+LEXICON ALEFImperInfl !!!! قواعد تصریفی پایانی فعل امری
+@P.FORMAL.ON@:@P.FORMAL.ON@ iALEFImperInfl;
+!=======================================================================================================================
+!=========================================================IMPER VAV VOWEL ENDING=============================================
+LEXICON iVAVImperInflInTransFinal
++مفرد:0 iStress;
+LEXICON iVAVImperInflInTrans
+@D.LONEINFSTEM@:@D.LONEINFSTEM@ iVAVImperInflInTransFinal;
++ش۵:*یید ColloqImperNoImperGate;
+@C.FORMAL@+ش۵:@C.FORMAL@*یین ColloqImperNoImperGate;
++ش۴:*ییم ColloqImperNoImperGate;
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON VAVImperInflInTrans
+@P.FORMAL.ON@:@P.FORMAL.ON@ iVAVImperInflInTrans;
+
+LEXICON iVAVImperInflFinal
++مفرد:0 iObjectClitic;
+@P.TINTER.ON@+مفرد:@P.TINTER.ON@ی* iObjectClitic;!TINTER diacritic is used for limiting the structure to be used only with obj clitics
+LEXICON iVAVImperInfl !!!! قواعد تصریفی پایانی فعل امری غیر رسمی
+@D.LONEINFSTEM@:@D.LONEINFSTEM@ iVAVImperInflFinal;
++ش۵:*یید ObjectImperNoImperGate;
+@C.FORMAL@+ش۵:@C.FORMAL@*یین ObjectImperNoImperGate;
++ش۴:*ییم ObjectImperNoImperGate;
+!------------------------!
+LEXICON VAVImperInfl !!!! قواعد تصریفی پایانی فعل امری
+@P.FORMAL.ON@:@P.FORMAL.ON@ iVAVImperInfl;
+!=======================================================================================================================
+!=========================================================IMPER YEH VOWEL ENDING=============================================
+LEXICON iYEHImperInflInTransFinal
++مفرد:0 iStress;
+LEXICON iYEHImperInflInTrans
+@D.LONEINFSTEM@:@D.LONEINFSTEM@ iYEHImperInflInTransFinal;
++ش۵:×اید ColloqImperNoImperGate;
+@C.FORMAL@+ش۵:@C.FORMAL@×این ColloqImperNoImperGate;
++ش۴:×ایم ColloqImperNoImperGate;
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON YEHImperInflInTrans
+@P.FORMAL.ON@:@P.FORMAL.ON@ iYEHImperInflInTrans;
+
+LEXICON iYEHImperInflFinal
++مفرد:0 iObjectClitic;
+LEXICON iYEHImperInfl !!!! قواعد تصریفی پایانی فعل امری غیر رسمی
+@D.LONEINFSTEM@:@D.LONEINFSTEM@ iYEHImperInflFinal;
++ش۵:×اید ObjectImperNoImperGate;
+@C.FORMAL@+ش۵:@C.FORMAL@×این ObjectImperNoImperGate;
++ش۴:×ایم ObjectImperNoImperGate;
+!------------------------!
+LEXICON YEHImperInfl !!!! قواعد تصریفی پایانی فعل امری
+@P.FORMAL.ON@:@P.FORMAL.ON@ iYEHImperInfl;
+!=======================================================================================================================
 LEXICON iRawPres
 دار pres;
 باش presInTrans;  !!! هنوز این سکشن (presInTrans) تعریف نشده است.
-کن pres;
-ش ipres;
+کُن:کن pres;!kon
+!!کَن:کن pres;!kan!!فعل حال ساده کَندن ندارد
+@P.LONEINFSTEM.ON@ش@P.LONEINFSTEM.ON@ ipresInTrans;
 !!!د
 !!!خوا
+@P.LONEFRMSTEM.ON@ده@P.LONEFRMSTEM.ON@ pres;
+@P.LONEFRMSTEM.ON@خواه@P.LONEFRMSTEM.ON@ pres;
+@P.LONEFRMSTEM.ON@شو@P.LONEFRMSTEM.ON@ presInTrans;
 
 LEXICON iPresP  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل گذشته برای ماضی نقلی غیر رسمی
 آگاهوند iPrPInfl;
@@ -349,16 +545,14 @@ LEXICON iPresP  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل گ�
 دویید iPrPInflInTrans;
 موند iPrPInflInTrans;
 دونست iPrPInflInTrans;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!مگردومیان!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!برای حالت مگردومیان تمام رولهای مربوط به دو فعل "ذاشت" را در حالت  غیر فعال(کامنت) قرار دهید
-!!(خط پایین)و تنها رول این بخش را فعال کنید
-!!ذاشت iPrPInfl;
-!!شست iPrPInflInTrans;
-!!شوند iPrPInfl;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-@R.SPECINFL@ذاشت@R.SPECINFL@ iPrPInfl;!!!!دارای تصریف ناقص - تصریف تنها برای ماضی استمراری و منفی ان ، نقلی مستمرو منفی آن، منفی ماضی ساده، منفی ماضی نقلی، منفی ماضی بعید، منفی ماضی ابعد، 
-@R.SPECINFL@شست@R.SPECINFL@ iPrPInflInTrans;
-@R.SPECINFL@شوند@R.SPECINFL@ iPrPInflInTrans;
+@R.SPECINFL@گذاشت:ذاشت@R.SPECINFL@ iPrPInfl;!!!!دارای تصریف ناقص - تصریف تنها برای ماضی استمراری و منفی ان ، نقلی مستمرو منفی آن، منفی ماضی ساده، منفی ماضی نقلی، منفی ماضی بعید، منفی ماضی ابعد، 
+@R.SPECINFL@نشست:شست@R.SPECINFL@ iPrPInflInTrans;
+@R.SPECINFL@نشوند:شوند@R.SPECINFL@ iPrPInflInTrans;
+@R.SPECINFL@انداخت:نداخت@R.SPECINFL@ iPrPInfl;
+@R.SPECINFL@افتاد:فتاد@R.SPECINFL@ iPrPInflInTrans;
+@R.SPECINFL@افتاد:وفتاد@R.SPECINFL@ iPrPInflInTrans;
+@R.SPECINFL@اورد:ورد@R.SPECINFL@ iPrPInfl;
+@R.SPECINFL@اومد:ومد@R.SPECINFL@ iPrPInflInTrans;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!formal!!!!!!!!!!!!!!!
 انداخت PrPInfl;
@@ -434,8 +628,8 @@ LEXICON iPresP  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل گ�
 بخشید PrPInfl;
 برازید PrPInfl;!!!!virastyar
 براند PrPInfl;!!!!virastyar
-برد PrPInfl;
-برید PrPInfl;
+بُرد:برد PrPInfl;
+بُرید:برید PrPInfl;
 بست PrPInfl;
 بلعید PrPInfl;
 بود PrPInflInTrans;
@@ -773,7 +967,7 @@ LEXICON iPresP  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل گ�
 کشانید PrPInfl;
 کشت PrPInfl;
 کشید PrPInfl;
-کند PrPInfl;!!!!virastyar
+کَند:کند PrPInfl;!!!!kand
 کوباند PrPInfl;
 کوبانید PrPInfl;
 کوبید PrPInfl;
@@ -878,1233 +1072,6 @@ LEXICON iPresP  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل گ�
 یازید PrPInflInTrans;
 یافت PrPInflInTrans;
 
-LEXICON iPastP  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل گذشته ماضی بعید غیر رسمی
-آگاهوند iPsPInfl;
-افشوند iPsPInfl;
-پاشوند iPsPInfl;
-پروند iPsPInfl;
-پزوند iPsPInfl;
-پکوند iPsPInfl;
-پلاسوند iPsPInfl;
-پوسوند iPsPInfl;
-پوشوند iPsPInfl;
-پیچوند iPsPInfl;
-تابوند iPsPInfl;
-تازوند iPsPInflInTrans;
-تاروند iPsPInfl;
-تپوند iPsPInfl;
-ترسوند iPsPInfl;
-تراشوند iPsPInfl;
-ترکوند iPsPInfl;
-تکوند iPsPInfl;
-جنبوند iPsPInfl;
-جوشوند iPsPInfl;
-چپوند iPsPInfl;
-چرخوند iPsPInfl;
-چروند iPsPInfl;
-چزوند iPsPInfl;
-چسبوند iPsPInfl;
-چشوند iPsPInfl;
-چکوند iPsPInfl;
-چلوند iPsPInfl;
-چلونید iPsPInfl;
-خاروند iPsPInfl;
-خراشوند iPsPInfl;
-خشکوند iPsPInfl;
-خندوند iPsPInfl;
-خوابوند iPsPInfl;!!!!خابوند
-خوروند iPsPInfl;
-خوند iPsPInfl;
-خیسوند iPsPInfl;
-دووند iPsPInfl;
-رسوند iPsPInfl;
-رقصوند iPsPInfl;
-رنجوند iPsPInfl;
-روند iPsPInfl;
-زاوند iPsPInfl;
-سابوند iPsPInfl;
-سوزوند iPsPInfl;
-شوروند iPsPInfl;
-شکوند iPsPInfl;
-شناسوند iPsPInfl;
-شوروند iPsPInfl;
-غلتوند iPsPInfl;
-قبولوند iPsPInfl;
-فشوند iPsPInfl;
-فهموند iPsPInfl;
-کشوند iPsPInfl;
-کوبوند iPsPInfl;
-گدازوند iPsPInfl;
-گذروند iPsPInfl;!!!!corpus
-گردوند iPsPInfl;
-گریزوند iPsPInfl;
-گریوند iPsPInfl;
-گستروند iPsPInfl;
-گنجوند iPsPInfl;
-گندوند iPsPInfl;
-لرزوند iPsPInfl;
-لغزوند iPsPInfl;
-لمبوند iPsPInfl;
-مالوند iPsPInfl;
-نالوند iPsPInfl;
-نشوند iPsPInfl;
-نوشوند iPsPInfl;
-نمایوند iPsPInfl;
-ورزوند iPsPInfl;
-
-درخشوند iPsPInflInTrans;
-خوند iPsPInfl;
-شوتید iPsPInfl;
-!!!!!!!!!!!!!!!
-اومد iPsPInflInTrans;
-تونست iPsPInflInTrans;
-درموند iPsPInflInTrans;
-دویید iPsPInflInTrans;
-موند iPsPInflInTrans;
-دونست iPsPInflInTrans;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!مگردومیان!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!برای حالت مگردومیان تمام رولهای مربوط به دو فعل "ذاشت" را در حالت  غیر فعال(کامنت) قرار دهید
-!!(خط پایین)و تنها رول این بخش را فعال کنید
-!!ذاشت iPsPInfl;
-!!شست iPsPInflInTrans;
-!!شوند iPsPInfl;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-@R.SPECINFL@ذاشت@R.SPECINFL@ iPsPInfl;!!!!دارای تصریف ناقص - تصریف تنها برای ماضی استمراری و منفی ان ، نقلی مستمرو منفی آن، منفی ماضی ساده، منفی ماضی نقلی، منفی ماضی بعید، منفی ماضی ابعد، 
-@R.SPECINFL@شست@R.SPECINFL@ iPsPInflInTrans;
-@R.SPECINFL@شوند@R.SPECINFL@ iPsPInflInTrans;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!formal!!!!!!!!!!!!!!!
-انداخت PsPInfl;
-آراست PsPInfl;
-آرایید PsPInfl;
-آزرد PsPInfl;
-آزمود PsPInfl;
-آغازید PsPInfl;
-آغشت PsPInfl;
-آگاهاند PsPInfl;
-آفرید PsPInfl;
-آکند PsPInfl;
-آگاهانید PsPInfl;
-آلایید PsPInfl;
-آلود PsPInfl;
-آمرزید PsPInfl;
-آموزاند PsPInfl;!!!!virastyar
-آمیخت PsPInfl;
-آمیزید PsPInflInTrans;
-آورد PsPInfl;
-آویخت PsPInfl;
-آهارید PsPInfl;
-افراخت PsPInfl;
-افراشت PsPInfl;
-افروخت PsPInfl;
-افروزید PsPInfl;
-افزود PsPInfl;
-افسرد PsPInfl;
-افشاند PsPInfl;
-افشرد PsPInfl;
-افکند PsPInfl;
-افگند PsPInfl;!!!!virastyar
-آرامید PsPInflInTrans;
-آرمید PsPInflInTrans;
-آسایید PsPInflInTrans;
-آسود PsPInflInTrans;
-آشفت PsPInflInTrans;
-آماسید PsPInflInTrans;
-آمایید PsPInflInTrans;
-آمد PsPInflInTrans;
-آموخت PsPInfl;
-ارزید PsPInflInTrans;
-افتاد PsPInflInTrans;
-آشامید PsPInflInTrans;
-آشکارید PsPInfl;
-القایید PsPInflInTrans;
-انباشت PsPInfl;
-انبوهید PsPInflInTrans;
-انجامید PsPInflInTrans;
-انداخت PsPInfl;
-اندوخت PsPInfl;
-اندیشید PsPInflInTrans;
-انگارید PsPInflInTrans;
-انگاشت PsPInflInTrans;
-انگیخت PsPInfl;
-انگیزاند PsPInfl;
-انگیزانید PsPInfl;
-انگیزید PsPInflInTrans;
-ایستاد PsPInflInTrans;
-ایستاند PsPInfl;
-باخت PsPInflInTrans;
-باراند PsPInfl;
-بارانید PsPInfl;
-بارید PsPInflInTrans;
-بافت PsPInfl;
-بالاند PsPInfl;
-بالانید PsPInfl;
-بالید PsPInflInTrans;
-بخشاند PsPInfl;
-بخشانید PsPInfl;
-بخشایید PsPInfl;
-بخشود PsPInfl;
-بخشید PsPInfl;
-برازید PsPInfl;!!!!virastyar
-براند PsPInfl;!!!!virastyar
-برد PsPInfl;
-برید PsPInfl;
-بست PsPInfl;
-بلعید PsPInfl;
-بود PsPInflInTrans;
-بوساند PsPInfl;
-بوسانید PsPInfl;
-بوسید PsPInfl;
-بویید PsPInfl;
-پائید PsPInfl;
-پاشاند PsPInfl;!!!!virastyar
-پاشید PsPInfl;
-پالائید PsPInfl;
-پالاند PsPInfl;
-پالانید PsPInfl;
-پالایید PsPInfl;
-پالود PsPInfl;
-پایید PsPInfl;!!!!virastyar
-پخت PsPInfl;
-پخشاند PsPInfl;
-پخشانید PsPInfl;
-پخشید PsPInflInTrans;
-پذیراند PsPInfl;!!!!virastyar
-پذیرفت PsPInfl;
-پراکند PsPInfl;
-پراند PsPInfl;
-پرانید PsPInfl;
-پرچید PsPInfl;
-پرداخت PsPInfl;
-پردازید PsPInflInTrans;
-پرستید PsPInfl;
-پرسید PsPInfl;
-پروراند PsPInfl;
-پرورانید PsPInfl;
-پرورد PsPInfl;
-پرهیزید PsPInflInTrans;
-پرید PsPInflInTrans;
-پریشاند PsPInfl;
-پریشید PsPInflInTrans;
-پزاند PsPInfl;
-پژمرد PsPInfl;
-پژوهید PsPInflInTrans;
-پسندید PsPInfl;
-پفید PsPInflInTrans;
-پکاند PsPInfl;
-پکانید PsPInfl;
-پکید PsPInflInTrans;
-پلاساند PsPInfl;!!!!virastyar
-پلاسید PsPInflInTrans;
-پلکید PsPInflInTrans;
-پناهاند PsPInfl;!!!!virastyar
-پناهید PsPInflInTrans;
-پندارید PsPInflInTrans;
-پنداشت PsPInflInTrans;
-پوساند PsPInfl;
-پوسانید PsPInfl;
-پوسید PsPInflInTrans;
-پوشاند PsPInfl;
-پوشانید PsPInfl;
-پوشید PsPInflInTrans;
-پویید PsPInfl;
-پیچاند PsPInfl;
-پیچانید PsPInfl;
-پیچید PsPInflInTrans;
-پیراست PsPInfl;
-پیرایید PsPInfl;
-پیمایید PsPInfl;
-پیمود PsPInflInTrans;
-پیوست PsPInflInTrans;
-تاباند PsPInfl;
-تابانید PsPInfl;
-تابید PsPInflInTrans;
-تاخت PsPInflInTrans;
-تاراند PsPInfl;
-تارانید PsPInfl;
-تازاند PsPInfl;
-تازید PsPInflInTrans;
-تافت PsPInflInTrans;
-تباهید PsPInfl;
-تپاند PsPInfl;
-تپانید PsPInfl;
-تپید PsPInflInTrans;
-تراشاند PsPInfl;
-تراشانید PsPInfl;
-تراشید PsPInfl;
-تراوید PsPInflInTrans;
-ترساند PsPInfl;
-ترسانید PsPInfl;
-ترسید PsPInflInTrans;
-ترشاند PsPInfl;!!!!virastyar
-ترشید PsPInflInTrans;
-ترکاند PsPInfl;
-ترکید PsPInflInTrans;
-تکاند PsPInfl;
-تکانید PsPInfl;
-تکید PsPInflInTrans;
-تمرگید PsPInflInTrans;
-تنید PsPInflInTrans;
-توانست PsPInflInTrans;!!!!virastyar
-توپید PsPInflInTrans;
-تیغاند PsPInfl;
-تیغانید PsPInfl;
-تیغید PsPInfl;
-جست PsPInfl;
-جنباند PsPInfl;
-جنبانید PsPInfl;
-جنبید PsPInflInTrans;
-جنگید PsPInflInTrans;
-جوئید PsPInfl;
-جوشاند PsPInfl;
-جوشانید PsPInfl;
-جوشید PsPInflInTrans;
-جوید PsPInfl;
-جویید PsPInfl;
-جهاند PsPInfl;
-جهانید PsPInfl;
-جهید PsPInflInTrans;
-چاپید PsPInfl;
-چایید PsPInflInTrans;
-چپاند PsPInfl;
-چپانید PsPInfl;
-چپید PsPInflInTrans;
-چراند PsPInfl;
-چرانید PsPInfl;
-چرباند PsPInfl;!!!!virastyar
-چربید PsPInflInTrans;
-چرتید PsPInflInTrans;
-چرخاند PsPInfl;
-چرخانید PsPInfl;
-چرخید PsPInflInTrans;
-چروکاند PsPInfl;
-چروکید PsPInflInTrans;
-چرید PsPInflInTrans;
-چزاند PsPInfl;
-چزانید PsPInfl;
-چسباند PsPInfl;
-چسبانید PsPInfl;
-چسبید PsPInflInTrans;
-چسید PsPInflInTrans;
-چشاند PsPInfl;
-چشانید PsPInfl;
-چشید PsPInflInTrans;
-چکاند PsPInfl;
-چکانید PsPInfl;
-چکید PsPInflInTrans;
-چلاند PsPInfl;
-چلانید PsPInfl;
-چمید PsPInflInTrans;
-چید PsPInfl;
-خاراند PsPInfl;
-خارانید PsPInfl;
-خارید PsPInflInTrans;
-خراشاند PsPInfl;
-خراشید PsPInfl;
-خرامید PsPInflInTrans;
-خروشاند PsPInfl;
-خروشانید PsPInfl;
-خروشید PsPInflInTrans;
-خرید PsPInfl;
-خزاند PsPInfl;
-خزانید PsPInfl;
-خزید PsPInflInTrans;
-خشکاند PsPInfl;
-خشکانید PsPInfl;
-خشکید PsPInflInTrans;
-خفت PsPInflInTrans;
-خماند PsPInfl;
-خمید PsPInflInTrans;
-خنداند PsPInfl;
-خندانید PsPInfl;!!!!virastyar
-خندید PsPInflInTrans;
-خواباند PsPInfl;
-خوابانید PsPInfl;
-خوابید PsPInflInTrans;
-خواست PsPInfl;
-خواند PsPInfl;
-خوراند PsPInfl;
-خورانید PsPInfl;
-خورد PsPInfl;
-خیزاند PsPInfl;
-خیزید PsPInflInTrans;
-خیساند PsPInfl;
-خیسانید PsPInfl;
-خیسید PsPInflInTrans;
-داد PsPInfl;
-داشت PsPInfl;
-دانست PsPInfl;
-درخشاند PsPInfl;
-درخشانید PsPInfl;
-درخشید PsPInflInTrans;
-درنگید PsPInflInTrans;
-دریافت PsPInfl;
-درید PsPInfl;
-دزداند PsPInfl;
-دزدانید PsPInfl;
-دزدید PsPInfl;
-دماند PsPInfl;
-دمید PsPInflInTrans;
-دواند PsPInfl;
-دوانید PsPInfl;
-دوخت PsPInfl;
-دوشید PsPInfl;
-دوید PsPInflInTrans;
-دید PsPInfl;
-راند PsPInfl;
-رایاند PsPInfl;
-رایانید PsPInfl;
-ربایید PsPInfl;
-ربود PsPInfl;
-رخشید PsPInflInTrans;
-رزمید PsPInflInTrans;
-رساند PsPInfl;
-رسانید PsPInfl;
-رست PsPInflInTrans;
-رسید PsPInflInTrans;
-رفت PsPInflInTrans;
-رقصاند PsPInfl;
-رقصانید PsPInfl;
-رقصید PsPInflInTrans;
-رماند PsPInfl;
-رمانید PsPInfl;
-رمید PsPInflInTrans;
-رنجاند PsPInfl;
-رنجانید PsPInfl;
-رنجید PsPInflInTrans;
-رندید PsPInfl;
-روئید PsPInflInTrans;
-روبید PsPInfl;
-روفت PsPInfl;!!!!virastyar
-رویاند PsPInfl;
-رویانید PsPInfl;
-رویید PsPInflInTrans;
-رهاند PsPInfl;
-رهانید PsPInfl;
-رهایید PsPInfl;
-رهید PsPInflInTrans;
-ریخت PsPInfl;
-رید PsPInflInTrans;
-ریسید PsPInfl;
-زائید PsPInfl;
-زائوند PsPInfl;
-زاد PsPInfl;
-زارید PsPInflInTrans;
-زایاند PsPInfl;
-زایانید PsPInfl;
-زایید PsPInfl;
-زد PsPInfl;
-زدایید PsPInflInTrans;
-زدود PsPInfl;
-زیبید PsPInflInTrans;
-زیست PsPInflInTrans;
-ژولید PsPInfl;
-سائید PsPInfl;
-ساباند PsPInfl;!!!!virastyar
-سابید PsPInfl;
-ساخت PsPInfl;
-سایید PsPInfl;
-ساوید PsPInfl;
-سپرد PsPInfl;
-سپوخت PsPInfl;!!!!virastyar
-ستاند PsPInfl;
-ستانید PsPInfl;
-ستود PsPInfl;
-ستیزید PsPInflInTrans;
-سراند PsPInfl;
-سرانید PsPInfl;
-سرایید PsPInfl;!!!!virastyar
-سرکشید PsPInfl;!!!!virastyar
-سرمایید PsPInfl;
-سرود PsPInfl;
-سرید PsPInflInTrans;
-سنجید PsPInfl;
-سوخت PsPInflInTrans;
-سوزاند PsPInfl;
-شاشید PsPInflInTrans;
-شتاباند PsPInfl;
-شتابانید PsPInfl;
-شتابید PsPInflInTrans;
-شتافت PsPInflInTrans;
-شد PsPInflInTrans;!!!!virastyar
-شست PsPInfl;
-شکافت PsPInfl;
-شکاند PsPInfl;
-شکست PsPInfl;
-شکفت PsPInflInTrans;
-شکوفید PsPInflInTrans;
-شلید PsPInflInTrans;
-شمارد PsPInfl;
-شمرد PsPInfl;
-شناخت PsPInfl;
-شناساند PsPInfl;
-شناسانید PsPInfl;
-شنود PsPInfl;
-شنید PsPInfl;
-شوراند PsPInfl;
-شورانید PsPInfl;
-شورید PsPInflInTrans;
-شویاند PsPInfl;
-صافید PsPInfl;
-صرفید PsPInflInTrans;
-طپید PsPInflInTrans;!!!!virastyar
-طلبید PsPInfl;
-غراند PsPInfl;!!!!virastyar
-غرمبید PsPInflInTrans;
-غرید PsPInflInTrans;
-غلتاند PsPInfl;
-غلتانید PsPInfl;
-غلتید PsPInflInTrans;
-فرسایید PsPInflInTrans;
-فرستاد PsPInfl;
-فرسود PsPInflInTrans;
-فرمود PsPInflInTrans;
-فروخت PsPInfl;
-فروزاند PsPInfl;
-فروزید PsPInflInTrans;
-فریبید PsPInfl;
-فریفت PsPInfl;
-فشاند PsPInfl;
-فشانید PsPInfl;
-فشرد PsPInfl;
-فلسفید PsPInflInTrans;
-فهماند PsPInfl;
-فهمانید PsPInfl;
-فهمید PsPInfl;
-قاپید PsPInfl;
-قبولاند PsPInfl;
-قبولانید PsPInfl;
-قطبید PsPInflInTrans;
-کاشت PsPInfl;
-کاواند PsPInfl;
-کاوانید PsPInfl;
-کاوید PsPInfl;
-کاهید PsPInflInTrans;
-کپید PsPInflInTrans;
-کرد PsPInfl;
-کشاند PsPInfl;
-کشانید PsPInfl;
-کشت PsPInfl;
-کشید PsPInfl;
-کند PsPInfl;!!!!virastyar
-کوباند PsPInfl;
-کوبانید PsPInfl;
-کوبید PsPInfl;
-کوچاند PsPInfl;
-کوچانید PsPInfl;
-کوچید PsPInflInTrans;
-کوشید PsPInflInTrans;
-کوفت PsPInfl;
-گایید PsPInfl;
-گداخت PsPInfl;
-گدازاند PsPInfl;
-گدازانید PsPInfl;
-گدازید PsPInflInTrans;
-گذارد PsPInfl;
-گذاشت PsPInfl;
-گذراند PsPInfl;
-گذرانید PsPInfl;
-گذشت PsPInflInTrans;
-گرائید PsPInflInTrans;
-گرایید PsPInflInTrans;
-گرداند PsPInfl;
-گردانید PsPInfl;
-گردید PsPInflInTrans;
-گرفت PsPInfl;
-گروید PsPInflInTrans;
-گریاند PsPInfl;
-گریانید PsPInfl;
-گریخت PsPInflInTrans;
-گریزاند PsPInfl;
-گریست PsPInflInTrans;
-گریید PsPInflInTrans;
-گزید PsPInfl;
-گستراند PsPInfl;
-گسترانید PsPInfl;
-گسترد PsPInfl;
-گسست PsPInfl;
-گسیخت PsPInfl;
-گشاد PsPInfl;
-گشت PsPInfl;!!!!virastyar
-گشود PsPInfl;
-گفت PsPInfl;
-گمارد PsPInfl;
-گماشت PsPInfl;
-گنجاند PsPInfl;
-گنجانید PsPInfl;!!!!virastyar
-گنجید PsPInflInTrans;
-گنداند PsPInfl;
-گندید PsPInflInTrans;
-گوزید PsPInflInTrans;
-گیراند PsPInfl;
-لاسید PsPInflInTrans;
-لافید PsPInflInTrans;
-لرزاند PsPInfl;
-لرزانید PsPInfl;
-لرزید PsPInflInTrans;
-لغزاند PsPInfl;
-لغزانید PsPInfl;
-لغزید PsPInflInTrans;
-لقید PsPInflInTrans;
-لمباند PsPInfl;
-لمبانید PsPInfl;
-لمید PsPInflInTrans;
-لنگید PsPInflInTrans;
-لولید PsPInflInTrans;
-لهاند PsPInfl;
-لهانید PsPInfl;
-لهید PsPInflInTrans;
-لیسید PsPInfl;
-ماسید PsPInflInTrans;
-مالاند PsPInfl;
-مالید PsPInfl;
-ماند PsPInflInTrans;
-مرد PsPInflInTrans;
-مکید PsPInfl;
-مویید PsPInflInTrans;
-میراند PsPInfl;
-نازید PsPInflInTrans;
-نالاند PsPInfl;!!!!virastyar
-نالید PsPInflInTrans;
-نامید PsPInfl;
-نشاند PsPInfl;
-نشست PsPInflInTrans;
-نکوهید PsPInfl;
-نگاشت PsPInfl;
-نگریست PsPInfl;
-نمایاند PsPInfl;
-نمود PsPInfl;
-نواخت PsPInfl;
-نوردید PsPInfl;
-نوشاند PsPInfl;
-نوشت PsPInfl;
-نوشید PsPInfl;
-نهاد PsPInfl;
-نهفت PsPInfl;
-ورزاند PsPInfl;
-ورزانید PsPInfl;
-ورزید PsPInflInTrans;
-وزاند PsPInfl;!!!!virastyar
-وزید PsPInflInTrans;
-هراساند PsPInfl;!!!!virastyar
-هراسید PsPInflInTrans;
-یازید PsPInflInTrans;
-یافت PsPInflInTrans;
-
-LEXICON iPastSubj   !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل گذشته  التزامی غیر رسمی
-آگاهوند iPastSubjInfl;
-افشوند iPastSubjInfl;
-پاشوند iPastSubjInfl;
-پروند iPastSubjInfl;
-پزوند iPastSubjInfl;
-پکوند iPastSubjInfl;
-پلاسوند iPastSubjInfl;
-پوسوند iPastSubjInfl;
-پوشوند iPastSubjInfl;
-پیچوند iPastSubjInfl;
-تابوند iPastSubjInfl;
-تازوند iPastSubjInflInTrans;
-تاروند iPastSubjInfl;
-تپوند iPastSubjInfl;
-ترسوند iPastSubjInfl;
-تراشوند iPastSubjInfl;
-ترکوند iPastSubjInfl;
-تکوند iPastSubjInfl;
-جنبوند iPastSubjInfl;
-جوشوند iPastSubjInfl;
-چپوند iPastSubjInfl;
-چرخوند iPastSubjInfl;
-چروند iPastSubjInfl;
-چزوند iPastSubjInfl;
-چسبوند iPastSubjInfl;
-چشوند iPastSubjInfl;
-چکوند iPastSubjInfl;
-چلوند iPastSubjInfl;
-چلونید iPastSubjInfl;
-خاروند iPastSubjInfl;
-خراشوند iPastSubjInfl;
-خشکوند iPastSubjInfl;
-خندوند iPastSubjInfl;
-خوابوند iPastSubjInfl;!!!!خابوند
-خوروند iPastSubjInfl;
-خوند iPastSubjInfl;
-خیسوند iPastSubjInfl;
-دووند iPastSubjInfl;
-رسوند iPastSubjInfl;
-رقصوند iPastSubjInfl;
-رنجوند iPastSubjInfl;
-روند iPastSubjInfl;
-زاوند iPastSubjInfl;
-سابوند iPastSubjInfl;
-سوزوند iPastSubjInfl;
-شوروند iPastSubjInfl;
-شکوند iPastSubjInfl;
-شناسوند iPastSubjInfl;
-شوروند iPastSubjInfl;
-غلتوند iPastSubjInfl;
-قبولوند iPastSubjInfl;
-فشوند iPastSubjInfl;
-فهموند iPastSubjInfl;
-کشوند iPastSubjInfl;
-کوبوند iPastSubjInfl;
-گدازوند iPastSubjInfl;
-گذروند iPastSubjInfl;!!!!corpus
-گردوند iPastSubjInfl;
-گریزوند iPastSubjInfl;
-گریوند iPastSubjInfl;
-گستروند iPastSubjInfl;
-گنجوند iPastSubjInfl;
-گندوند iPastSubjInfl;
-لرزوند iPastSubjInfl;
-لغزوند iPastSubjInfl;
-لمبوند iPastSubjInfl;
-مالوند iPastSubjInfl;
-نالوند iPastSubjInfl;
-نشوند iPastSubjInfl;
-نوشوند iPastSubjInfl;
-نمایوند iPastSubjInfl;
-ورزوند iPastSubjInfl;
-
-درخشوند iPastSubjInflInTrans;
-خوند iPastSubjInfl;
-شوتید iPastSubjInfl;
-!!!!!!!!!!!!!!!
-اومد iPastSubjInflInTrans;
-تونست iPastSubjInflInTrans;
-درموند iPastSubjInflInTrans;
-دویید iPastSubjInflInTrans;
-موند iPastSubjInflInTrans;
-دونست iPastSubjInflInTrans;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!مگردومیان!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!برای حالت مگردومیان تمام رولهای مربوط به دو فعل "ذاشت" را در حالت  غیر فعال(کامنت) قرار دهید
-!!(خط پایین)و تنها رول این بخش را فعال کنید
-!!ذاشت iPastSubjInfl;
-!!شست iPastSubjInflInTrans;
-!!شوند iPastSubjInfl;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-@R.SPECINFL@ذاشت@R.SPECINFL@ iPastSubjInfl;!!!!دارای تصریف ناقص - تصریف تنها برای ماضی استمراری و منفی ان ، نقلی مستمرو منفی آن، منفی ماضی ساده، منفی ماضی نقلی، منفی ماضی بعید، منفی ماضی ابعد، 
-@R.SPECINFL@شست@R.SPECINFL@ iPastSubjInflInTrans;
-@R.SPECINFL@شوند@R.SPECINFL@ iPastSubjInflInTrans;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!formal!!!!!!!!!!!!!!!
-انداخت PastSubjInfl;
-آراست PastSubjInfl;
-آرایید PastSubjInfl;
-آزرد PastSubjInfl;
-آزمود PastSubjInfl;
-آغازید PastSubjInfl;
-آغشت PastSubjInfl;
-آگاهاند PastSubjInfl;
-آفرید PastSubjInfl;
-آکند PastSubjInfl;
-آگاهانید PastSubjInfl;
-آلایید PastSubjInfl;
-آلود PastSubjInfl;
-آمرزید PastSubjInfl;
-آموزاند PastSubjInfl;!!!!virastyar
-آمیخت PastSubjInfl;
-آمیزید PastSubjInflInTrans;
-آورد PastSubjInfl;
-آویخت PastSubjInfl;
-آهارید PastSubjInfl;
-افراخت PastSubjInfl;
-افراشت PastSubjInfl;
-افروخت PastSubjInfl;
-افروزید PastSubjInfl;
-افزود PastSubjInfl;
-افسرد PastSubjInfl;
-افشاند PastSubjInfl;
-افشرد PastSubjInfl;
-افکند PastSubjInfl;
-افگند PastSubjInfl;!!!!virastyar
-آرامید PastSubjInflInTrans;
-آرمید PastSubjInflInTrans;
-آسایید PastSubjInflInTrans;
-آسود PastSubjInflInTrans;
-آشفت PastSubjInflInTrans;
-آماسید PastSubjInflInTrans;
-آمایید PastSubjInflInTrans;
-آمد PastSubjInflInTrans;
-آموخت PastSubjInfl;
-ارزید PastSubjInflInTrans;
-افتاد PastSubjInflInTrans;
-آشامید PastSubjInflInTrans;
-آشکارید PastSubjInfl;
-القایید PastSubjInflInTrans;
-انباشت PastSubjInfl;
-انبوهید PastSubjInflInTrans;
-انجامید PastSubjInflInTrans;
-انداخت PastSubjInfl;
-اندوخت PastSubjInfl;
-اندیشید PastSubjInflInTrans;
-انگارید PastSubjInflInTrans;
-انگاشت PastSubjInflInTrans;
-انگیخت PastSubjInfl;
-انگیزاند PastSubjInfl;
-انگیزانید PastSubjInfl;
-انگیزید PastSubjInflInTrans;
-ایستاد PastSubjInflInTrans;
-ایستاند PastSubjInfl;
-باخت PastSubjInflInTrans;
-باراند PastSubjInfl;
-بارانید PastSubjInfl;
-بارید PastSubjInflInTrans;
-بافت PastSubjInfl;
-بالاند PastSubjInfl;
-بالانید PastSubjInfl;
-بالید PastSubjInflInTrans;
-بخشاند PastSubjInfl;
-بخشانید PastSubjInfl;
-بخشایید PastSubjInfl;
-بخشود PastSubjInfl;
-بخشید PastSubjInfl;
-برازید PastSubjInfl;!!!!virastyar
-براند PastSubjInfl;!!!!virastyar
-برد PastSubjInfl;
-برید PastSubjInfl;
-بست PastSubjInfl;
-بلعید PastSubjInfl;
-بود PastSubjInflInTrans;
-بوساند PastSubjInfl;
-بوسانید PastSubjInfl;
-بوسید PastSubjInfl;
-بویید PastSubjInfl;
-پائید PastSubjInfl;
-پاشاند PastSubjInfl;!!!!virastyar
-پاشید PastSubjInfl;
-پالائید PastSubjInfl;
-پالاند PastSubjInfl;
-پالانید PastSubjInfl;
-پالایید PastSubjInfl;
-پالود PastSubjInfl;
-پایید PastSubjInfl;!!!!virastyar
-پخت PastSubjInfl;
-پخشاند PastSubjInfl;
-پخشانید PastSubjInfl;
-پخشید PastSubjInflInTrans;
-پذیراند PastSubjInfl;!!!!virastyar
-پذیرفت PastSubjInfl;
-پراکند PastSubjInfl;
-پراند PastSubjInfl;
-پرانید PastSubjInfl;
-پرچید PastSubjInfl;
-پرداخت PastSubjInfl;
-پردازید PastSubjInflInTrans;
-پرستید PastSubjInfl;
-پرسید PastSubjInfl;
-پروراند PastSubjInfl;
-پرورانید PastSubjInfl;
-پرورد PastSubjInfl;
-پرهیزید PastSubjInflInTrans;
-پرید PastSubjInflInTrans;
-پریشاند PastSubjInfl;
-پریشید PastSubjInflInTrans;
-پزاند PastSubjInfl;
-پژمرد PastSubjInfl;
-پژوهید PastSubjInflInTrans;
-پسندید PastSubjInfl;
-پفید PastSubjInflInTrans;
-پکاند PastSubjInfl;
-پکانید PastSubjInfl;
-پکید PastSubjInflInTrans;
-پلاساند PastSubjInfl;!!!!virastyar
-پلاسید PastSubjInflInTrans;
-پلکید PastSubjInflInTrans;
-پناهاند PastSubjInfl;!!!!virastyar
-پناهید PastSubjInflInTrans;
-پندارید PastSubjInflInTrans;
-پنداشت PastSubjInflInTrans;
-پوساند PastSubjInfl;
-پوسانید PastSubjInfl;
-پوسید PastSubjInflInTrans;
-پوشاند PastSubjInfl;
-پوشانید PastSubjInfl;
-پوشید PastSubjInflInTrans;
-پویید PastSubjInfl;
-پیچاند PastSubjInfl;
-پیچانید PastSubjInfl;
-پیچید PastSubjInflInTrans;
-پیراست PastSubjInfl;
-پیرایید PastSubjInfl;
-پیمایید PastSubjInfl;
-پیمود PastSubjInflInTrans;
-پیوست PastSubjInflInTrans;
-تاباند PastSubjInfl;
-تابانید PastSubjInfl;
-تابید PastSubjInflInTrans;
-تاخت PastSubjInflInTrans;
-تاراند PastSubjInfl;
-تارانید PastSubjInfl;
-تازاند PastSubjInfl;
-تازید PastSubjInflInTrans;
-تافت PastSubjInflInTrans;
-تباهید PastSubjInfl;
-تپاند PastSubjInfl;
-تپانید PastSubjInfl;
-تپید PastSubjInflInTrans;
-تراشاند PastSubjInfl;
-تراشانید PastSubjInfl;
-تراشید PastSubjInfl;
-تراوید PastSubjInflInTrans;
-ترساند PastSubjInfl;
-ترسانید PastSubjInfl;
-ترسید PastSubjInflInTrans;
-ترشاند PastSubjInfl;!!!!virastyar
-ترشید PastSubjInflInTrans;
-ترکاند PastSubjInfl;
-ترکید PastSubjInflInTrans;
-تکاند PastSubjInfl;
-تکانید PastSubjInfl;
-تکید PastSubjInflInTrans;
-تمرگید PastSubjInflInTrans;
-تنید PastSubjInflInTrans;
-توانست PastSubjInflInTrans;!!!!virastyar
-توپید PastSubjInflInTrans;
-تیغاند PastSubjInfl;
-تیغانید PastSubjInfl;
-تیغید PastSubjInfl;
-جست PastSubjInfl;
-جنباند PastSubjInfl;
-جنبانید PastSubjInfl;
-جنبید PastSubjInflInTrans;
-جنگید PastSubjInflInTrans;
-جوئید PastSubjInfl;
-جوشاند PastSubjInfl;
-جوشانید PastSubjInfl;
-جوشید PastSubjInflInTrans;
-جوید PastSubjInfl;
-جویید PastSubjInfl;
-جهاند PastSubjInfl;
-جهانید PastSubjInfl;
-جهید PastSubjInflInTrans;
-چاپید PastSubjInfl;
-چایید PastSubjInflInTrans;
-چپاند PastSubjInfl;
-چپانید PastSubjInfl;
-چپید PastSubjInflInTrans;
-چراند PastSubjInfl;
-چرانید PastSubjInfl;
-چرباند PastSubjInfl;!!!!virastyar
-چربید PastSubjInflInTrans;
-چرتید PastSubjInflInTrans;
-چرخاند PastSubjInfl;
-چرخانید PastSubjInfl;
-چرخید PastSubjInflInTrans;
-چروکاند PastSubjInfl;
-چروکید PastSubjInflInTrans;
-چرید PastSubjInflInTrans;
-چزاند PastSubjInfl;
-چزانید PastSubjInfl;
-چسباند PastSubjInfl;
-چسبانید PastSubjInfl;
-چسبید PastSubjInflInTrans;
-چسید PastSubjInflInTrans;
-چشاند PastSubjInfl;
-چشانید PastSubjInfl;
-چشید PastSubjInflInTrans;
-چکاند PastSubjInfl;
-چکانید PastSubjInfl;
-چکید PastSubjInflInTrans;
-چلاند PastSubjInfl;
-چلانید PastSubjInfl;
-چمید PastSubjInflInTrans;
-چید PastSubjInfl;
-خاراند PastSubjInfl;
-خارانید PastSubjInfl;
-خارید PastSubjInflInTrans;
-خراشاند PastSubjInfl;
-خراشید PastSubjInfl;
-خرامید PastSubjInflInTrans;
-خروشاند PastSubjInfl;
-خروشانید PastSubjInfl;
-خروشید PastSubjInflInTrans;
-خرید PastSubjInfl;
-خزاند PastSubjInfl;
-خزانید PastSubjInfl;
-خزید PastSubjInflInTrans;
-خشکاند PastSubjInfl;
-خشکانید PastSubjInfl;
-خشکید PastSubjInflInTrans;
-خفت PastSubjInflInTrans;
-خماند PastSubjInfl;
-خمید PastSubjInflInTrans;
-خنداند PastSubjInfl;
-خندانید PastSubjInfl;!!!!virastyar
-خندید PastSubjInflInTrans;
-خواباند PastSubjInfl;
-خوابانید PastSubjInfl;
-خوابید PastSubjInflInTrans;
-خواست PastSubjInfl;
-خواند PastSubjInfl;
-خوراند PastSubjInfl;
-خورانید PastSubjInfl;
-خورد PastSubjInfl;
-خیزاند PastSubjInfl;
-خیزید PastSubjInflInTrans;
-خیساند PastSubjInfl;
-خیسانید PastSubjInfl;
-خیسید PastSubjInflInTrans;
-داد PastSubjInfl;
-داشت PastSubjInfl;
-دانست PastSubjInfl;
-درخشاند PastSubjInfl;
-درخشانید PastSubjInfl;
-درخشید PastSubjInflInTrans;
-درنگید PastSubjInflInTrans;
-دریافت PastSubjInfl;
-درید PastSubjInfl;
-دزداند PastSubjInfl;
-دزدانید PastSubjInfl;
-دزدید PastSubjInfl;
-دماند PastSubjInfl;
-دمید PastSubjInflInTrans;
-دواند PastSubjInfl;
-دوانید PastSubjInfl;
-دوخت PastSubjInfl;
-دوشید PastSubjInfl;
-دوید PastSubjInflInTrans;
-دید PastSubjInfl;
-راند PastSubjInfl;
-رایاند PastSubjInfl;
-رایانید PastSubjInfl;
-ربایید PastSubjInfl;
-ربود PastSubjInfl;
-رخشید PastSubjInflInTrans;
-رزمید PastSubjInflInTrans;
-رساند PastSubjInfl;
-رسانید PastSubjInfl;
-رست PastSubjInflInTrans;
-رسید PastSubjInflInTrans;
-رفت PastSubjInflInTrans;
-رقصاند PastSubjInfl;
-رقصانید PastSubjInfl;
-رقصید PastSubjInflInTrans;
-رماند PastSubjInfl;
-رمانید PastSubjInfl;
-رمید PastSubjInflInTrans;
-رنجاند PastSubjInfl;
-رنجانید PastSubjInfl;
-رنجید PastSubjInflInTrans;
-رندید PastSubjInfl;
-روئید PastSubjInflInTrans;
-روبید PastSubjInfl;
-روفت PastSubjInfl;!!!!virastyar
-رویاند PastSubjInfl;
-رویانید PastSubjInfl;
-رویید PastSubjInflInTrans;
-رهاند PastSubjInfl;
-رهانید PastSubjInfl;
-رهایید PastSubjInfl;
-رهید PastSubjInflInTrans;
-ریخت PastSubjInfl;
-رید PastSubjInflInTrans;
-ریسید PastSubjInfl;
-زائید PastSubjInfl;
-زائوند PastSubjInfl;
-زاد PastSubjInfl;
-زارید PastSubjInflInTrans;
-زایاند PastSubjInfl;
-زایانید PastSubjInfl;
-زایید PastSubjInfl;
-زد PastSubjInfl;
-زدایید PastSubjInflInTrans;
-زدود PastSubjInfl;
-زیبید PastSubjInflInTrans;
-زیست PastSubjInflInTrans;
-ژولید PastSubjInfl;
-سائید PastSubjInfl;
-ساباند PastSubjInfl;!!!!virastyar
-سابید PastSubjInfl;
-ساخت PastSubjInfl;
-سایید PastSubjInfl;
-ساوید PastSubjInfl;
-سپرد PastSubjInfl;
-سپوخت PastSubjInfl;!!!!virastyar
-ستاند PastSubjInfl;
-ستانید PastSubjInfl;
-ستود PastSubjInfl;
-ستیزید PastSubjInflInTrans;
-سراند PastSubjInfl;
-سرانید PastSubjInfl;
-سرایید PastSubjInfl;!!!!virastyar
-سرکشید PastSubjInfl;!!!!virastyar
-سرمایید PastSubjInfl;
-سرود PastSubjInfl;
-سرید PastSubjInflInTrans;
-سنجید PastSubjInfl;
-سوخت PastSubjInflInTrans;
-سوزاند PastSubjInfl;
-شاشید PastSubjInflInTrans;
-شتاباند PastSubjInfl;
-شتابانید PastSubjInfl;
-شتابید PastSubjInflInTrans;
-شتافت PastSubjInflInTrans;
-شد PastSubjInflInTrans;!!!!virastyar
-شست PastSubjInfl;
-شکافت PastSubjInfl;
-شکاند PastSubjInfl;
-شکست PastSubjInfl;
-شکفت PastSubjInflInTrans;
-شکوفید PastSubjInflInTrans;
-شلید PastSubjInflInTrans;
-شمارد PastSubjInfl;
-شمرد PastSubjInfl;
-شناخت PastSubjInfl;
-شناساند PastSubjInfl;
-شناسانید PastSubjInfl;
-شنود PastSubjInfl;
-شنید PastSubjInfl;
-شوراند PastSubjInfl;
-شورانید PastSubjInfl;
-شورید PastSubjInflInTrans;
-شویاند PastSubjInfl;
-صافید PastSubjInfl;
-صرفید PastSubjInflInTrans;
-طپید PastSubjInflInTrans;!!!!virastyar
-طلبید PastSubjInfl;
-غراند PastSubjInfl;!!!!virastyar
-غرمبید PastSubjInflInTrans;
-غرید PastSubjInflInTrans;
-غلتاند PastSubjInfl;
-غلتانید PastSubjInfl;
-غلتید PastSubjInflInTrans;
-فرسایید PastSubjInflInTrans;
-فرستاد PastSubjInfl;
-فرسود PastSubjInflInTrans;
-فرمود PastSubjInflInTrans;
-فروخت PastSubjInfl;
-فروزاند PastSubjInfl;
-فروزید PastSubjInflInTrans;
-فریبید PastSubjInfl;
-فریفت PastSubjInfl;
-فشاند PastSubjInfl;
-فشانید PastSubjInfl;
-فشرد PastSubjInfl;
-فلسفید PastSubjInflInTrans;
-فهماند PastSubjInfl;
-فهمانید PastSubjInfl;
-فهمید PastSubjInfl;
-قاپید PastSubjInfl;
-قبولاند PastSubjInfl;
-قبولانید PastSubjInfl;
-قطبید PastSubjInflInTrans;
-کاشت PastSubjInfl;
-کاواند PastSubjInfl;
-کاوانید PastSubjInfl;
-کاوید PastSubjInfl;
-کاهید PastSubjInflInTrans;
-کپید PastSubjInflInTrans;
-کرد PastSubjInfl;
-کشاند PastSubjInfl;
-کشانید PastSubjInfl;
-کشت PastSubjInfl;
-کشید PastSubjInfl;
-کند PastSubjInfl;!!!!virastyar
-کوباند PastSubjInfl;
-کوبانید PastSubjInfl;
-کوبید PastSubjInfl;
-کوچاند PastSubjInfl;
-کوچانید PastSubjInfl;
-کوچید PastSubjInflInTrans;
-کوشید PastSubjInflInTrans;
-کوفت PastSubjInfl;
-گایید PastSubjInfl;
-گداخت PastSubjInfl;
-گدازاند PastSubjInfl;
-گدازانید PastSubjInfl;
-گدازید PastSubjInflInTrans;
-گذارد PastSubjInfl;
-گذاشت PastSubjInfl;
-گذراند PastSubjInfl;
-گذرانید PastSubjInfl;
-گذشت PastSubjInflInTrans;
-گرائید PastSubjInflInTrans;
-گرایید PastSubjInflInTrans;
-گرداند PastSubjInfl;
-گردانید PastSubjInfl;
-گردید PastSubjInflInTrans;
-گرفت PastSubjInfl;
-گروید PastSubjInflInTrans;
-گریاند PastSubjInfl;
-گریانید PastSubjInfl;
-گریخت PastSubjInflInTrans;
-گریزاند PastSubjInfl;
-گریست PastSubjInflInTrans;
-گریید PastSubjInflInTrans;
-گزید PastSubjInfl;
-گستراند PastSubjInfl;
-گسترانید PastSubjInfl;
-گسترد PastSubjInfl;
-گسست PastSubjInfl;
-گسیخت PastSubjInfl;
-گشاد PastSubjInfl;
-گشت PastSubjInfl;!!!!virastyar
-گشود PastSubjInfl;
-گفت PastSubjInfl;
-گمارد PastSubjInfl;
-گماشت PastSubjInfl;
-گنجاند PastSubjInfl;
-گنجانید PastSubjInfl;!!!!virastyar
-گنجید PastSubjInflInTrans;
-گنداند PastSubjInfl;
-گندید PastSubjInflInTrans;
-گوزید PastSubjInflInTrans;
-گیراند PastSubjInfl;
-لاسید PastSubjInflInTrans;
-لافید PastSubjInflInTrans;
-لرزاند PastSubjInfl;
-لرزانید PastSubjInfl;
-لرزید PastSubjInflInTrans;
-لغزاند PastSubjInfl;
-لغزانید PastSubjInfl;
-لغزید PastSubjInflInTrans;
-لقید PastSubjInflInTrans;
-لمباند PastSubjInfl;
-لمبانید PastSubjInfl;
-لمید PastSubjInflInTrans;
-لنگید PastSubjInflInTrans;
-لولید PastSubjInflInTrans;
-لهاند PastSubjInfl;
-لهانید PastSubjInfl;
-لهید PastSubjInflInTrans;
-لیسید PastSubjInfl;
-ماسید PastSubjInflInTrans;
-مالاند PastSubjInfl;
-مالید PastSubjInfl;
-ماند PastSubjInflInTrans;
-مرد PastSubjInflInTrans;
-مکید PastSubjInfl;
-مویید PastSubjInflInTrans;
-میراند PastSubjInfl;
-نازید PastSubjInflInTrans;
-نالاند PastSubjInfl;!!!!virastyar
-نالید PastSubjInflInTrans;
-نامید PastSubjInfl;
-نشاند PastSubjInfl;
-نشست PastSubjInflInTrans;
-نکوهید PastSubjInfl;
-نگاشت PastSubjInfl;
-نگریست PastSubjInfl;
-نمایاند PastSubjInfl;
-نمود PastSubjInfl;
-نواخت PastSubjInfl;
-نوردید PastSubjInfl;
-نوشاند PastSubjInfl;
-نوشت PastSubjInfl;
-نوشید PastSubjInfl;
-نهاد PastSubjInfl;
-نهفت PastSubjInfl;
-ورزاند PastSubjInfl;
-ورزانید PastSubjInfl;
-ورزید PastSubjInflInTrans;
-وزاند PastSubjInfl;!!!!virastyar
-وزید PastSubjInflInTrans;
-هراساند PastSubjInfl;!!!!virastyar
-هراسید PastSubjInflInTrans;
-یازید PastSubjInflInTrans;
-یافت PastSubjInflInTrans;
-
-
 LEXICON iSimpleP
 آگاهوند ipast;
 افشوند ipast;
@@ -2189,16 +1156,14 @@ LEXICON iSimpleP
 دویید ipastInTrans;
 موند ipastInTrans;
 دونست ipastInTrans;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!مگردومیان!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!برای حالت مگردومیان تمام رولهای مربوط به دو فعل "ذاشت" را در حالت  غیر فعال(کامنت) قرار دهید
-!!(خط پایین)و تنها رول این بخش را فعال کنید
-!!ذاشت ipast;
-!!شست ipastInTrans;
-!!شوند ipast;
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-@R.SPECINFL@ذاشت@R.SPECINFL@ ipast;!!!!دارای تصریف ناقص - تصریف تنها برای ماضی استمراری و منفی ان ، نقلی مستمرو منفی آن، منفی ماضی ساده، منفی ماضی نقلی، منفی ماضی بعید، منفی ماضی ابعد، 
-@R.SPECINFL@شست@R.SPECINFL@ ipastInTrans;
-@R.SPECINFL@شوند@R.SPECINFL@ ipastInTrans;
+@R.SPECINFL@گذاشت:ذاشت@R.SPECINFL@ ipast;!!!!دارای تصریف ناقص - تصریف تنها برای ماضی استمراری و منفی ان ، نقلی مستمرو منفی آن، منفی ماضی ساده، منفی ماضی نقلی، منفی ماضی بعید، منفی ماضی ابعد، 
+@R.SPECINFL@نشست:شست@R.SPECINFL@ ipastInTrans;
+@R.SPECINFL@نشوند:شوند@R.SPECINFL@ ipastInTrans;
+@R.SPECINFL@انداخت:نداخت@R.SPECINFL@ ipast;
+@R.SPECINFL@افتاد:فتاد@R.SPECINFL@ ipastInTrans;
+@R.SPECINFL@افتاد:وفتاد@R.SPECINFL@ ipastInTrans;
+@R.SPECINFL@اورد:ورد@R.SPECINFL@ ipast;
+@R.SPECINFL@اومد:ومد@R.SPECINFL@ ipastInTrans;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!formal!!!!!!!!!!!!!!!
 انداخت past;
@@ -2274,8 +1239,8 @@ LEXICON iSimpleP
 بخشید past;
 برازید past;!!!!virastyar
 براند past;!!!!virastyar
-برد past;
-برید past;
+بُرد:برد past;
+بُرید:برید past;
 بست past;
 بلعید past;
 بود pastInTrans;
@@ -2613,7 +1578,7 @@ LEXICON iSimpleP
 کشانید past;
 کشت past;
 کشید past;
-کند past;!!!!virastyar
+کَند:کند past;!!!!kand
 کوباند past;
 کوبانید past;
 کوبید past;
@@ -2721,9 +1686,8 @@ LEXICON iSimpleP
 
 
 LEXICON iVpres
-ا ipresInTrans;
+!!!!ا ipresInTrans;
 ار ipres;
-اوفت ipresInTrans;!!!!corpus-duplicate
 افشون ipres;
 پاشون ipres;
 پرون ipres;
@@ -2754,7 +1718,7 @@ LEXICON iVpres
 چلون ipres;
 خوابون ipres;!!!!خابون
 خارون ipres;
-خوا ipres;!!!!خا
+!!!!خوا iALEFpres;!!!!خا
 خراشون ipres;
 خرون ipres;
 خورون ipres;
@@ -2762,31 +1726,31 @@ LEXICON iVpres
 خندون ipres;
 خون ipres;
 خیسون ipres;
-د ipres;
+
 درخشون ipres;
 دون ipres;
 دوون ipres;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!برای مضارع لازم نیست زیرا یا امری و التزامی با پیشوند "ب" ساخته میشود و یا مضارع اخباری با پیشوند "می" 
-ذار ipres;
-شین ipresInTrans;!!!!corpus
-شون ipres;
+گذار:ذار ipres;
+نشین:شین ipresInTrans;!!!!corpus
+نشون:شون ipres;
+انداز:نداز ipres;
+افت:فت ipresInTrans;
+افت:وفت ipresInTrans;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!مگردومیان!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!ر ipresInTrans;
-!ش ipresInTrans;
-!گ ipres;
-@P.NOTFORIMPER.ON@ر@P.NOTFORIMPER.ON@ ipresInTrans;
-@P.NOTFORIMPER.ON@ش@P.NOTFORIMPER.ON@ ipresInTrans;
-@P.NOTFORIMPER.ON@گ@P.NOTFORIMPER.ON@ ipres;
+@P.LONEINFSTEM.ON@ر@P.LONEINFSTEM.ON@ ipresInTrans;
+@P.LONEINFSTEM.ON@ش@P.LONEINFSTEM.ON@ ipresInTrans;
+@P.LONEINFSTEM.ON@گ@P.LONEINFSTEM.ON@ ipres;
+@P.LONEINFSTEM.ON@د@P.LONEINFSTEM.ON@ ipres;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-رس ipresInTrans;!!!!corpus
+!رس ipresInTrans;!!!!corpus
 رسون ipres;
 رقص ipres;
 رنجون ipres;
 رنج ipresInTrans;
 رون ipres;
-زا ipres;
+زا iALEFpres;
 سابون ipres;
 سوزون ipres;
 شورون ipres;
@@ -2819,12 +1783,12 @@ LEXICON iVpres
 ورزون ipres;
 !!!!!!!!!!!!!!!formal!!!!!!!!!!!!!!!
 انداز pres;
-آ presInTrans;!!!!virastyar
-آرا pres;
+ا ALEFpresInTrans;!!!!virastyar
+آرا ALEFpres;
 آرام pres;
 آزار pres;
-آزما pres;
-آسا pres;
+آزما ALEFpres;
+آسا ALEFpres;
 آشام pres;
 آشفت presInTrans;!!!!virastyar
 آشکار pres;
@@ -2834,8 +1798,8 @@ LEXICON iVpres
 آکن pres;
 آگاه pres;
 آگاهان pres;
-آلا pres;
-آما pres;
+آلا ALEFpres;
+آما ALEFpres;
 آماس pres;
 آمرز pres;
 آموز pres;
@@ -2849,13 +1813,13 @@ LEXICON iVpres
 افت presInTrans;
 افراز pres;
 افروز pres;
-افزا pres;
+افزا ALEFpres;
 افسر pres;
 افشان pres;
 افشر pres;
 افکن pres;
 افگن pres;!!!!virastyar
-القا pres;
+القا ALEFpres;
 انبار pres;
 انباز pres;!!!!virastyar
 انجام pres;
@@ -2874,18 +1838,19 @@ LEXICON iVpres
 باف pres;
 بال pres;
 بخش pres;
-بخشا pres;
-بر pres;
+بخشا ALEFpres;
+بُر:بر pres;
+بَر:بر pres;
 براز pres;!!!!virastyar
 بلع pres;
 بند pres;
-بوی pres; !!smelling
+بو VAVpres; !!smelling
 بوس pres;
 بین pres;
-پا pres;
+پا ALEFpres;
 پاش pres;
 پاشان pres;!!!!virastyar
-پالا pres;
+پالا ALEFpres;
 پخش pres;
 پذیر pres;
 پذیران pres;!!!!virastyar
@@ -2902,7 +1867,7 @@ LEXICON iVpres
 پز pres;
 پزان pres;
 پژمر pres;
-پژوه pres;
+@P.LONEFRMSTEM.ON@پژوه@P.LONEFRMSTEM.ON@ pres;
 پسند pres;
 پک pres;
 پلاس pres;
@@ -2911,7 +1876,7 @@ LEXICON iVpres
 پناه pres;
 پناهان pres;!!!!virastyar
 پندار pres;
-پوی pres; !!searching
+پو VAVpres; !!searching
 پوز pres;
 پوس pres;
 پوسان pres;
@@ -2919,8 +1884,8 @@ LEXICON iVpres
 پوشان pres;
 پیچ pres;
 پیچان pres;
-پیرا pres;
-پیما pres;
+پیرا ALEFpres;
+پیما ALEFpres;
 پیوند pres;
 تاب pres;
 تابان pres;
@@ -2932,7 +1897,7 @@ LEXICON iVpres
 تراز pres;
 تراش pres;
 تراشان pres;!!!!virastyar
-تراو pres;
+@P.LONEFRMSTEM.ON@تراو@P.LONEFRMSTEM.ON@ pres;
 ترس presInTrans;
 ترسان pres;
 ترش presInTrans;
@@ -2953,11 +1918,11 @@ LEXICON iVpres
 جو pres;
 جوش pres;
 جوشان pres;
-جوی pres;
-جه presInTrans;
+جو VAVpres;
+@P.LONEFRMSTEM.ON@جه@P.LONEFRMSTEM.ON@ presInTrans;
 جهان pres;
 چاپ pres;
-چای presInTrans;
+چا ALEFpresInTrans;
 چپ presInTrans;
 چپان pres;
 چر presInTrans;
@@ -2994,7 +1959,7 @@ LEXICON iVpres
 خواب presInTrans;
 خوابان pres;
 خوان pres;
-خواه pres;
+@P.LONEFRMSTEM.ON@خواه@P.LONEFRMSTEM.ON@ pres;
 خور pres;
 خوران pres;
 خیز presInTrans;
@@ -3002,7 +1967,6 @@ LEXICON iVpres
 خیسان pres;
 دان presInTrans;
 در pres;
-درا pres;
 درخش presInTrans;
 درخشان pres;!!!!virastyar
 دزد pres;
@@ -3010,12 +1974,12 @@ LEXICON iVpres
 دوان pres;
 دوز pres;
 دوش pres;
-ده pres;
+@P.LONEFRMSTEM.ON@ده@P.LONEFRMSTEM.ON@ pres;
 راست pres;
 راستان pres;
 ران pres;
 رایان pres;
-ربا pres;
+ربا ALEFpres;
 رخش presInTrans;
 رزم presInTrans;
 رس presInTrans;
@@ -3026,39 +1990,39 @@ LEXICON iVpres
 رمان pres;
 رنج presInTrans;
 رنجان pres;
-رو presInTrans; !!!going
-روی presInTrans; !!!growing
+@P.LONEFRMSTEM.ON@رو@P.LONEFRMSTEM.ON@ presInTrans; !!!going
+رو VAVpresInTrans; !!!growing
 روب pres;
 رویان pres;
-ره presInTrans;
-رها pres;
+@P.LONEFRMSTEM.ON@ره@P.LONEFRMSTEM.ON@ presInTrans;
+رها ALEFpres;
 رهان pres;
 ریز pres;
 ریس pres;
 رین presInTrans;
-زا pres;
+زا ALEFpres;
 زایان pres;
-زدا pres;
+زدا ALEFpres;
 زن pres;
-زی presInTrans;
+زی YEHpresInTrans;
 زیب pres;
 ژول pres;
-سا pres;
+سا ALEFpres;
 ساو pres;
 ساب pres;
 سابان pres;!!!!virastyar
 ساز pres;
 سپار pres;
 سپر pres;
-ستا pres;
+ستا ALEFpres;
 ستان pres;
 ستد pres;
-ستوه pres;
+@P.LONEFRMSTEM.ON@ستوه@P.LONEFRMSTEM.ON@ pres;
 ستیز pres;
 سر pres;
-سرا pres;
+سرا ALEFpres;
 سز presInTrans;
-سزا pres;!!!!virastyar
+سزا ALEFpres;!!!!virastyar
 سگال pres;!!!!virastyar
 سنج pres;
 سوز presInTrans;
@@ -3080,10 +2044,10 @@ LEXICON iVpres
 شوت pres;
 شور presInTrans;
 شوران pres;
-شو presInTrans; !!becoming
-شوی pres; !!!washing
+@P.LONEFRMSTEM.ON@شو@P.LONEFRMSTEM.ON@ presInTrans; !!becoming
+شو VAVpres; !!!washing
 شویان pres;
-شیو pres;
+@P.LONEFRMSTEM.ON@شیو@P.LONEFRMSTEM.ON@ pres;
 صاف pres;
 صرف pres;
 طلب presInTrans;
@@ -3092,8 +2056,8 @@ LEXICON iVpres
 غرمب presInTrans;
 غلت presInTrans;
 غلتان pres;
-فرسا pres;
-فرما pres;
+فرسا ALEFpres;
+فرما ALEFpres;
 فروز pres;
 فروزان pres;
 فروش pres;
@@ -3109,26 +2073,27 @@ LEXICON iVpres
 قبولان pres;
 کار pres;
 کاو pres;
-کاه pres;
+@P.LONEFRMSTEM.ON@کاه@P.LONEFRMSTEM.ON@ pres;
 کپ presInTrans;
 کش pres;
 کشان pres;
-کن pres;
+کُن:کن pres;!kon
+کَن:کن pres;!kan
 کوب pres;
 کوبان pres;!!!!virastyar
 کوچ presInTrans;
 کوچان pres;
 کوش presInTrans;
-گا pres;
+گا ALEFpres;
 گداز pres;
 گذار pres;
 گذر presInTrans;
 گذران pres;
-گرا presInTrans;
+گرا ALEFpresInTrans;
 گرد pres;
 گردان pres;
 گرو presInTrans;
-گری presInTrans;
+!!!!گری presInTrans;
 گریان pres;
 گریز presInTrans;
 گریزان pres;
@@ -3140,13 +2105,13 @@ LEXICON iVpres
 گستران pres;
 گسل presInTrans;
 گسیل pres;
-گشا pres;
+گشا ALEFpres;
 گمار pres;
 گنج pres;
 گنجان pres;
 گند presInTrans;
 گندان pres;
-گو pres;
+گو VAVpres;
 گوار pres;!!!!virastyar
 گور pres;
 گوز presInTrans;!!!!virastyar
@@ -3170,7 +2135,7 @@ LEXICON iVpres
 مالان pres;
 مان presInTrans;
 مک pres;
-موی presInTrans; !!!crying
+موی VAVpresInTrans; !!!crying
 میر presInTrans;
 میران pres;
 ناز pres;
@@ -3181,14 +2146,14 @@ LEXICON iVpres
 نشین presInTrans;
 نگار pres;!!!!virastyar
 نگر pres;
-نما pres;
+نما ALEFpres;
 نمایان pres;
 نواز pres;
 نورد pres;
 نوش pres;
 نوشان pres;
 نویس pres;
-نه pres;
+@P.LONEFRMSTEM.ON@نه@P.LONEFRMSTEM.ON@ pres;
 نهاد pres;
 ورز pres;
 وز presInTrans;
@@ -3199,9 +2164,8 @@ LEXICON iVpres
 یاز pres;
 
 LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل حال غیر رسمی
-ا iImperInflInTrans;
+!!!!ا iImperInflInTrans;
 ار iImperInfl;
-اوفت iImperInflInTrans;!!!!corpus-duplicate
 افشون iImperInfl;
 پاشون iImperInfl;
 پرون iImperInfl;
@@ -3232,7 +2196,7 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 چلون iImperInfl;
 خوابون iImperInfl;!!!!خابون
 خارون iImperInfl;
-خوا iImperInfl;!!!!خا
+!!!!خوا iALEFImperInfl;!!!!خا
 خراشون iImperInfl;
 خرون iImperInfl;
 خورون iImperInfl;
@@ -3240,32 +2204,31 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 خندون iImperInfl;
 خون iImperInfl;
 خیسون iImperInfl;
-د iImperInfl;
 درخشون iImperInfl;
 دون iImperInfl;
 دوون iImperInfl;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!برای مضارع لازم نیست زیرا یا امری و التزامی با پیشوند "ب" ساخته میشود و یا مضارع اخباری با پیشوند "می" 
 !!!---نیازی به تغییر نیست
-ذار iImperInfl;
-شین iImperInflInTrans;!!!!corpus
-شون iImperInfl;
+گذار:ذار iImperInfl;
+نشین:شین iImperInflInTrans;!!!!corpus
+نشون:شون iImperInfl;
+افت:فت iImperInflInTrans;
+افت:وفت iImperInflInTrans;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!مگردومیان!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!ر iImperInflInTrans;
-!ش iImperInflInTrans;
-!گ iImperInfl;
-@P.NOTFORIMPER.ON@ر@P.NOTFORIMPER.ON@ iImperInflInTrans;
-@P.NOTFORIMPER.ON@ش@P.NOTFORIMPER.ON@ iImperInflInTrans;
-@P.NOTFORIMPER.ON@گ@P.NOTFORIMPER.ON@ iImperInfl;
+@P.LONEINFSTEM.ON@ر@P.LONEINFSTEM.ON@ iImperInflInTrans;
+@P.LONEINFSTEM.ON@ش@P.LONEINFSTEM.ON@ iImperInflInTrans;
+@P.LONEINFSTEM.ON@گ@P.LONEINFSTEM.ON@ iImperInfl;
+@P.LONEINFSTEM.ON@د@P.LONEINFSTEM.ON@ iImperInfl;
+@P.LONEINFSTEM.ON@ا@P.LONEINFSTEM.ON@ ALEFImperInflInTrans;!!!!virastyar
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-رس iImperInflInTrans;!!!!corpus
+!رس iImperInflInTrans;!!!!corpus
 رسون iImperInfl;
 رقص iImperInfl;
 رنجون iImperInfl;
 رنج iImperInflInTrans;
 رون iImperInfl;
-زا iImperInfl;
+زا iALEFImperInfl;
 سابون iImperInfl;
 سوزون iImperInfl;
 شورون iImperInfl;
@@ -3296,14 +2259,15 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 نوشون iImperInfl;
 نمایون iImperInfl;
 ورزون iImperInfl;
+نداز iImperInfl;
+
 !!!!!!!!!!!!!!!formal!!!!!!!!!!!!!!!
 انداز ImperInfl;
-آ ImperInflInTrans;!!!!virastyar
-آرا ImperInfl;
+آرا ALEFImperInfl;
 آرام ImperInfl;
 آزار ImperInfl;
-آزما ImperInfl;
-آسا ImperInfl;
+آزما ALEFImperInfl;
+آسا ALEFImperInfl;
 آشام ImperInfl;
 آشفت ImperInflInTrans;!!!!virastyar
 آشکار ImperInfl;
@@ -3313,8 +2277,8 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 آکن ImperInfl;
 آگاه ImperInfl;
 آگاهان ImperInfl;
-آلا ImperInfl;
-آما ImperInfl;
+آلا ALEFImperInfl;
+آما ALEFImperInfl;
 آماس ImperInfl;
 آمرز ImperInfl;
 آموز ImperInfl;
@@ -3328,13 +2292,13 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 افت ImperInflInTrans;
 افراز ImperInfl;
 افروز ImperInfl;
-افزا ImperInfl;
+افزا ALEFImperInfl;
 افسر ImperInfl;
 افشان ImperInfl;
 افشر ImperInfl;
 افکن ImperInfl;
 افگن ImperInfl;!!!!virastyar
-القا ImperInfl;
+القا ALEFImperInfl;
 انبار ImperInfl;
 انباز ImperInfl;!!!!virastyar
 انجام ImperInfl;
@@ -3353,18 +2317,19 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 باف ImperInfl;
 بال ImperInfl;
 بخش ImperInfl;
-بخشا ImperInfl;
-بر ImperInfl;
+بخشا ALEFImperInfl;
+بُر:بر ImperInfl;
+بَر:بر ImperInfl;
 براز ImperInfl;!!!!virastyar
 بلع ImperInfl;
 بند ImperInfl;
-بوی ImperInfl; !!smelling
+بو VAVImperInfl; !!smelling
 بوس ImperInfl;
 بین ImperInfl;
-پا ImperInfl;
+پا ALEFImperInfl;
 پاش ImperInfl;
 پاشان ImperInfl;!!!!virastyar
-پالا ImperInfl;
+پالا ALEFImperInfl;
 پخش ImperInfl;
 پذیر ImperInfl;
 پذیران ImperInfl;!!!!virastyar
@@ -3390,7 +2355,7 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 پناه ImperInfl;
 پناهان ImperInfl;!!!!virastyar
 پندار ImperInfl;
-پوی ImperInfl; !!searching
+پو VAVImperInfl; !!searching
 پوز ImperInfl;
 پوس ImperInfl;
 پوسان ImperInfl;
@@ -3398,8 +2363,8 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 پوشان ImperInfl;
 پیچ ImperInfl;
 پیچان ImperInfl;
-پیرا ImperInfl;
-پیما ImperInfl;
+پیرا ALEFImperInfl;
+پیما ALEFImperInfl;
 پیوند ImperInfl;
 تاب ImperInfl;
 تابان ImperInfl;
@@ -3432,11 +2397,11 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 جو ImperInfl;
 جوش ImperInfl;
 جوشان ImperInfl;
-جوی ImperInfl;
+جو VAVImperInfl;
 جه ImperInflInTrans;
 جهان ImperInfl;
 چاپ ImperInfl;
-چای ImperInflInTrans;
+چا ALEFImperInflInTrans;
 چپ ImperInflInTrans;
 چپان ImperInfl;
 چر ImperInflInTrans;
@@ -3481,7 +2446,6 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 خیسان ImperInfl;
 دان ImperInflInTrans;
 در ImperInfl;
-درا ImperInfl;
 درخش ImperInflInTrans;
 درخشان ImperInfl;!!!!virastyar
 دزد ImperInfl;
@@ -3494,7 +2458,7 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 راستان ImperInfl;
 ران ImperInfl;
 رایان ImperInfl;
-ربا ImperInfl;
+ربا ALEFImperInfl;
 رخش ImperInflInTrans;
 رزم ImperInflInTrans;
 رس ImperInflInTrans;
@@ -3506,7 +2470,7 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 رنج ImperInflInTrans;
 رنجان ImperInfl;
 رو ImperInflInTrans; !!!going
-روی ImperInfl; !!!growing
+رو VAVImperInfl; !!!growing
 روب ImperInfl;
 رویان ImperInfl;
 ره ImperInflInTrans;
@@ -3515,29 +2479,29 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 ریز ImperInfl;
 ریس ImperInfl;
 رین ImperInflInTrans;
-زا ImperInfl;
+زا ALEFImperInfl;
 زایان ImperInfl;
-زدا ImperInfl;
+زدا ALEFImperInfl;
 زن ImperInfl;
-زی ImperInflInTrans;
+زی YEHImperInflInTrans;
 زیب ImperInfl;
 ژول ImperInfl;
-سا ImperInfl;
+سا ALEFImperInfl;
 ساو ImperInfl;
 ساب ImperInfl;
 سابان ImperInfl;!!!!virastyar
 ساز ImperInfl;
 سپار ImperInfl;
 سپر ImperInfl;
-ستا ImperInfl;
+ستا ALEFImperInfl;
 ستان ImperInfl;
 ستد ImperInfl;
 ستوه ImperInfl;
 ستیز ImperInfl;
 سر ImperInfl;
-سرا ImperInfl;
+سرا ALEFImperInfl;
 سز ImperInflInTrans;
-سزا ImperInfl;!!!!virastyar
+سزا ALEFImperInfl;!!!!virastyar
 سگال ImperInfl;!!!!virastyar
 سنج ImperInfl;
 سوز ImperInflInTrans;
@@ -3560,7 +2524,7 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 شوت ImperInfl;
 شور ImperInflInTrans;
 شوران ImperInfl;
-شوی ImperInfl;
+شو VAVImperInfl;
 شویان ImperInfl;
 شیو ImperInfl;
 صاف ImperInfl;
@@ -3571,8 +2535,8 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 غرمب ImperInflInTrans;
 غلت ImperInflInTrans;
 غلتان ImperInfl;
-فرسا ImperInfl;
-فرما ImperInfl;
+فرسا ALEFImperInfl;
+فرما ALEFImperInfl;
 فروز ImperInfl;
 فروزان ImperInfl;
 فروش ImperInfl;
@@ -3592,22 +2556,23 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 کپ ImperInflInTrans;
 کش ImperInfl;
 کشان ImperInfl;
-کن ImperInfl;
+کُن:کن ImperInfl;!kon
+کَن:کن ImperInfl;!kan
 کوب ImperInfl;
 کوبان ImperInfl;!!!!virastyar
 کوچ ImperInflInTrans;
 کوچان ImperInfl;
 کوش ImperInflInTrans;
-گا ImperInfl;
+گا ALEFImperInfl;
 گداز ImperInfl;
 گذار ImperInfl;
 گذر ImperInflInTrans;
 گذران ImperInfl;
-گرا ImperInflInTrans;
+گرا ALEFImperInflInTrans;
 گرد ImperInfl;
 گردان ImperInfl;
 گرو ImperInflInTrans;
-گری ImperInflInTrans;
+@P.LONEINFSTEM.ON@گری@P.LONEINFSTEM.ON@ ImperInflInTrans;
 گریان ImperInfl;
 گریز ImperInflInTrans;
 گریزان ImperInfl;
@@ -3619,13 +2584,13 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 گستران ImperInfl;
 گسل ImperInflInTrans;
 گسیل ImperInfl;
-گشا ImperInfl;
+گشا ALEFImperInfl;
 گمار ImperInfl;
 گنج ImperInfl;
 گنجان ImperInfl;
 گند ImperInflInTrans;
 گندان ImperInfl;
-گو ImperInfl;
+گو VAVImperInfl;
 گوار ImperInfl;!!!!virastyar
 گور ImperInfl;
 گوز ImperInflInTrans;!!!!virastyar
@@ -3649,7 +2614,7 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 مالان ImperInfl;
 مان ImperInflInTrans;
 مک ImperInfl;
-موی ImperInflInTrans; !!!crying
+مو VAVImperInflInTrans; !!!crying
 میر ImperInflInTrans;
 میران ImperInfl;
 ناز ImperInfl;
@@ -3660,7 +2625,7 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 نشین ImperInflInTrans;
 نگار ImperInfl;!!!!virastyar
 نگر ImperInfl;
-نما ImperInfl;
+نما ALEFImperInfl;
 نمایان ImperInfl;
 نواز ImperInfl;
 نورد ImperInfl;

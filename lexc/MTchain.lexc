@@ -1,0 +1,384 @@
+Multichar_Symbols @P.VAR.ON@ @P.VA.ON@ @P.DAR.ON@ @P.BAR.ON@ @P.BAZ.ON@ @P.FARA.ON@ @R.VAR@ @R.VA@ @R.DAR@ @R.BAR@ @R.BAZ@ @R.FARA@ @P.VAY.ON@ @R.VAY@ @P.PA.ON@ @R.PA@ @D.PA@ @P.TINTER.ON@ @D.TINTER@ @P.NEGAH.ON@ @R.NEGAH@ @P.FORMAL.ON@ @D.FORMAL@ @C.FORMAL@ @P.LONELYSTEM.ON@ @D.LONELYSTEM@ @P.VAR.ON@ @R.VAR@ @P.FORU.ON@ @R.FORU@ @R.FORMAL@ @P.IMPERATIVE.ON@ @D.IMPERATIVE@ @R.IMPERATIVE@ @P.ALLIMPER.ON@ @R.ALLIMPER@ @D.ALLIMPER@ @D.LONEFRMSTEM@ @P.LONEFRMSTEM.ON@ @D.TWOSIDED@ @P.TWOSIDED.ON@
+
+LEXICON Root
+@P.VAR.ON@ور+:@P.VAR.ON@ور* iChainVHub;
+@P.VA.ON@وا+:@P.VA.ON@وا* iChainVHub;
+@P.DAR.ON@در+:@P.DAR.ON@در* iChainVHub;
+@P.BAR.ON@بر+:@P.BAR.ON@بر* iChainVHub;
+@P.BAZ.ON@باز+:@P.BAZ.ON@باز* iChainVHub;
+@P.FARA.ON@فرا+:@P.FARA.ON@فرا^ iChainVHub;!!!!corpus
+@P.VAY.ON@وای+:@P.VAY.ON@وای* iChainVHub;!!!!corpus
+@P.VAY.ON@وا+:@P.VAY.ON@وا* iChainVHub;!!!!corpus
+@P.PA.ON@پا+:@P.PA.ON@پا* iChainVHub;!!!!corpus-only-formal-imperative
+@P.NEGAH.ON@نگه+:@P.NEGAH.ON@نگه^ iChainVHub;
+@P.FORU.ON@فرو+:@P.FORU.ON@فرو^ iChainVHub; !!!!!!!!!!!!!!!!!newnew
+
+LEXICON Tintv
+@P.TINTER.ON@+ت:@P.TINTER.ON@*ت iObjectClitic;
+
+LEXICON iChainVHub
+iChainVB;
+منفی+:ن* iChainVB;
+!!!!!!!!!!!!!!!!!Iregularities!!!!!!!!!!!!!!!!!!!!!past
+@R.BAZ@منفی+ف.م.ب=ذاشت:@R.BAZ@ن*ذاشت iPsPInfl; !! منفی ماضی بعید - نذاشته بود
+@R.BAZ@منفی+ف.م.ال=ذاشت:@R.BAZ@ن*ذاشت iPastSubjInfl; !! منفی ماضی التزامی - نذاشته باشه
+
+LEXICON iChainVB
+ف.م.ب=:0 iChainPastP; !اومده بودم - ماضی بعید
+!!!!!!!!ف.م.ا.ب=:0 iChainPastPP; !اومده بوده ام - ماضی ابعد  !!! کم کاربرد
+ف.م.ال=:0 iChainPastSubj; !اومده باشم - ماضی التزامی
+!!!!ف.آ=:0 iChainFuture; !خواهم اومد - فعل آینده  !!!! احتمالا بدون کاربرد
+ف.آ=:0 chainFuture; !خواهم رفت - فعل آینده
+ف.م.ا.ب=:0 chainPastPP; !خریده بوده ام - ماضی ابعد
+
+LEXICON iObjectClitic
+@C.FORMAL@+ومفعولی۱:@C.FORMAL@*م iStress;
+@C.FORMAL@+ومفعولی۲:@C.FORMAL@*ت iStress;
+@C.FORMAL@+ومفعولی۳:@C.FORMAL@*ش iStress;
+@C.FORMAL@+ومفعولی۴:@C.FORMAL@*مون iStress;
+@C.FORMAL@+ومفعولی۴:@C.FORMAL@*مان iStress;
+@C.FORMAL@+ومفعولی۵:@C.FORMAL@*تون iStress;
+@C.FORMAL@+ومفعولی۵:@C.FORMAL@*تان iStress;
+@C.FORMAL@+ومفعولی۶:@C.FORMAL@*شون iStress;
+@C.FORMAL@+ومفعولی۶:@C.FORMAL@*شان iStress;
+@D.TINTER@:@D.TINTER@ iStress;
+
+!!!!شناسایی فعل های دوجهی ممکن نیست بنابراین @R.TWOSIDED@ به @D.TWOSIDED@ تبدیل شد 
+
+LEXICON iStress
+@D.FORMAL@:@D.FORMAL@ #;
+@R.FORMAL@ +رسمی:@R.FORMAL@ #;
++تاکید:*ا #;
++تاکید:^ها #;
++عطف:*و #;
+@D.IMPERATIVE@+هم:&م@D.IMPERATIVE@ #;
+
+LEXICON PastPPInfl !!!! قواعد تصریفی ماضی ابعد
++وربطی۱+رسمی:*ه^بوده×ام #;
++وربطی۲+رسمی:*ه^بوده×ای #;
++ف.ربطی۳+رسمی:*ه^بوده^است #;
++وربطی۴+رسمی:*ه^بوده×ایم #;
++وربطی۵+رسمی:*ه^بوده×اید #;
++وربطی۶+رسمی:*ه^بوده×اند #;
+
+LEXICON chainFuture !!!! قواعد تصریف فعل آینده  رسمی
+خواه+ش۱+:خواهم^ chainFutureInf;
+خواه+ش۲+:خواهی^ chainFutureInf;
+خواه+ش۳+:خواهد^ chainFutureInf;
+خواه+ش۴+:خواهیم^ chainFutureInf;
+خواه+ش۵+:خواهید^ chainFutureInf;
+خواه+ش۶+:خواهند^ chainFutureInf;
+
+LEXICON iPsPInflInTrans  !ماضی بعید ناگذر غیر رسمی
++ش۱:*ه^بودم iStress;
++ش۲:*ه^بودی iStress;
++ش۳:*ه^بود iStress;
+@C.FORMAL@+ش۳+ش.تاکیدی:@C.FORMAL@*ه^بودش SubjCliticDiacritics;
++ش۴:*ه^بودیم iStress;
+@C.FORMAL@+ش۵:@C.FORMAL@*ه^بودین iStress;
++ش۵:*ه^بودید iStress;
+@C.FORMAL@+ش۶:@C.FORMAL@*ه^بودن iStress;
++ش۶:*ه^بودند iStress;
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON PsPInflInTrans ! ماضی بعید ناگذر رسمی
+@P.FORMAL.ON@:@P.FORMAL.ON@ iPsPInflInTrans;
+
+LEXICON SubjCliticDiacritics
+@C.FORMAL@:@C.FORMAL@ iStress;
+
+LEXICON iPsPInfl !!!! قواعد تصریفی ماضی بعید غیر رسمی
++ش۱:*ه^بودم iObjectClitic;
++ش۲:*ه^بودی iObjectClitic;
++ش۳:*ه^بود iObjectClitic;
+@D.TWOSIDED@+ش۳+وفاعلی:@D.TWOSIDED@*ه^بودش SubjCliticDiacritics;
+@C.FORMAL@+ش۳:@C.FORMAL@*ه^بود Tintv;!!!!ت کمکی برای شناسایی مفعول زیرا شناسه بروز حرفی ندارد
++ش۴:*ه^بودیم iObjectClitic;
+@C.FORMAL@+ش۵:@C.FORMAL@*ه^بودین iObjectClitic;
++ش۵:*ه^بودید iObjectClitic;
+@C.FORMAL@+ش۶:@C.FORMAL@*ه^بودن iObjectClitic;
++ش۶:*ه^بودند iObjectClitic;
+!-------------------------------!
+LEXICON PsPInfl !!!! قواعد تصریفی ماضی بعید رسمی
+@P.FORMAL.ON@:@P.FORMAL.ON@ iPsPInfl;
+
+LEXICON iPastSubjInflInTrans !!!! قواعد تصریفی ماضی التزامی غیر رسمی
++ش۱:*ه^باشم iStress;
++ش۲:*ه^باشی iStress;
+@C.FORMAL@+ش۳:@C.FORMAL@*ه^باشه iStress;
+@C.FORMAL@+ش۳:@C.FORMAL@*ه^باشد*ش SubjCliticDiacritics;
++ش۳:*ه^باشد iStress;
++ش۴:*ه^باشیم iStress;
+@C.FORMAL@+ش۵:@C.FORMAL@*ه^باشین iStress;
++ش۵:*ه^باشید iStress;
+@C.FORMAL@+ش۶:@C.FORMAL@*ه^باشن iStress;
++ش۶:*ه^باشند iStress;
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON PastSubjInflInTrans !!!! قواعد تصریفی ماضی التزامی
+@P.FORMAL.ON@:@P.FORMAL.ON@ iPastSubjInflInTrans;
+
+LEXICON iPastSubjInfl !!!! قواعد تصریفی ماضی التزامی غیر رسمی
++ش۱:*ه^باشم iObjectClitic;
++ش۲:*ه^باشی iObjectClitic;
+@C.FORMAL@+ش۳:@C.FORMAL@*ه^باشه iObjectClitic;
+@D.TWOSIDED@+ش۳:@D.TWOSIDED@*ه^باشد*ش SubjCliticDiacritics;
++ش۳:*ه^باشد iObjectClitic;
++ش۴:*ه^باشیم iObjectClitic;
+@C.FORMAL@+ش۵:@C.FORMAL@*ه^باشین iObjectClitic;
++ش۵:*ه^باشید iObjectClitic;
+@C.FORMAL@+ش۶:@C.FORMAL@*ه^باشن iObjectClitic;
++ش۶:*ه^باشند iObjectClitic;
+!-------------------------------!
+LEXICON PastSubjInfl !!!! قواعد تصریفی ماضی التزامی
+@P.FORMAL.ON@:@P.FORMAL.ON@ iPastSubjInfl;
+
+LEXICON chainFutureInf
+@R.BAR@آمد+رسمی:آمد@R.BAR@ #;
+@R.BAR@افراخت+رسمی:افراخت@R.BAR@ #;
+@R.BAR@افروخت+رسمی:افروخت@R.BAR@ #;
+@R.BAR@انداخت+رسمی:انداخت@R.BAR@ #;
+@R.BAR@انگیخت+رسمی:انگیخت@R.BAR@ #;
+@R.BAR@آورد+رسمی:آورد@R.BAR@ #;
+@R.BAR@چید+رسمی:چید@R.BAR@ #;
+@R.BAR@داشت+رسمی:داشت@R.BAR@ #;
+@R.BAR@فروخت+رسمی:فروخت@R.BAR@ #;
+@R.BAR@گرداند+رسمی:گرداند@R.BAR@ #;
+@R.BAR@گرفت+رسمی:گرفت@R.BAR@ #;
+@R.BAR@گذشت+رسمی:گذشت@R.BAR@ #;
+@R.BAR@گزید+رسمی:گزید@R.BAR@ #;
+@R.BAR@کند+رسمی:کند@R.BAR@ #;
+@R.BAR@کشد+رسمی:کشد@R.BAR@ #;
+@R.BAR@نهاد+رسمی:نهاد@R.BAR@ #;
+@R.BAR@ریخت+رسمی:ریخت@R.BAR@ #;
+@R.BAR@شکست+رسمی:شکست@R.BAR@ #;
+@R.BAR@شمرد+رسمی:شمرد@R.BAR@ #;
+@R.BAR@شمارد+رسمی:شمارد@R.BAR@ #;
+@R.BAR@تابید+رسمی:تابید@R.BAR@ #;
+@R.BAR@خیزید+رسمی:خیزید@R.BAR@ #;
+@R.BAR@خورد+رسمی:خورد@R.BAR@ #;
+@R.BAZ@گشت+رسمی:گشت@R.BAZ@ #;
+@R.BAZ@گفت+رسمی:گفت@R.BAZ@ #;
+@R.BAZ@ماند+رسمی:ماند@R.BAZ@ #;
+@R.BAZ@شناخت+رسمی:شناخت@R.BAZ@ #;
+@R.BAZ@یافت+رسمی:یافت@R.BAZ@ #;
+@R.FARA@خواند+رسمی:خواند@R.FARA@ #;!!!!corpus
+@R.NEGAH@داشت+رسمی:داشت@R.NEGAH@ #;
+@R.BAR@گشت+رسمی:گشت@R.BAR@ #;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@آورد+رسمی:آورد@R.DAR@ #;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@آمد+رسمی:آمد@R.DAR@ #;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@ماند+رسمی:ماند@R.DAR@ #;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@گذاشت+رسمی:گذاشت@R.BAZ@ #;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@رساند+رسمی:رساند@R.BAZ@ #;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@خواند+رسمی:خواند@R.BAZ@ #;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@نمایاند+رسمی:نمایاند@R.BAZ@ #;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAR@تاباند+رسمی:تاباند@R.BAR@ #;!!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAR@داشت+رسمی:داشت@R.BAR@ #;!!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@رفت+رسمی:رفت@R.DAR@ #;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.FARA@گرفت+رسمی:گرفت@R.FARA@ #;!!!!!!!!!!!!!!!!!newnew
+@R.VA@داشت+رسمی:داشت@R.VA@ #;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.VA@داد+رسمی:داد@R.VA@ #;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.VAR@رفت+رسمی:رفت@R.VAR@ #;!!!!!!!!!!!!!!!!!newnew
+@R.VA@رفت+رسمی:رفت@R.VA@ #;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.FORU@رفت+رسمی:رفت@R.FORU@ #;!!!!!!!!!!!!!!!!!newnew
+@R.DAR@افتاد+رسمی:افتاد@R.DAR@ #;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.DAR@یافت+رسمی:یافت@R.DAR@ #;!!!!!!!!!!!!!!!!!!!!!newnew
+
+LEXICON iChainPastP
+@R.VAR@اومد@R.VAR@ iPsPInflInTrans;
+@R.VAR@داشت@R.VAR@ iPsPInfl;
+@R.VA@موند@R.VA@ iPsPInflInTrans;
+@R.DAR@موند@R.DAR@ iPsPInflInTrans;
+@R.DAR@اورد@R.DAR@ iPsPInfl;
+@R.DAR@اومد@R.DAR@ iPsPInflInTrans;
+@R.BAR@گردوند@R.BAR@ iPsPInfl;
+@R.BAR@تابوند@R.BAR@ iPsPInfl;
+@R.BAR@اومد@R.BAR@ iPsPInfl;
+@R.BAZ@نمایوند@R.BAZ@ iPsPInfl;
+@R.BAZ@رسوند@R.BAZ@ iPsPInfl;
+@R.BAZ@خوند@R.BAZ@ iPsPInfl;
+@R.FARA@خوند@R.FARA@ iPsPInfl;!!!!corpus
+@R.VAY@ساد@R.VAY@ iPsPInflInTrans;!!!!corpus
+@R.VAY@ستاد@R.VAY@ iPsPInflInTrans;!!!!corpus
+@R.VAY@سوند@R.VAY@ iPsPInfl;!!!!corpus
+@R.VAY@ستوند@R.VAY@ iPsPInfl;!!!!corpus
+@R.PA@شد@R.PA@ iPsPInflInTrans;!!!!corpus
+@R.DAR@اورد:ورد@R.DAR@ iPsPInfl;
+@R.DAR@اومد:ومد@R.DAR@ iPsPInflInTrans;
+@R.VAR@اومد:ومد@R.VAR@ iPsPInflInTrans;
+@R.DAR@افتاد:فتاد@R.DAR@ iPsPInflInTrans;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.DAR@افتاد:وفتاد@R.DAR@ iPsPInflInTrans;!!!!!!!!!!!!!!!!!!!!!newnew
+!!!!!!!!!!!!!!!!!!!!!
+@R.BAR@آمد@R.BAR@ PsPInflInTrans;
+@R.BAR@افراخت@R.BAR@ PsPInfl;
+@R.BAR@افروخت@R.BAR@ PsPInfl;
+@R.BAR@انداخت@R.BAR@ PsPInfl;
+@R.BAR@انگیخت@R.BAR@ PsPInfl;
+@R.BAR@آورد@R.BAR@ PsPInfl;
+@R.BAR@چید@R.BAR@ PsPInfl;
+@R.BAR@داشت@R.BAR@ PsPInfl;
+@R.BAR@فروخت@R.BAR@ PsPInfl;
+@R.BAR@گرداند@R.BAR@ PsPInfl;
+@R.BAR@گرفت@R.BAR@ PsPInfl;
+@R.BAR@گذشت@R.BAR@ PsPInflInTrans;
+@R.BAR@گزید@R.BAR@ PsPInfl;
+@R.BAR@کند@R.BAR@ PsPInfl;
+@R.BAR@کشد@R.BAR@ PsPInfl;
+@R.BAR@نهاد@R.BAR@ PsPInfl;
+@R.BAR@ریخت@R.BAR@ PsPInfl;
+@R.BAR@شکست@R.BAR@ PsPInfl;
+@R.BAR@شمرد@R.BAR@ PsPInfl;
+@R.BAR@شمارد@R.BAR@ PsPInfl;
+@R.BAR@تابید@R.BAR@ PsPInfl;
+@R.BAR@خیزید@R.BAR@ PsPInflInTrans;
+@R.BAR@خورد@R.BAR@ PsPInfl;
+@R.BAZ@گشت@R.BAZ@ PsPInflInTrans;
+@R.BAZ@گفت@R.BAZ@ PsPInfl;
+@R.BAZ@ماند@R.BAZ@ PsPInflInTrans;
+@R.BAZ@شناخت@R.BAZ@ PsPInfl;
+@R.BAZ@یافت@R.BAZ@ PsPInfl;
+@R.FARA@خواند@R.FARA@ PsPInfl;!!!!corpus
+@R.NEGAH@داشت@R.NEGAH@ PsPInfl;
+@R.BAR@گشت@R.BAR@ PsPInflInTrans;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@آورد@R.DAR@ PsPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@آمد@R.DAR@ PsPInflInTrans;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@ماند@R.DAR@ PsPInflInTrans;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@گذاشت@R.BAZ@ PsPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@رساند@R.BAZ@ PsPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@خواند@R.BAZ@ PsPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@نمایاند@R.BAZ@ PsPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAR@تاباند@R.BAR@ PsPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAR@داشت@R.BAR@ PsPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@رفت@R.DAR@ PsPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.FARA@گرفت@R.FARA@ PsPInfl;!!!!!!!!!!!!!!!!!newnew
+@R.VA@داشت@R.VA@ PsPInfl;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.VA@داد@R.VA@ PsPInfl;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.VAR@رفت@R.VAR@ PsPInflInTrans;!!!!!!!!!!!!!!!!!newnew
+@R.VA@رفت@R.VA@ PsPInflInTrans;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.FORU@رفت@R.FORU@ PsPInflInTrans;!!!!!!!!!!!!!!!!!newnew
+@R.DAR@افتاد@R.DAR@ PsPInflInTrans;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.DAR@یافت@R.DAR@ PsPInfl;!!!!!!!!!!!!!!!!!!!!!newnew
+
+LEXICON iChainPastSubj
+@R.VAR@اومد@R.VAR@ iPastSubjInflInTrans;
+@R.VAR@داشت@R.VAR@ iPastSubjInfl;
+@R.VA@موند@R.VA@ iPastSubjInflInTrans;
+@R.DAR@موند@R.DAR@ iPastSubjInflInTrans;
+@R.DAR@اورد@R.DAR@ iPastSubjInfl;
+@R.DAR@اومد@R.DAR@ iPastSubjInflInTrans;
+@R.BAR@گردوند@R.BAR@ iPastSubjInfl;
+@R.BAR@تابوند@R.BAR@ iPastSubjInfl;
+@R.BAR@اومد@R.BAR@ iPastSubjInfl;
+@R.BAZ@نمایوند@R.BAZ@ iPastSubjInfl;
+@R.BAZ@رسوند@R.BAZ@ iPastSubjInfl;
+@R.BAZ@خوند@R.BAZ@ iPastSubjInfl;
+@R.FARA@خوند@R.FARA@ iPastSubjInfl;!!!!corpus
+@R.VAY@ساد@R.VAY@ iPastSubjInflInTrans;!!!!corpus
+@R.VAY@ستاد@R.VAY@ iPastSubjInflInTrans;!!!!corpus
+@R.VAY@سوند@R.VAY@ iPastSubjInfl;!!!!corpus
+@R.VAY@ستوند@R.VAY@ iPastSubjInfl;!!!!corpus
+@R.PA@شد@R.PA@ iPastSubjInflInTrans;!!!!corpus
+@R.DAR@اورد:ورد@R.DAR@ iPastSubjInfl;
+@R.DAR@اومد:ومد@R.DAR@ iPastSubjInflInTrans;
+@R.VAR@اومد:ومد@R.VAR@ iPastSubjInflInTrans;
+@R.DAR@افتاد:فتاد@R.DAR@ iPastSubjInflInTrans;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.DAR@افتاد:وفتاد@R.DAR@ iPastSubjInflInTrans;!!!!!!!!!!!!!!!!!!!!!newnew
+!!!!!!!!!!!!!!!!!!!!!
+@R.BAR@آمد@R.BAR@ PastSubjInflInTrans;
+@R.BAR@افراخت@R.BAR@ PastSubjInfl;
+@R.BAR@افروخت@R.BAR@ PastSubjInfl;
+@R.BAR@انداخت@R.BAR@ PastSubjInfl;
+@R.BAR@انگیخت@R.BAR@ PastSubjInfl;
+@R.BAR@آورد@R.BAR@ PastSubjInfl;
+@R.BAR@چید@R.BAR@ PastSubjInfl;
+@R.BAR@داشت@R.BAR@ PastSubjInfl;
+@R.BAR@فروخت@R.BAR@ PastSubjInfl;
+@R.BAR@گرداند@R.BAR@ PastSubjInfl;
+@R.BAR@گرفت@R.BAR@ PastSubjInfl;
+@R.BAR@گذشت@R.BAR@ PastSubjInflInTrans;
+@R.BAR@گزید@R.BAR@ PastSubjInfl;
+@R.BAR@کند@R.BAR@ PastSubjInfl;
+@R.BAR@کشد@R.BAR@ PastSubjInfl;
+@R.BAR@نهاد@R.BAR@ PastSubjInfl;
+@R.BAR@ریخت@R.BAR@ PastSubjInfl;
+@R.BAR@شکست@R.BAR@ PastSubjInfl;
+@R.BAR@شمرد@R.BAR@ PastSubjInfl;
+@R.BAR@شمارد@R.BAR@ PastSubjInfl;
+@R.BAR@تابید@R.BAR@ PastSubjInfl;
+@R.BAR@خیزید@R.BAR@ PastSubjInflInTrans;
+@R.BAR@خورد@R.BAR@ PastSubjInfl;
+@R.BAZ@گشت@R.BAZ@ PastSubjInflInTrans;
+@R.BAZ@گفت@R.BAZ@ PastSubjInfl;
+@R.BAZ@ماند@R.BAZ@ PastSubjInflInTrans;
+@R.BAZ@شناخت@R.BAZ@ PastSubjInfl;
+@R.BAZ@یافت@R.BAZ@ PastSubjInfl;
+@R.FARA@خواند@R.FARA@ PastSubjInfl;!!!!corpus
+@R.NEGAH@داشت@R.NEGAH@ PastSubjInfl;
+@R.BAR@گشت@R.BAR@ PastSubjInflInTrans;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@آورد@R.DAR@ PastSubjInfl;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@آمد@R.DAR@ PastSubjInflInTrans;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@ماند@R.DAR@ PastSubjInflInTrans;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@گذاشت@R.BAZ@ PastSubjInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@رساند@R.BAZ@ PastSubjInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@خواند@R.BAZ@ PastSubjInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@نمایاند@R.BAZ@ PastSubjInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAR@تاباند@R.BAR@ PastSubjInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAR@داشت@R.BAR@ PastSubjInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.VA@داد@R.VA@ PastSubjInfl;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.DAR@رفت@R.DAR@ PastSubjInfl;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.FARA@گرفت@R.FARA@ PastSubjInfl;!!!!!!!!!!!!!!!!!newnew
+@R.VA@داشت@R.VA@ PastSubjInfl;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.VAR@رفت@R.VAR@ PastSubjInflInTrans;!!!!!!!!!!!!!!!!!newnew
+@R.VA@رفت@R.VA@ PastSubjInflInTrans;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.FORU@رفت@R.FORU@ PastSubjInflInTrans;!!!!!!!!!!!!!!!!!newnew
+@R.DAR@افتاد@R.DAR@ PastSubjInflInTrans;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.DAR@یافت@R.DAR@ PastSubjInfl;!!!!!!!!!!!!!!!!!!!!!newnew
+
+LEXICON chainPastPP
+@R.BAR@آمد@R.BAR@ PastPPInfl;
+@R.BAR@افراخت@R.BAR@ PastPPInfl;
+@R.BAR@افروخت@R.BAR@ PastPPInfl;
+@R.BAR@انداخت@R.BAR@ PastPPInfl;
+@R.BAR@انگیخت@R.BAR@ PastPPInfl;
+@R.BAR@آورد@R.BAR@ PastPPInfl;
+@R.BAR@چید@R.BAR@ PastPPInfl;
+@R.BAR@داشت@R.BAR@ PastPPInfl;
+@R.BAR@فروخت@R.BAR@ PastPPInfl;
+@R.BAR@گرداند@R.BAR@ PastPPInfl;
+@R.BAR@گرفت@R.BAR@ PastPPInfl;
+@R.BAR@گذشت@R.BAR@ PastPPInfl;
+@R.BAR@گزید@R.BAR@ PastPPInfl;
+@R.BAR@کند@R.BAR@ PastPPInfl;
+@R.BAR@کشد@R.BAR@ PastPPInfl;
+@R.BAR@نهاد@R.BAR@ PastPPInfl;
+@R.BAR@ریخت@R.BAR@ PastPPInfl;
+@R.BAR@شکست@R.BAR@ PastPPInfl;
+@R.BAR@شمرد@R.BAR@ PastPPInfl;
+@R.BAR@شمارد@R.BAR@ PastPPInfl;
+@R.BAR@تابید@R.BAR@ PastPPInfl;
+@R.BAR@خیزید@R.BAR@ PastPPInfl;
+@R.BAR@خورد@R.BAR@ PastPPInfl;
+@R.BAZ@گشت@R.BAZ@ PastPPInfl;
+@R.BAZ@گفت@R.BAZ@ PastPPInfl;
+@R.BAZ@ماند@R.BAZ@ PastPPInfl;
+@R.BAZ@شناخت@R.BAZ@ PastPPInfl;
+@R.BAZ@یافت@R.BAZ@ PastPPInfl;
+@R.FARA@خواند@R.FARA@ PastPPInfl;!!!!corpus
+@R.NEGAH@داشت@R.NEGAH@ PastPPInfl;
+@R.BAR@گشت@R.BAR@ PastPPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@آورد@R.DAR@ PastPPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@آمد@R.DAR@ PastPPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@ماند@R.DAR@ PastPPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@گذاشت@R.BAZ@ PastPPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@رساند@R.BAZ@ PastPPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@خواند@R.BAZ@ PastPPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAZ@نمایاند@R.BAZ@ PastPPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAR@تاباند@R.BAR@ PastPPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.BAR@داشت@R.BAR@ PastPPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.DAR@رفت@R.DAR@ PastPPInfl;!!!!!!!!!!!!!!!!!!!!!!!!!new
+@R.FARA@گرفت@R.FARA@ PastPPInfl;!!!!!!!!!!!!!!!!!newnew
+@R.VA@داشت@R.VA@ PastPPInfl;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.VA@داد@R.VA@ PastPPInfl;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.VAR@رفت@R.VAR@ PastPPInfl;!!!!!!!!!!!!!!!!!newnew
+@R.VA@رفت@R.VA@ PastPPInfl;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.FORU@رفت@R.FORU@ PastPPInfl;!!!!!!!!!!!!!!!!!newnew
+@R.DAR@افتاد@R.DAR@ PastPPInfl;!!!!!!!!!!!!!!!!!!!!!newnew
+@R.DAR@یافت@R.DAR@ PastPPInfl;!!!!!!!!!!!!!!!!!!!!!newnew
