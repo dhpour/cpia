@@ -24854,8 +24854,14 @@ LEXICON ComNN
 @P.VOWEL.YEH@تک‌خطی vowelHaComNNFRM;!VOWEL_YEH
 تکیاختگان consnHaComNNFRM;
 تکذیب consnHaComNNFRM;
+تایید consnHaComNNFRM;
+تائید consnHaComNNFRM;
 @P.VOWEL.HEH@تکذیبیه vowelHaComNNFRM;!VOWEL_HEH
 @P.VOWEL.HEH@تکذیب‌نامه vowelHaComNNFRM;!VOWEL_HEH
+@P.VOWEL.HEH@تاییدیه vowelHaComNNFRM;!VOWEL_HEH
+@P.VOWEL.HEH@تاییدنامه vowelHaComNNFRM;!VOWEL_HEH
+@P.VOWEL.HEH@تائیدیه vowelHaComNNFRM;!VOWEL_HEH
+@P.VOWEL.HEH@تائیدنامه vowelHaComNNFRM;!VOWEL_HEH
 @P.VOWEL.ALEF@طلا vowelJatComNNFRM;!VOWEL_ALEF!PL-JAT
 طلاآلات consnHaComNNFRM;
 تالاب consnHaComNNFRM;

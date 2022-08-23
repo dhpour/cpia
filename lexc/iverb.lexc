@@ -51,10 +51,10 @@ LEXICON NaghliMostamer
 @P.CMPIMPERFECT.ON@:@P.CMPIMPERFECT.ON@ iPresP;
 
 LEXICON exceptionPres
-التزامی=خواه:ب*خوا presException;
-منفی+التزامی=خواه:ن*خوا presException;
-ف.ح.ا=خواه:می×خوا presException;
-منفی+ف.ح.ا=خواه:ن*می×خوا presException;
+!!!التزامی=خواه:ب*خوا presException;
+!!!منفی+التزامی=خواه:ن*خوا presException;
+!!!ف.ح.ا=خواه:می×خوا presException;
+!!!منفی+ف.ح.ا=خواه:ن*می×خوا presException;
 
 LEXICON presException
 +ش۱:*م iObjectClitic;
@@ -74,8 +74,8 @@ LEXICON exceptionalImp
 امری=کُن:کن ImperInfl;!kon
 !!امری=کَن:کن ImperInfl;!kan! فعل امری کَندن بدون پیشوند ب لازم ندارد
 امری=شو:شو ImperInflInTrans;
-امری=خواه:ب*خوا iALEFImperInfl;
-منفی+امری=خواه:ن*خوا iALEFImperInfl;
+!!!امری=خواه:ب*خوا iALEFImperInfl;
+!!!منفی+امری=خواه:ن*خوا iALEFImperInfl;
 امری=ایست:ایست ImperInflInTrans;
 امری=ا+مفرد:بی*ا theEnd;! این مشکلی نداشت، برای یکدست شدن با ساخت منفی استفاده شد.
 منفی+امری=ا+مفرد:نی*ا theEnd;! با مثلا بگنا تداخل داشت و به ناچرا به شکل استثنا مجزا ساخته شد. 
@@ -1721,7 +1721,9 @@ LEXICON iVpres
 چلون ipres;
 خوابون ipres;!!!!خابون
 خارون ipres;
-!!!!خوا iALEFpres;!!!!خا
+خوا iALEFpres;
+خا iALEFpres;
+خاه ipres;
 خراشون ipres;
 خرون ipres;
 خورون ipres;
@@ -2199,7 +2201,9 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 چلون iImperInfl;
 خوابون iImperInfl;!!!!خابون
 خارون iImperInfl;
-!!!!خوا iALEFImperInfl;!!!!خا
+خوا iALEFImperInfl;
+خا iALEFImperInfl;
+خاه iImperInfl;
 خراشون iImperInfl;
 خرون iImperInfl;
 خورون iImperInfl;
