@@ -1,0 +1,38 @@
+from fst_lookup import FST
+import re
+import os
+
+class Detail:
+    def __init__(self):
+        print(os.getcwd())
+
+class FarsiAnalyzer:
+    def __init__(self, fst_type='standard'):
+
+        fst_path = get_static_file_path(fst_type+".fst")
+        gen_fst_path = get_static_file_path("generation.fst")
+        
+        self.fst = FST.from_file(fst_path)
+        self.gen_fst = FST.from_file(gen_fst_path, labels="invert")
+
+    def __monkey_patch_out(self, inflection):
+
+        pattern = r'\+?رسمی$'
+        repl = '+رسمی'
+        pattern2 = '@.*?@'
+        repl2 = ''
+
+        inflection = inflection.replace(">", "").replace("<", "").replace("استاندارد:", "")
+        inflection = re.sub(pattern, repl, inflection)
+        inflection = re.sub(pattern2, repl2, inflection)
+        return inflection
+
+    def inflect(self, word):
+        return [self.__monkey_patch_out(x[0]) for x in list(self.fst.analyze(word))]
+
+    def generate(self, inflection):
+        return [self.__monkey_patch_out(x) for x in list(self.gen_fst.generate(inflection))]
+    
+
+def get_static_file_path(filename):
+    return os.path.join(os.path.dirname(__file__), 'fsts', filename)

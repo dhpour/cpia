@@ -1,5 +1,12 @@
 misc/
 misc/*
+build/
+build/*
+dist/
+dist/*
+cpia.egg-info/
+cpia.egg-info/*
+cpia/fsts/*
 foma.exe
 /cygwin1.dll
 /cygreadline7.dll
