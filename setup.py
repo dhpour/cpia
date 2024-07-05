@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '2024.7.57' 
+VERSION = '2024.7.5' 
 DESCRIPTION = 'Persian word analyzer'
 LONG_DESCRIPTION = 'Inflectional anlyzer for contemporary Persian'
 
