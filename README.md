@@ -1,10 +1,36 @@
-# Contemporary Persian Inflectional Analyzer  
-<p align="center">
-  <img src="https://github.com/lingwndr/cpia/blob/master/icon.png?raw=true" alt="تحلیلگر تصریفی فارسی معاصر" width="150"/>
-</p>
+Contemporary Persian Inflectional Analyzer  
+==========================================
+Analyze contemporary Persian words.
+
+Install
+-------
+    pip install cpia
+
+Usage
+-----
+```python
+>>> from cpia import FarsiAnalyzer
+>>> farsi = FarsiAnalyzer()
+
+>>> farsi.inflect("کتاب‌هایشان")
+['اسمعا=کتاب+جها+وشخصی۶+رسمی']
+
+>>> farsi.inflect("بشینین")
+['التزامی=نشین+ش۵', 'امری=نشین+ش۵']
+
+>>> farsi.generate("امری=گو+مفرد+رسمی")
+['بگو']
+
+>>> print(farsi.generate('ف.ح.ا=خور+ش۱+ومفعولی۲')[0])
+می‌‌خورمت
+```
 
 CPIA is a multi-FST inflectional analyzer for both informal and formal Persian. FSTs rules are compiled by [Foma](https://fomafst.github.io/).
 The main FST is enough for almost all tasks. The Secondary FSTs can be used for noisy informal Out-Of-Vocabulary words, they normally can produce a lot of useless inflections. They are only useful for special cases. Use them only if you know what you want.
+If you need to use other Fsts, just pass their name as argument to the FarsiAnalyzer constructor:
+```python
+>>> farsi = FarsiAnalyzer("homophone")
+```
 
 ### FSTs
 
@@ -21,27 +47,9 @@ The main FST is enough for almost all tasks. The Secondary FSTs can be used for 
 | **expressive**           | **چرااااااا** |                                         **<بیانی:اسمعا=چرا+رسمی>** |
 | **splitter**             |         **چهاربعدی**        |               **<تقطیع:شماره=چهار+رسمی><br><تقطیع:صفت=بعدی+رسمی>** |
 
-## How to check or use FSTs
-For testing the analyzer you can check both its [Online Tool](https://infarsi.herokuapp.com/) (all FSTs) or
-its [Telegram Bot](https://t.me/infarsi_bot) (only standard FST). You can also clone this repo or `app` folder and run the app by
-```batch
-python interfaceGrid.py
-```
-or run Foma as server:
-```shell
-flookup -S -A 127.0.0.1 ./1standard.fst
-```
-then quering it:
-```python
->>> import socket
-
->>> sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
->>> sock.sendto(bytes("می‌چرخونده", "utf-8"), ("127.0.0.1", 6062))
-21
->>> data, addr = sock.recvfrom(6062)
->>> print(str(data, encoding="utf-8"))
-می‌چرخونده 	       	<استاندارد:ف.م.ن.م=چرخوند+وربطی۳>
-```
+<p align="center">
+  <img src="https://github.com/lingwndr/cpia/blob/master/icon.png?raw=true" alt="تحلیلگر تصریفی فارسی معاصر" width="150"/>
+</p>
 
 ## Evaluation
 
