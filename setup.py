@@ -23,8 +23,6 @@ setup(
         classifiers= [
             "Intended Audience :: Developers",
             "Intended Audience :: Science/Research",
-            "Intended Audience :: Text Engineering",
-            "Intended Audience :: NLP",
             "Programming Language :: Python :: 3.8",
             "Programming Language :: Python :: 3.9",
             "Programming Language :: Python :: 3.10",
@@ -32,6 +30,7 @@ setup(
             "Programming Language :: Python :: 3.12",
             "Topic :: Software Development",
             "Topic :: Scientific/Engineering",
+            "Topic :: Text Processing :: Linguistic",
             "Operating System :: Microsoft :: Windows",
             "Operating System :: POSIX",
             "Operating System :: Unix",
