@@ -27,7 +27,7 @@ class Converter:
     def _rule_convert(self, rule, to_register, force=False):
         if to_register == 'informal':
             if '+رسمی' not in rule:
-                return rule
+                return '', rule, ''
             else:
                 res0 = self._breakInflectionLine(rule)
                 res = self.f2i(res0, force)
