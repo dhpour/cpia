@@ -2,6 +2,7 @@ from fst_lookup import FST
 from .utils import get_static_file_path
 import re
 import os
+from cpia.converter import Converter
 
 class Detail:
     def __init__(self):
