@@ -32,14 +32,14 @@ class FarsiAnalyzer:
         if '=' not in infl:
             infl = '=' + infl
         pos = infl.split("=")[0]
-        stem = infl.split("=")[1].split("+")[0]
-        if stem == 'را':
+        lemma = infl.split("=")[1].split("+")[0]
+        if lemma == 'را':
             pos = 'عمفعولی'
 
         if not show_pos:
-            return stem
+            return {"lemma": lemma}
         
-        return stem, pos
+        return {"lemma": lemma, "pos": pos}
 
     def inflect(self, word):
         return list(set([self.__monkey_patch_out(x[0]) for x in list(self._fst.analyze(word))]))
