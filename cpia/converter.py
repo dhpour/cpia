@@ -1,4 +1,4 @@
-from utils import get_static_file_path
+from .utils import get_static_file_path
 
 class Converter:
     def __init__(self):
