@@ -28,10 +28,10 @@ class FarsiAnalyzer:
         return inflection
 
     def inflect(self, word):
-        return [self.__monkey_patch_out(x[0]) for x in list(self.fst.analyze(word))]
+        return list(set([self.__monkey_patch_out(x[0]) for x in list(self.fst.analyze(word))]))
 
     def generate(self, inflection):
-        return [self.__monkey_patch_out(x) for x in list(self.gen_fst.generate(inflection))]
+        return list(set([self.__monkey_patch_out(x) for x in list(self.gen_fst.generate(inflection))]))
     
 
 def get_static_file_path(filename):
