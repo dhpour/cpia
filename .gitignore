@@ -14,3 +14,4 @@ foma.exe
 /cygncurses7.dll
 /foma.exe.stackdump
 app/setup-x86.exe
+**/__pycache__/
