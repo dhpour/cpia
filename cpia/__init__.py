@@ -47,7 +47,7 @@ class FarsiAnalyzer:
 
         if '=' not in infl:
             infl = '=' + infl
-        pos = infl.split("=")[0]
+        pos = infl.split("=")[0].split("+")[-1]
         lemma = infl.split("=")[1].split("+")[0]
         if lemma == 'را':
             pos = 'عمفعولی'
