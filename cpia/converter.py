@@ -1,9 +1,11 @@
 from .utils import get_static_file_path
 
 class Converter:
-    def __init__(self):
+    def __init__(self, analyzer, by_force=True):
         self._formal = []
         self._informal = []
+        self._analyzer = analyzer
+        self._by_force = by_force
 
         for line in open(get_static_file_path("convertableWords.txt", "streats"), encoding='utf-8'):
             if line.strip() != '':
@@ -27,7 +29,9 @@ class Converter:
             if '+رسمی' not in rule:
                 return rule
             else:
-                return self.f2i(self._breakInflectionLine(rule), force)
+                res0 = self._breakInflectionLine(rule)
+                res = self.f2i(res0, force)
+                return res
         elif to_register == 'formal':
             if '+رسمی' in rule:
                 return [], rule, []
@@ -81,7 +85,7 @@ class Converter:
         left_hand = [x for x in rule_parts[3:] if x != '']
         whole_rule = right_hand + '=' + ('+').join(left_hand)
 
-        return whole_rule
+        return '', whole_rule, ''
     
     def i2f(self, rule_parts, force):
         register_changed = False
@@ -175,4 +179,26 @@ class Converter:
         whole_rule = (' ').join(right_hand).replace(' ', '+') + '=' + ('+').join(left_hand)
 
         return pre, whole_rule, extra
-    
+
+    def _ignore_more_then_one(self, rule, length, to_register):
+        if length == 1:
+            return False
+        
+        if to_register == 'formal':
+            if rule.endswith("+رسمی"):
+                return False
+            return True
+        elif to_register == 'informal':
+            if not rule.endswith("+رسمی"):
+                return False
+            return True
+
+    def convert(self, word, to_register):
+        out_words = []
+        inflecs = self._analyzer.inflect(word)
+        for infl in inflecs:
+            pre, new_rule, extra = self._rule_convert(infl, to_register, force=self._by_force)
+            if not self._ignore_more_then_one(new_rule, len(inflecs), to_register):
+                res = self._analyzer.generate(new_rule)
+                out_words += res
+        return list(set(out_words))
