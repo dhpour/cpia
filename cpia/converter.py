@@ -30,13 +30,13 @@ class Converter:
                 return '', rule, ''
             else:
                 res0 = self._breakInflectionLine(rule)
-                res = self.f2i(res0, force)
+                res = self._f2i(res0, force)
                 return res
         elif to_register == 'formal':
             if '+رسمی' in rule:
                 return [], rule, []
             else:
-                return self.i2f(self._breakInflectionLine(rule), force)
+                return self._i2f(self._breakInflectionLine(rule), force)
     
     def _breakInflectionLine(self, rule):
         word = ''
@@ -47,7 +47,7 @@ class Converter:
         lemma = left[0]
         return [word, pre, pos, lemma] + left[1:]
     
-    def f2i(self, rule_parts, force):
+    def _f2i(self, rule_parts, force):
         register_changed = False
         lemma = rule_parts[3]
         lemma_index = -1
@@ -87,7 +87,7 @@ class Converter:
 
         return '', whole_rule, ''
     
-    def i2f(self, rule_parts, force):
+    def _i2f(self, rule_parts, force):
         register_changed = False
         lemma = rule_parts[3]
         lemma_index = -1
