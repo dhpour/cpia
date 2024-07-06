@@ -12,8 +12,8 @@ class FarsiAnalyzer:
         fst_path = get_static_file_path(fst_type+".fst")
         gen_fst_path = get_static_file_path("generation.fst")
         
-        self.fst = FST.from_file(fst_path)
-        self.gen_fst = FST.from_file(gen_fst_path, labels="invert")
+        self._fst = FST.from_file(fst_path)
+        self._gen_fst = FST.from_file(gen_fst_path, labels="invert")
 
     def __monkey_patch_out(self, inflection):
 
@@ -42,10 +42,10 @@ class FarsiAnalyzer:
         return stem, pos
 
     def inflect(self, word):
-        return list(set([self.__monkey_patch_out(x[0]) for x in list(self.fst.analyze(word))]))
+        return list(set([self.__monkey_patch_out(x[0]) for x in list(self._fst.analyze(word))]))
 
     def generate(self, inflection):
-        return list(set([self.__monkey_patch_out(x) for x in list(self.gen_fst.generate(inflection))]))
+        return list(set([self.__monkey_patch_out(x) for x in list(self._gen_fst.generate(inflection))]))
     
 
 def get_static_file_path(filename):
