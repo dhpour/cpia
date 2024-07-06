@@ -48,6 +48,8 @@ class FarsiAnalyzer:
             pos = 'عمفعولی'
       
         out = {"lemma": lemma, "pos": pos}
+        out['register'] = "رسمی" if infl.endswith("+رسمی") else "غیررسمی"
+        
         if pos in self._parts_help.keys():
             out["long_pos"] = self._parts_help[pos]
         return out 
