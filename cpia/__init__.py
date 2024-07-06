@@ -1,4 +1,5 @@
 from fst_lookup import FST
+from utils import get_static_file_path
 import re
 import os
 
@@ -49,7 +50,7 @@ class FarsiAnalyzer:
       
         out = {"lemma": lemma, "pos": pos}
         out['register'] = "رسمی" if infl.endswith("+رسمی") else "غیررسمی"
-        
+
         if pos in self._parts_help.keys():
             out["long_pos"] = self._parts_help[pos]
         return out 
@@ -60,6 +61,3 @@ class FarsiAnalyzer:
     def generate(self, inflection):
         return list(set([self.__monkey_patch_out(x) for x in list(self._gen_fst.generate(inflection))]))
     
-
-def get_static_file_path(filename, folder):
-    return os.path.join(os.path.dirname(__file__), folder, filename)
