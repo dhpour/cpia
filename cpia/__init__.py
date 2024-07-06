@@ -9,13 +9,13 @@ class Detail:
 class FarsiAnalyzer:
     def __init__(self, fst_type='standard'):
 
-        fst_path = get_static_file_path(fst_type+".fst")
-        gen_fst_path = get_static_file_path("generation.fst")
+        fst_path = get_static_file_path(fst_type+".fst", "fsts")
+        gen_fst_path = get_static_file_path("generation.fst", "fsts")
         
         self._fst = FST.from_file(fst_path)
         self._gen_fst = FST.from_file(gen_fst_path, labels="invert")
 
-        self._parts_help = self.__load_parts_info('streats/rule-parts.txt')
+        self._parts_help = self.__load_parts_info(get_static_file_path('rule-parts.txt', "streats"))
 
     def __load_parts_info(self, file):
         """loads data of parts and their meanings of inflection rules"""
@@ -62,5 +62,5 @@ class FarsiAnalyzer:
         return list(set([self.__monkey_patch_out(x) for x in list(self._gen_fst.generate(inflection))]))
     
 
-def get_static_file_path(filename):
-    return os.path.join(os.path.dirname(__file__), 'fsts', filename)
+def get_static_file_path(filename, folder):
+    return os.path.join(os.path.dirname(__file__), folder, filename)
