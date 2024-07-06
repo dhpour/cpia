@@ -38,7 +38,7 @@ class FarsiAnalyzer:
         inflection = re.sub(pattern2, repl2, inflection)
         return inflection
 
-    def lemmatize(self, infl, show_pos=True):
+    def lemmatize(self, infl):
 
         if '=' not in infl:
             infl = '=' + infl
@@ -46,10 +46,7 @@ class FarsiAnalyzer:
         lemma = infl.split("=")[1].split("+")[0]
         if lemma == 'را':
             pos = 'عمفعولی'
-
-        if not show_pos:
-            return {"lemma": lemma}
-        
+      
         out = {"lemma": lemma, "pos": pos}
         if pos in self._parts_help.keys():
             out["long_pos"] = self._parts_help[pos]
