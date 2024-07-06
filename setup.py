@@ -15,7 +15,7 @@ setup(
         long_description=LONG_DESCRIPTION,
         packages=find_packages(),
         #package_dir={"cpia": "fsts/*.fst"},
-        package_data={"cpia": ["fsts/*.fst"]},
+        package_data={"cpia": ["fsts/*.fst", "streats/*"]},
         install_requires=['fst-lookup>=2024.7.3'], # add any additional packages that 
         # needs to be installed along with your package. Eg: 'caer'
         
