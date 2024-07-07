@@ -16,6 +16,10 @@ setup(
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
         long_description_content_type='text/markdown',
+        project_urls = {
+            'Homepage': "https://github.com/lingwndr/cpia",
+            "Repository": "https://github.com/lingwndr/cpia"
+        },
         packages=find_packages(),
         #package_dir={"cpia": "fsts/*.fst"},
         package_data={"cpia": ["fsts/*.fst", "streats/*"]},
