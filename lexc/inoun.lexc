@@ -2418,7 +2418,6 @@ LEXICON ComNN
 انبرک consnHaComNNFRM;
 @P.VOWEL.YEH@انبوهی vowelHaComNNFRM;!VOWEL_YEH
 @P.VOWEL.YEH@انبوه‌کاری vowelHaComNNFRM;!VOWEL_YEH
-@P.VOWEL.YEH@انبوه سازی vowelHaComNNFRM;!VOWEL_YEH
 @P.VOWEL.YEH@انبوه‌سازی vowelHaComNNFRM;!VOWEL_YEH
 @P.VOWEL.HEH@آنچه vowelHaComNNFRM;!VOWEL_HEH
 انچوچک consnHaComNNFRM;
@@ -8026,7 +8025,7 @@ LEXICON ComNN
 ارث‌ومیراث consnHaComNNFRM;
 ارتعاش consnAtComNNFRM;!PL-AT
 ارتباط consnAtComNNFRM;!PL-AT
-@P.VOWEL.YEH@ارتباط ‌جمعی vowelAtComNNFRM;!VOWEL_YEH!PL-AT
+@P.VOWEL.YEH@ارتباط‌‌جمعی vowelAtComNNFRM;!VOWEL_YEH!PL-AT
 ارتداد consnHaComNNFRM;
 ارتفاع consnAtComNNFRM;!PL-AT
 ارتفاعات(جم):ارتفاعات consnHaComNNFRM;!ARABIC-PL
@@ -13175,7 +13174,6 @@ LEXICON ComNN
 کلاه consnHaComNNFRM;
 کلاهک consnHaComNNFRM;
 @P.VOWEL.YEH@کلاهبرداری vowelHaComNNFRM;!VOWEL_YEH
-@P.VOWEL.YEH@کلاه برفی vowelHaComNNFRM;!VOWEL_YEH
 @P.VOWEL.YEH@کلاه‌‌برفی vowelHaComNNFRM;!VOWEL_YEH
 کلاهدوز consnHaComNNFRM;
 @P.VOWEL.YEH@کلاهدوزی vowelHaComNNFRM;!VOWEL_YEH
@@ -13322,7 +13320,7 @@ LEXICON ComNN
 کنفرانس consnHaComNNFRM;
 @P.VOWEL.ALEF@کنگلومرا vowelHaComNNFRM;!VOWEL_ALEF
 @P.VOWEL.HEH@کنگره vowelHaComNNFRM;!VOWEL_HEH
-@P.VOWEL.YEH@کنگره داری vowelHaComNNFRM;!VOWEL_YEH
+@P.VOWEL.YEH@کنگره‌داری vowelHaComNNFRM;!VOWEL_YEH
 کونگ‌‌فو consnHaComNNFRM;
 کونگ‌‌فوکار consnHaComNNFRM;
 @P.VOWEL.HEH@کنگره vowelHaComNNFRM;!VOWEL_HEH
@@ -25558,7 +25556,6 @@ LEXICON ComNN
 تصمیم‌گیر consnAnComNNFRM;!PL-AN
 @P.VOWEL.YEH@تصمیم‌گیری vowelHaComNNFRM;!VOWEL_YEH
 @P.VOWEL.HEH@تصمیم‌نامه vowelHaComNNFRM;!VOWEL_HEH
-@P.VOWEL.YEH@تصمیم سازی vowelAtComNNFRM;!VOWEL_YEH!PL-AT
 @P.VOWEL.YEH@تصمیم‌سازی vowelHaComNNFRM;!VOWEL_YEH
 تسمیران consnHaComNNFRM;
 @P.VOWEL.HEH@تسمیه vowelHaComNNFRM;!VOWEL_HEH
@@ -29210,7 +29207,7 @@ LEXICON adjLex
 عالم‌‌گیر adjFRM;
 @P.VOWEL.YEH@المی adjFRM;!VOWEL_YEH
 عالمسوز adjFRM;
-عالم تاب adjFRM;!PL-IN!PL-AN
+عالم‌تاب adjFRM;!PL-IN!PL-AN
 @P.VOWEL.YEH@علنی adjFRM;!VOWEL_YEH
 علاقه‌‌مند adjFRM;!PL-AN
 @P.VOWEL.HEH@علقه‌مضغه adjFRM;!VOWEL_HEH
@@ -31714,7 +31711,7 @@ LEXICON adjLex
 @P.VOWEL.YEH@چهل‌و‌پنج‌متری adjFRM;!VOWEL_YEH
 @P.VOWEL.HEH@چهل‌ساله adjFRM;!VOWEL_HEH
 @P.VOWEL.YEH@چهل‌سانتیمتری adjFRM;!VOWEL_YEH
-@P.VOWEL.YEH@چهل ستونی adjFRM;!VOWEL_YEH
+@P.VOWEL.YEH@چهل‌ستونی adjFRM;!VOWEL_YEH
 @P.VOWEL.YEH@چهره‌ای adjFRM;!VOWEL_YEH
 @P.VOWEL.HEH@چکاننده adjFRM;!VOWEL_HEH
 @P.VOWEL.HEH@چکاره adjFRM;!VOWEL_HEH
@@ -35896,7 +35893,7 @@ LEXICON adjLex
 کردنشین adjFRM;
 کردتبار adjFRM;
 کردزبان adjFRM;
-@P.VOWEL.YEH@کره ای adjFRM;!VOWEL_YEH
+@P.VOWEL.YEH@کره‌ای adjFRM;!VOWEL_YEH
 کره‌‌ای‌‌تبار adjFRM;
 کره‌‌مانند adjFRM;
 @P.VOWEL.YEH@کره‌‌یی adjFRM;!VOWEL_YEH
@@ -38119,8 +38116,8 @@ LEXICON adjLex
 @P.VOWEL.HEH@ناآگاهانه adjFRM;!VOWEL_HEH
 نااهل adjFRM;!PL-AN
 ناعلاج adjFRM;
-@P.VOWEL.HEH@نا آلوده adjFRM;!VOWEL_HEH
-@P.VOWEL.HEH@نا آمده adjFRM;!VOWEL_HEH
+@P.VOWEL.HEH@نا‌آلوده adjFRM;!VOWEL_HEH
+@P.VOWEL.HEH@نا‌آمده adjFRM;!VOWEL_HEH
 نا‌امن adjFRM;
 @P.VOWEL.HEH@ناامن‌کننده adjFRM;!VOWEL_HEH!PL-GAN
 ناامن‌ساز adjFRM;
@@ -39851,7 +39848,6 @@ LEXICON adjLex
 پروتستان‌نشین adjFRM;
 @P.VOWEL.YEH@پروژه‌ای adjFRM;!VOWEL_YEH
 پرپر adjFRM;
-پرپیچ وخم adjFRM;
 پرپیچ‌و‌خم adjFRM;
 پرپروتئین adjFRM;
 پرپشت adjFRM;
@@ -40503,7 +40499,6 @@ LEXICON adjLex
 @P.VOWEL.YEH@غیر‌‌بازرگانی adjFRM;!VOWEL_YEH
 @P.VOWEL.YEH@غیر‌‌بازاری adjFRM;!VOWEL_YEH
 @P.VOWEL.YEH@غیر‌بازنمائی adjFRM;!VOWEL_YEH
-@P.VOWEL.YEH@غیر بازیافتی adjFRM;!VOWEL_YEH
 @P.VOWEL.YEH@غیربهداشتی adjFRM;!VOWEL_YEH
 @P.VOWEL.HEH@غیربهینه adjFRM;!VOWEL_HEH
 @P.VOWEL.YEH@غیربحرانی adjFRM;!VOWEL_YEH
@@ -43128,7 +43123,6 @@ LEXICON adjLex
 @P.VOWEL.HEH@تجلی‌یافته adjFRM;!VOWEL_HEH
 @P.VOWEL.HEH@تجمع‌کننده adjFRM;!VOWEL_HEH!PL-GAN
 @P.VOWEL.YEH@تجملاتی adjFRM;!VOWEL_YEH
-@P.VOWEL.ALEF@تجمل گرا adjFRM;!VOWEL_ALEF!PL-AT
 @P.VOWEL.ALEF@تجمل‌گرا adjFRM;!VOWEL_ALEF
 @P.VOWEL.YEH@تجملی adjFRM;!VOWEL_YEH
 تجمل‌پرست adjFRM;
@@ -43474,7 +43468,6 @@ LEXICON adjLex
 تغییر‌طلب adjFRM;
 @P.VOWEL.HEH@تغییر‌یافته adjFRM;!VOWEL_HEH
 @P.VOWEL.YEH@تغذیه‌ای adjFRM;!VOWEL_YEH
-@P.VOWEL.HEH@تغذیه کننده adjFRM;!VOWEL_HEH
 @P.VOWEL.HEH@تغذیه‌کننده adjFRM;!VOWEL_HEH
 تار adjFRM;
 تر adjFRM;
@@ -44583,7 +44576,6 @@ LEXICON adjLex
 @P.VOWEL.YEH@خیریه‌ای adjFRM;!VOWEL_YEH
 خیرخواه adjFRM;!PL-AN
 @P.VOWEL.HEH@خیره adjFRM;!VOWEL_HEH
-@P.VOWEL.HEH@خیره کننده adjFRM;!VOWEL_HEH
 @P.VOWEL.HEH@خیره‌کننده adjFRM;!VOWEL_HEH
 خیره‌سر adjFRM;
 خیس adjFRM;
@@ -54621,7 +54613,7 @@ LEXICON sent
 نوش‌جان finpointFRM;
 ام‌ابیها finpointFRM;!VOWEL_ALEF
 اولیاء‌الله finpointFRM;
-ق م finpointFRM;
+ق‌م finpointFRM;
 ق.‌م finpointFRM;
 قصص‌‌الانبیاء finpointFRM;
 ره finpointFRM;
