@@ -95,13 +95,13 @@ The **`recall`** metric is calculated for all FSTs as below
 
 OOVs and OO-Rules
 -----------------
-There is a list of words and inflections in [OOs/extra.txt](https://github.com/lingwndr/cpia/blob/master/app/OOs/extra.txt) that are not included in FSTs. You can directly contribute to this list or report lack of words/rules by online tools and update this list. Both [Online Tool](https://infarsi.herokuapp.com/) and [Telegram Bot](https://t.me/infarsi_bot) have report capability. This list will be used to update FSTs in a proper manner periodically. For contributing directly to this list, please use the following format, and for inflection, use the structure of this analyzer. Note that the third column (the context that the word appears in) is optional.
+There is a list of words and inflections in [OOs/extra.txt](https://github.com/lingwndr/cpia/blob/master/app/OOs/extra.txt) that are not included in Fsts. You can directly contribute to this list. This list will be used to update Fsts in a proper manner periodically. For contributing directly to this list, please use the following format, and for inflection, use the structure of this analyzer. Note that the third column (the context that the word appears in) is optional.
 
 `فونت[TAB]اسمعام=فونت+رسمی[TAB]فونت قشنگی استفاده کردن`
 
 Persian word structure; informal and formal
 --------------------------------------------
-Comprehensive structure of words especially informal words are explained in the `Contemporary Persian Inflectional Analyzer` paper in full detail: [`docs/informal-analyzer.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/informal-analyzer.pdf); [paper on the Journal website](https://jipm.irandoc.ac.ir/article-1-4337-en.html%3B)
+Comprehensive structure of words especially informal words are explained in the `Contemporary Persian Inflectional Analyzer` paper in full detail: [`docs/informal-analyzer.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/informal-analyzer.pdf); or [from the Journal website](https://jipm.irandoc.ac.ir/article-1-4337-en.html%3B)
 ### Citation
 ```bibtex
 @article{Heidarpour2021, 
@@ -118,8 +118,9 @@ Comprehensive structure of words especially informal words are explained in the 
 ```
 Fst word rule structure; informal and formal
 --------------------------------------------
-All the lexicon, morphotactic and morphophonemic rules are in `lexc` folder. These files are used by Foma to compile FSTs.
-How the rules of words are developed to make FSTs are explained in `Thesis`: [`docs/thesis.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/thesis.pdf)
+All the lexicon, morphotactic and morphophonemic rules are in `lexc` folder. These files are used by a tool called [Foma](https://fomafst.github.io/) to compile Fsts.
+How the rules of words are developed to make Fsts are explained in `Thesis`: [`docs/thesis.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/thesis.pdf)
+
 ### Citation
 ```bibtex
 @mastersthesis{Heidarpour2018,
@@ -130,7 +131,7 @@ How the rules of words are developed to make FSTs are explained in `Thesis`: [`d
 ```
 Secondary Fsts
 --------------
-These FSTs are designed for covering out-of-vocabulary informal/noisy words and are explained in `Covering Out-of-Vocabulary Words of Informal Persian` paper: [`docs/informal-oov.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/informal-oov.pdf)
+These Fsts are designed for covering out-of-vocabulary informal/noisy words and are explained in `Covering Out-of-Vocabulary Words of Informal Persian` paper: [`docs/informal-oov.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/informal-oov.pdf)
 ### Citation
 ```bibtex
 @incollection{Heidarpour2019, 
@@ -142,7 +143,6 @@ These FSTs are designed for covering out-of-vocabulary informal/noisy words and 
 }
 ```
 
-Fst rules are compiled by [Foma](https://fomafst.github.io/).
 
 License
 -------
