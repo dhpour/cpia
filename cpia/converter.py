@@ -39,14 +39,16 @@ class Converter:
                 return self._i2f(self._breakInflectionLine(rule), force)
     
     def _breakInflectionLine(self, rule):
+        debug = True
         word = ''
         right = rule.split("=")[0].split('+')
         left = rule.split("=")[-1].split('+')
         pre = '' if right[0] == right[-1] else right[0]
         pos = right[-1]
         lemma = left[0]
-        print('--_breakInflectionLine:')
-        print('--result:', [word, pre, pos, lemma] + left[1:])
+        if debug:
+            print('--_breakInflectionLine:')
+            print('--result:', [word, pre, pos, lemma] + left[1:])
         return [word, pre, pos, lemma] + left[1:]
     
     def _f2i(self, rule_parts, force):
