@@ -17,7 +17,7 @@ Modals;
 !: exceptionPres;
 
 LEXICON theEnd
-+رسمی:0 #;
+@R.FORMAL@+رسمی:@R.FORMAL@0 #;
 
 LEXICON iCopula
 @P.FORMAL.ON@اسناد=هست:@P.FORMAL.ON@هست ipastInTrans;
@@ -97,7 +97,7 @@ LEXICON iObjectClitic
 
 LEXICON iStress
 @D.FORMAL@:@D.FORMAL@ #;
-@R.FORMAL@ +رسمی:@R.FORMAL@ #;
+@R.FORMAL@ +رسمی:@R.FORMAL@0 #;
 +تاکید:*ا #;
 +تاکید:^ها #;
 +عطف:*و #;
