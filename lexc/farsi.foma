@@ -1,28 +1,28 @@
 #read lexc lexc/noun.lexc
 #define LexNoun;
 
-read lexc lexc/harf.lexc
+read lexc harf.lexc
 define LexHarf;
 
 #read lexc lexc/verb.lexc
 #define LexVerb;
 
-read lexc lexc/MTvbs.lexc
+read lexc MTvbs.lexc
 define MTverbs;
 
-read lexc lexc/iverb.lexc
+read lexc iverb.lexc
 define iLexVerb;
 
-read lexc lexc/inoun.lexc
+read lexc inoun.lexc
 define iLexNoun;
 
 #read lexc lexc/iharf.lexc
 #define iLexHarf;
 
-read lexc lexc/MTchain.lexc
+read lexc MTchain.lexc
 define MTchain;
 
-read lexc lexc/ichain.lexc
+read lexc ichain.lexc
 define iChain;
 
 #read lexc lexc/chain.lexc
