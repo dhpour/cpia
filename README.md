@@ -35,7 +35,16 @@ Usage
 می‌چرخاندم
 
 ```
-
+For understanding abbreviations used in inflection rules:
+```python
+>>> farsi.show_help()
+🔹  ف.م.ب 👈 فعل ماضی بعید*
+🔹  ف.م.ال 👈 فعل ماضی التزامی*
+🔹  ف.م.ا.ب 👈 فعل ماضی ابعد*
+🔹  ف.آ 👈 فعل مستقبل (آینده)*
+🔹  اسمعام 👈 اسم عام
+          ...
+```
 CPIA is a multi-FST inflectional analyzer for both informal and formal Persian. FSTs rules are compiled by [Foma](https://fomafst.github.io/).
 The main FST is enough for almost all tasks. The Secondary FSTs can be used for noisy informal Out-Of-Vocabulary words, they normally can produce a lot of useless inflections. They are only useful for special cases. Use them only if you know what you want.
 If you need to use other Fsts, just pass their name as argument to the FarsiAnalyzer constructor:
