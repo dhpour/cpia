@@ -45,6 +45,8 @@ class Converter:
         pre = '' if right[0] == right[-1] else right[0]
         pos = right[-1]
         lemma = left[0]
+        print('--_breakInflectionLine:')
+        print('--result:', [word, pre, pos, lemma] + left[1:])
         return [word, pre, pos, lemma] + left[1:]
     
     def _f2i(self, rule_parts, force):
@@ -194,11 +196,26 @@ class Converter:
             return True
 
     def convert(self, word, to_register):
+        debug = True
         out_words = []
         inflecs = self._analyzer.inflect(word)
+        if debug:
+            print('-'*10)
         for infl in inflecs:
             pre, new_rule, extra = self._rule_convert(infl, to_register, force=self._by_force)
+            if debug:
+                print('convert:', 'to_register:', to_register)
+                print('-word:', word)
+                print('-infl:', infl)
+                print('-new_rule:', new_rule)
             if not self._ignore_more_then_one(new_rule, len(inflecs), to_register):
+                if debug:
+                    print('-_ignore_more_then_one:', False, 'length:', len(inflecs))
                 res = self._analyzer.generate(new_rule)
                 out_words += res
+            else:
+                if debug:
+                    print('-_ignore_more_then_one:', True, 'length:', len(inflecs))
+            if debug:
+                print('-'*3)
         return list(set(out_words))
