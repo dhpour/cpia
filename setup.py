@@ -38,7 +38,7 @@ setup(
             "Programming Language :: Python :: 3.12",
             "Topic :: Software Development",
             "Topic :: Scientific/Engineering",
-            "Topic :: Text Processing :: Linguistics",
+            "Topic :: Text Processing :: Linguistic",
             "Operating System :: Microsoft :: Windows",
             "Operating System :: Unix",
             "Operating System :: MacOS",
