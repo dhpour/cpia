@@ -65,3 +65,8 @@ class FarsiAnalyzer:
     def generate(self, inflection):
         return list(set([self.__monkey_patch_out(x) for x in list(self._gen_fst.generate(inflection))]))
     
+    def show_help(self):
+        txt = ''
+        for k in self._parts_help.keys():
+            txt += "🔹  " + k + " 👈 " + self._parts_help[k] + "\n"
+        return txt
