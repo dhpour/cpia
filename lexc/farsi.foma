@@ -474,26 +474,31 @@ define brdHandler putConcat .o.
 
 ######STANDARD-1-FST########
 #define FST1 WORDS .o. brdHandler .o. fborderNonDet .o. refineZWNJ;
-#regex debugFST(FST1, STANDARD);
+##regex debugFST(FST1, STANDARD);
+#regex FST1;
 ######################
 ######HOMOPHONE-1-FST########
 #SHOULD ACTIVATE >>> SPECIAL-EZAFE-CONSTRUCTION IN inoun.lexc line 436 and 437
 #define FST2 WORDS .o. brdHandler .o. fborderNonDet .o. refineZWNJ .o. homoPhones;
-#regex debugFST(FST2, HOMOPHONE);
+##regex debugFST(FST2, HOMOPHONE);
+#regex FST2;
 ######################
 ######AVAEE-1-FST########
 #define FST3 WORDS .o. brdHandler .o. elitRules .o. fborderNonDet.i .o. refineZWNJ;
 #define elimFormal ["+" RE SIN MIM YEH] -> 0;
 #define finalAvaee FST3.i .o. elimFormal;
-#regex debugFST(finalAvaee.i, AVAEE);
+##regex debugFST(finalAvaee.i, AVAEE);
+#regex finalAvaee.i;
 ######################
 ######WORD-STRESS#######
 #define FST4 WORDS .o. brdHandler .o. fborderNonDet .o. refineZWNJ .o. wordStress.i;
-#regex debugFST(FST4, EXPRESSIVE);
+##regex debugFST(FST4, EXPRESSIVE);
+#regex FST4;
 ######################
 ######SPLIT############
 #define FST5 WORDS .o. brdHandler  .o. fborderNonDet.i .o. refineZWNJ .o. splitJointWord.i;
-#regex debugFST(FST5, SPLITTER);
+##regex debugFST(FST5, SPLITTER);
+#regex FST5;
 ######################
 ######GENERATION########
 define ARMokasarFlagElim ["(" JIM MIM ")"] (->) 0;
