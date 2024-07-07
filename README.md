@@ -3,7 +3,7 @@ Contemporary Persian Inflectional Analyzer
 [![PyPI version](https://img.shields.io/badge/pypi-v2024.7.71-blue)](https://pypi.org/project/cpia/)
 [![calver YYYY.MM.DD](https://img.shields.io/badge/calver-YYYY.MM.MICRO-22bfda.svg)](http://calver.org/)
 
-Analyze contemporary Persian words.
+Analyze Informal and Formal words of contemporary Persian.
 
 Install
 -------
@@ -48,25 +48,26 @@ For understanding abbreviations used in inflection rules:
 🔹  اسمعام 👈 اسم عام
           ...
 ```
-CPIA is a multi-FST inflectional analyzer for both informal and formal Persian. FSTs rules are compiled by [Foma](https://fomafst.github.io/).
-The main FST is enough for almost all tasks. The Secondary FSTs can be used for noisy informal Out-Of-Vocabulary words, they normally can produce a lot of useless inflections. They are only useful for special cases. Use them only if you know what you want.
-If you need to use other Fsts, just pass their name as argument to the FarsiAnalyzer constructor:
+Other than `standard` fst for inflection and `generation` fst for generating words from rules, cpia has secondary fsts. The main fst is enough for almost all tasks but the secondary fsts can be used for noisy informal Out-Of-Vocabulary words, they normally can produce a lot of useless inflections. They are only useful for special cases. Use them only if you know what you want.
+If you need to use other fsts, just pass their name as argument to the FarsiAnalyzer constructor:
 ```python
 >>> farsi = FarsiAnalyzer("homophone")
 ```
 
-### FSTs
+Fsts
+----
 
-| FST                  |           word          |                                                         output |
+| Name                  |           word          |                                                         output |
 |----------------------|:-----------------------:|---------------------------------------------------------------:|
 | **standard**             |           **برم**           | **<استاندارد:اسمعا=بره+وشخصی۱><br><استاندارد:اسمعا=بر+هم><br><استاندارد:اسمعا=بر+وشخصی۱+رسمی><br><استاندارد:اسمعا=بر+وربطی۱+رسمی><br><استاندارد:اسمعا=برم+رسمی><br><استاندارد:حضاف=بر+وشخصی۱+رسمی><br><استاندارد:التزامی=ر+ش۱><br><استاندارد:امری=رم+مفرد+رسمی>** |
 
-**Secondary FSTs**
+Secondary Fsts
+--------------
 
-| FST                  |           word          |                                                         output |
+| Name                  |           word          |                                                         output |
 |----------------------|:-----------------------:|---------------------------------------------------------------:|
 | **homophone**            | **مسؤول<br>مسئول<br>مسیول** |                                       <**همصدا:اسمعا=مسئول+رسمی>** |
-| **phone_change**                |          **شیطون**          |                                            **<آوایی:اسمعا=شیطان>** |
+| **phone_change (avaee)**                |          **شیطون**          |                                            **<آوایی:اسمعا=شیطان>** |
 | **expressive**           | **چرااااااا** |                                         **<بیانی:اسمعا=چرا+رسمی>** |
 | **splitter**             |         **چهاربعدی**        |               **<تقطیع:شماره=چهار+رسمی><br><تقطیع:صفت=بعدی+رسمی>** |
 
@@ -74,7 +75,8 @@ If you need to use other Fsts, just pass their name as argument to the FarsiAnal
   <img src="https://github.com/lingwndr/cpia/blob/master/icon.png?raw=true" alt="تحلیلگر تصریفی فارسی معاصر" width="150"/>
 </p>
 
-## Evaluation
+Evaluation
+----------
 
 The analyzer is not aware of context but the output should provide all possible inflections for all possible contexts. Eval dataset is in `eval` folder. For 1786 unique words extracted from dataset analyzer produced 3,704 inflections rules. Here are the shortcomings counted based on their occurances.
 
@@ -91,12 +93,14 @@ The **`recall`** metric is calculated for all FSTs as below
 | formal                  | **95.1%**  | 95.1%     | 95.1%        | 95.1%      | 95.1%    |
 | combined (Contemporary) | **95.56%** | 95.64%    | 96%          | 96%        | 96.08%   |
 
-## OOVs and OO-Rules
+OOVs and OO-Rules
+-----------------
 There is a list of words and inflections in [OOs/extra.txt](https://github.com/lingwndr/cpia/blob/master/app/OOs/extra.txt) that are not included in FSTs. You can directly contribute to this list or report lack of words/rules by online tools and update this list. Both [Online Tool](https://infarsi.herokuapp.com/) and [Telegram Bot](https://t.me/infarsi_bot) have report capability. This list will be used to update FSTs in a proper manner periodically. For contributing directly to this list, please use the following format, and for inflection, use the structure of this analyzer. Note that the third column (the context that the word appears in) is optional.
 
 `فونت[TAB]اسمعام=فونت+رسمی[TAB]فونت قشنگی استفاده کردن`
 
-## Persian word structure; informal and formal
+Persian word structure; informal and formal
+--------------------------------------------
 Comprehensive structure of words especially informal words are explained in the `Contemporary Persian Inflectional Analyzer` paper in full detail: [`docs/informal-analyzer.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/informal-analyzer.pdf); [paper on the Journal website](https://jipm.irandoc.ac.ir/article-1-4337-en.html%3B)
 ### Citation
 ```bibtex
@@ -112,7 +116,8 @@ Comprehensive structure of words especially informal words are explained in the 
   year = {2021}  
 }
 ```
-## FST word rule structure; informal and formal
+Fst word rule structure; informal and formal
+--------------------------------------------
 All the lexicon, morphotactic and morphophonemic rules are in `lexc` folder. These files are used by Foma to compile FSTs.
 How the rules of words are developed to make FSTs are explained in `Thesis`: [`docs/thesis.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/thesis.pdf)
 ### Citation
@@ -123,7 +128,8 @@ How the rules of words are developed to make FSTs are explained in `Thesis`: [`d
   year = {2018}
 } 
 ```
-## Secondary FSTs
+Secondary Fsts
+--------------
 These FSTs are designed for covering out-of-vocabulary informal/noisy words and are explained in `Covering Out-of-Vocabulary Words of Informal Persian` paper: [`docs/informal-oov.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/informal-oov.pdf)
 ### Citation
 ```bibtex
@@ -135,3 +141,9 @@ These FSTs are designed for covering out-of-vocabulary informal/noisy words and 
   year = {2019}  
 }
 ```
+
+Fst rules are compiled by [Foma](https://fomafst.github.io/).
+
+License
+-------
+Licensed under GNU General Public License Version 3 (GPLv3)
