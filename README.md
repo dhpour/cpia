@@ -1,7 +1,7 @@
 Contemporary Persian Inflectional Analyzer  
 ==========================================
-[![PyPI version](https://img.shields.io/badge/pypi-v2024.7.71-blue)](https://pypi.org/project/cpia/)
-[![calver YYYY.MM.DD](https://img.shields.io/badge/calver-YYYY.MM.MICRO-22bfda.svg)](http://calver.org/)
+[![PyPI version](https://img.shields.io/badge/pypi-v2024.7.8-blue)](https://pypi.org/project/cpia/)
+[![calver YYYY.MM.DD](https://img.shields.io/badge/calver-YYYY.MM.DD-22bfda.svg)](http://calver.org/)
 
 Analyze Informal and Formal words of contemporary Persian.
 
