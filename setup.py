@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from pathlib import Path
 this_directory = Path(__file__).parent
 
-VERSION = '2024.7.7' 
+VERSION = '2024.7.71' 
 DESCRIPTION = 'Contemporary Persian word analyzer'
 LONG_DESCRIPTION = (this_directory / "README.md").read_text(encoding='utf-8')
 
