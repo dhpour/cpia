@@ -6,7 +6,6 @@ dist/
 dist/*
 cpia.egg-info/
 cpia.egg-info/*
-cpia/fsts/*
 playground/*
 foma.exe
 cygwin1.dll
