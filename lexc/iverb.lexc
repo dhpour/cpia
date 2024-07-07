@@ -14,7 +14,7 @@ Modals;
 !!!!!!!!!!!!!!!!!!!!!Iregularities-Imperative!!!!!!!!!!!!!!!!!!!!!!
 @P.IMPERATIVE.ON@:@P.IMPERATIVE.ON@ exceptionalImp;
 !!!!!!!!!!!!!!!!!!!!!!Iregularities-Present!!!!!!!!!!!!!!!!!!!!!!!!!
-: exceptionPres;
+!: exceptionPres;
 
 LEXICON theEnd
 +رسمی:0 #;
@@ -50,7 +50,7 @@ LEXICON iNormalVerbs
 LEXICON NaghliMostamer
 @P.CMPIMPERFECT.ON@:@P.CMPIMPERFECT.ON@ iPresP;
 
-LEXICON exceptionPres
+!LEXICON exceptionPres
 !!!التزامی=خواه:ب*خوا presException;
 !!!منفی+التزامی=خواه:ن*خوا presException;
 !!!ف.ح.ا=خواه:می×خوا presException;
@@ -1761,7 +1761,7 @@ LEXICON iVpres
 شورون ipres;
 شوت ipres;
 شکون ipres;
-غلتون ipres
+غلتون ipres;
 قبولون ipres;
 فهمون ipres;
 فشون ipres;
@@ -2241,7 +2241,7 @@ LEXICON iImper  !!!! واژگان پر (12/3/2016 3:43 PM )  ریشه فعل ح�
 شورون iImperInfl;
 شوت iImperInfl;
 شکون iImperInfl;
-غلتون iImperInfl
+غلتون iImperInfl;
 قبولون iImperInfl;
 فهمون iImperInfl;
 فشون iImperInfl;
