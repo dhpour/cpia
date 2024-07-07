@@ -30,7 +30,7 @@ class Converter:
                 return '', rule, ''
             else:
                 res0 = self._breakInflectionLine(rule)
-                res = self._f2i(res0, force)
+                res = self._f2i(res0, False)
                 return res
         elif to_register == 'formal':
             if '+رسمی' in rule:
@@ -210,7 +210,7 @@ class Converter:
                 print('-word:', word)
                 print('-infl:', infl)
                 print('-new_rule:', new_rule)
-            if not self._ignore_more_then_one(new_rule, len(inflecs), to_register):
+            if not self._ignore_more_then_one(new_rule, len(inflecs), to_register) or True:
                 if debug:
                     print('-_ignore_more_then_one:', False, 'length:', len(inflecs))
                 res = self._analyzer.generate(new_rule)
