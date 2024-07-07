@@ -37,7 +37,7 @@ class FarsiAnalyzer:
         pattern3 = chr(8204)+"+"
         repl3 = chr(8204)
 
-        inflection = inflection.replace(">", "").replace("<", "").replace("استاندارد:", "")
+        #inflection = inflection.replace(">", "").replace("<", "").replace("استاندارد:", "")
         inflection = re.sub(pattern, repl, inflection)
         inflection = re.sub(pattern2, repl2, inflection)
         inflection = re.sub(pattern3, repl3, inflection)
