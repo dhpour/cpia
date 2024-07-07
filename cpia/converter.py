@@ -39,7 +39,7 @@ class Converter:
                 return self._i2f(self._breakInflectionLine(rule), force)
     
     def _breakInflectionLine(self, rule):
-        debug = True
+        debug = False
         word = ''
         right = rule.split("=")[0].split('+')
         left = rule.split("=")[-1].split('+')
@@ -198,7 +198,7 @@ class Converter:
             return True
 
     def convert(self, word, to_register):
-        debug = True
+        debug = False
         out_words = []
         inflecs = self._analyzer.inflect(word)
         if debug:
