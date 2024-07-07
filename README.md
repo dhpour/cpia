@@ -9,7 +9,7 @@ Install
 Usage
 -----
 ```python
->>> from cpia import FarsiAnalyzer
+>>> from cpia import FarsiAnalyzer, Converter
 >>> farsi = FarsiAnalyzer()
 
 >>> farsi.inflect("کتاب‌هایشان")
@@ -23,6 +23,17 @@ Usage
 
 >>> print(farsi.generate('ف.ح.ا=خور+ش۱+ومفعولی۲')[0])
 می‌‌خورمت
+
+>>> farsi.lemmatize(farsi.inflect("میچرخوندمش")[0])
+{'lemma': 'چرخوند',
+ 'pos': 'ف.م.ا',
+ 'register': 'غیررسمی',
+ 'long_pos': 'فعل ماضی استمراری'}
+
+>>> converter = Converter(farsi)
+>>> print(converter.convert("میچرخوندمش", "formal")[0])
+می‌چرخاندم
+
 ```
 
 CPIA is a multi-FST inflectional analyzer for both informal and formal Persian. FSTs rules are compiled by [Foma](https://fomafst.github.io/).
