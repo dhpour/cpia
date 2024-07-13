@@ -102,7 +102,7 @@ There is a list of words and inflections in [OOs/extra.txt](https://github.com/l
 
 Persian word structure; informal and formal
 --------------------------------------------
-Comprehensive structure of words especially informal words are explained in the `Contemporary Persian Inflectional Analyzer` paper in full detail: [`docs/informal-analyzer.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/informal-analyzer.pdf); or [from the Journal website](https://jipm.irandoc.ac.ir/article-1-4337-en.html%3B)
+Comprehensive structure of words especially informal words are explained in the `Contemporary Persian Inflectional Analyzer` paper in full detail: [`docs/informal-analyzer.pdf`](https://github.com/lingwndr/cpia/blob/master/docs/informal-analyzer.pdf); or [from the Journal website](https://jipm.irandoc.ac.ir/article_699645.html?lang=en)
 ### Citation
 ```bibtex
 @article{Heidarpour2021, 
